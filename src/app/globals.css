@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Image Details Text */
+
+.text-details {
+  background-image: url("../../public/details.png");
+  background-position: center;
+  background-size: 1000px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: drop-shadow(5px 0 10px rgba(0, 0, 0, 0.8));
+  display: inline-block;
+  color: rgba(187, 16, 32, 0);
+  display: inline-block;
+  font-weight: 400;
+  z-index: 1999;
+  transform: scale(1, 1.2);
+  opacity: 0;
+  animation: loadingText 1.5s linear infinite;
+}
+
+/* Span loading */
+
+@keyframes loadingText {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
