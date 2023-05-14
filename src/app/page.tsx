@@ -8,9 +8,9 @@ export default function Home() {
   const [loadingPageState, setLoadingPageState] = useState(true);
 
   useEffect(() => {
-    // setTimeout(() => {
-    setLoadingPageState(false);
-    // }, 2000);
+    setTimeout(() => {
+      setLoadingPageState(false);
+    }, 2000);
   }, []);
 
   return (
