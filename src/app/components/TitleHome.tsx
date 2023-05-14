@@ -13,7 +13,7 @@ export default function TitleHome() {
       stagger: 0.05,
       opacity: 0,
       duration: 0.1,
-      // delay: 2,
+      delay: 2,
     });
 
     gsap.from("#archives-title .char", {
@@ -21,12 +21,12 @@ export default function TitleHome() {
       stagger: 0.03,
       opacity: 0,
       duration: 0.1,
-      delay: 2,
+      delay: 4,
     });
   }, []);
 
   return (
-    <div className="w-[auto] h-auto absolute top-[70%] translate-y-[-70%] left-0 pl-4 z-[100]">
+    <div className="w-[auto] h-auto absolute top-[60%] translate-y-[-60%] left-0 pl-4 z-[100]">
       <div className="title-container background-details__title overflow-hidden relative">
         <h1
           id="title-home"
