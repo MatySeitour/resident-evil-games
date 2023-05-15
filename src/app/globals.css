@@ -129,15 +129,16 @@ body {
     animation: up 0.2s linear;
     animation-fill-mode: forwards;
     animation-delay: 6s;
+    right: 50%;
     opacity: 1;
   }
 
   @keyframes up {
     0% {
-      transform: translate(52%, 100%);
+      transform: translate(50%, 100%);
     }
     100% {
-      transform: translate(52%, -40%);
+      transform: translate(50%, -40%);
     }
   }
 }
@@ -168,4 +169,19 @@ body {
   100% {
     opacity: 0;
   }
+}
+
+.scroll-text__effect {
+  background-image: url("../../public/details.png");
+  background-position: top left;
+  background-size: 1000px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: drop-shadow(5px 0 10px rgba(0, 0, 0, 0.8));
+  display: inline-block;
+  color: rgba(187, 16, 32, 0);
+  display: inline-block;
+  font-weight: 400;
+  z-index: 1999;
+  transform: scale(1, 1.2);
 }
