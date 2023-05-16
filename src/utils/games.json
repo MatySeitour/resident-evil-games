@@ -2,38 +2,31 @@
   "games": [
     {
       "id": 1,
-      "title": "Resident Evil"
+      "title": "Resident Evil",
+      "description": "The game's plot begins with the arrival of Chris, Jill and Wesker at a mansion located in the woods. There they will meet the undead dwelling in the corridors and rooms. In that place, they will try to escape without being eaten by the dogs that are outside. Soon, they witness the experiments carried out by the most important company in the city, and a list of betrayals that goes all the way to the S.T.A.R.S."
     },
     {
       "id": 2,
       "title": "Resident Evil 2",
+      "description": "the story It takes place in Raccoon City, an American city whose population has mostly been transformed into zombies by the T-virus, a biological weapon developed by the Umbrella company. While fleeing the city, Officer Leon S. Kennedy and college student Claire Redfield meet and bond with other survivors, only to discover that Umbrella is trying to seize a sample of the new virus to continue their biological experiments on humans.",
       "other_games": [{}]
     },
     {
       "id": 3,
       "title": "Resident Evil 3",
+      "description": "The story is divided into two halves; the first takes place during the first hours of the outbreak of the T virus in Raccoon City, taking place 24 hours before the events that occurred in Resident Evil 2 and the last takes place two days after said events. The protagonist Jill Valentine, who survived the viral disaster of the Spencer mansion from the first installment, must escape the city before the United States government decides to eradicate it along with its infected population by means of a nuclear missile, but what What he doesn't know is that the Umbrella Corporation has created a specially programmed biological weapon to eliminate all remaining members of S.T.A.R.S, Nemesis.",
       "other_games": [{}]
     },
     {
       "id": 4,
       "title": "Resident Evil 4",
+      "description": "2004, northern hemisphere autumn, six years have passed since Raccoon City was destroyed under the orders of the United States Government in order to avoid a Pandemic scenario due to the viral disaster that destroyed the city and its serious threat to the rest of the world. Leon S. Kennedy is recruited by the United States Secret Service upon learning of his survival in the Raccoon City incident and also because of his talented weapons handling and paramilitary skills. He is the one chosen to be sent on a special mission to rescue Ashley Graham, the president's daughter, who has been kidnapped by a strange organization. She finds herself in a rural town in Spain, the protagonist travels there where he runs into a group of violent villagers who swear allegiance to Los Illuminados, the organization that kidnapped Ashley.",
       "other_games": [{}]
     },
     {
       "id": 5,
-      "title": "Resident Evil 5"
-    },
-    {
-      "id": 6,
-      "title": "Resident Evil 6"
-    },
-    {
-      "id": 7,
-      "title": "Resident Evil 7"
-    },
-    {
-      "id": 8,
-      "title": "Resident Evil 8"
+      "title": "Resident Evil 5",
+      "description": "Five years after the events of Resident Evil 4, in 2009, Chris Redfield as a member of the B.S.A.A., is sent to a remote African town, precisely to Kijuju, following in the footsteps of a bioterrorist named Ricardo Irving, who is wanted by the B.S.A.A for selling biological weapons to terrorists. In the mission he is assigned as a partner a young agent from the African division of the B.S.A.A. called Sheva Alomar, along with several agents scattered throughout Kijuju (known as the Alpha Group)"
     }
   ]
 }

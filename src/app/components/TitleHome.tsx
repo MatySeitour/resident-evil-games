@@ -8,6 +8,7 @@ export default function TitleHome() {
     gsap.registerPlugin(SplitType);
     const myText = new SplitType("#title-home");
     const archiveText = new SplitType("#archives-title");
+
     gsap.from("#title-home .char", {
       x: 0,
       stagger: 0.05,

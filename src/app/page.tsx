@@ -5,14 +5,14 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Nav from "./components/Nav";
 import { gsap } from "gsap";
-
+import ScrollSection from "./components/ScrollSection";
 export default function Home() {
-  const [loadingPageState, setLoadingPageState] = useState(true);
+  const [loadingPageState, setLoadingPageState] = useState<boolean>(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoadingPageState(false);
-    }, 2000);
+    // setTimeout(() => {
+    setLoadingPageState(false);
+    // }, 2000);
   }, []);
 
   useEffect(() => {
@@ -47,7 +47,10 @@ export default function Home() {
           </div>
         </div>
       )}
-      <div className="min-h-screen background-home min-w-screen relative flex justify-end items-end bg-black overflow-hidden">
+      <div
+        // id="section-container"
+        className="min-h-screen background-home min-w-screen relative flex justify-end items-end bg-black overflow-hidden"
+      >
         <TitleHome />
         <div className="h-[50px] z-[100] text-3xl inline-block absolute top-[60%] translate-y-[-60%] opacity-0 right-[10%] max-[700px]:bottom-[0%] max-[700px]:top-auto max-[700px]:translate-y-[100%] max-[700px]:right-[50%] max-[700px]:translate-x-[50%] element-up max-[700px]:text-base">
           <p className="mb-2 tracking-wide text-white scroll-text__effect bg-white">
@@ -59,14 +62,8 @@ export default function Home() {
             <span className="w-[16px] h-[16px] border-b-2 border-r-2 rotate-[45deg] border-white inline-block max-[700px]:w-[10px] max-[700px]:h-[10px] max-[700px]:hidden"></span>
           </div>
         </div>
-        {/* <Image
-        src={"/image-home.png"}
-        alt="zombie hands"
-        height={657}
-        width={1115}
-        className="img-background__home absolute right-0 top-[50%] -translate-y-[50%]"
-      /> */}
       </div>
+      <ScrollSection />
     </main>
   );
 }
