@@ -26,7 +26,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-w-screen min-h-screen flex-col items-center justify-center">
+    <main className="min-w-screen min-h-screen h-auto flex-col items-center justify-center">
       {loadingPageState && (
         <div className="w-screen h-screen fixed flex justify-center bg-black z-[999]">
           <div className="w-auto h-auto flex flex-col justify-center items-center">
