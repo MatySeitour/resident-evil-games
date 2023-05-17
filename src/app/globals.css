@@ -28,6 +28,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  width: 100vw;
 }
 
 /* Image Details Text */
@@ -81,39 +82,18 @@ html {
 }
 
 .background-home {
+  background-image: url("../../public/bg.webp");
   background-position: center;
   background-repeat: no-repeat;
-  animation: sliderBackgroundImage 40s ease-in-out infinite;
   background-size: cover;
   will-change: background;
+  width: 100vw;
 }
 
-@keyframes sliderBackgroundImage {
-  0%,
-  100% {
-    background-image: url("../../public/bg-1.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  20% {
-    background-image: url("../../public/bg-2.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  40% {
-    background-image: url("../../public/bg-3.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  60% {
-    background-image: url("../../public/bg-4.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  80% {
-    background-image: url("../../public/bg-5.webp");
-    background-position: center;
-    background-repeat: no-repeat;
+@media only screen and (max-width: 700px) {
+  .background-home {
+    background-image: url("../../public/bg-mobile.webp");
+    background-size: 160vw;
   }
 }
 
