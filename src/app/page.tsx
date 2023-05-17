@@ -7,15 +7,15 @@ import Nav from "./components/Nav";
 import { gsap } from "gsap";
 import ScrollSection from "./components/ScrollSection";
 export default function Home() {
+  /* first load page */
   const [loadingPageState, setLoadingPageState] = useState<boolean>(true);
 
   useEffect(() => {
-    // setTimeout(() => {
-    setLoadingPageState(false);
-    // }, 2000);
-  }, []);
+    /* when the page load, wait two seconds and setloadingpage in false */
 
-  useEffect(() => {
+    setTimeout(() => {
+      setLoadingPageState(false);
+    }, 2000);
     gsap.to(".element-up", {
       x: 0,
       stagger: 0.05,
@@ -27,7 +27,6 @@ export default function Home() {
 
   return (
     <main className="min-w-screen min-h-screen flex-col items-center justify-center">
-      {/* <Nav /> */}
       {loadingPageState && (
         <div className="w-screen h-screen fixed flex justify-center bg-black z-[999]">
           <div className="w-auto h-auto flex flex-col justify-center items-center">
