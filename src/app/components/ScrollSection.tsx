@@ -22,6 +22,7 @@ export default function ScrollSection() {
     <>
       {games.map((game) => (
         <SectionGame
+          key={game.id}
           id={game.id}
           title={game.title}
           description={game.description}

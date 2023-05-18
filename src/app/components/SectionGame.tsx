@@ -178,6 +178,7 @@ export default function SectionGame({
               handleSearchCharacter={handleSearchCharacter}
               characterSelected={characterSelected}
               setCharacterSelected={characterSelected}
+              key={character.id}
             />
           ))}
         </div>
