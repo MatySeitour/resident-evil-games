@@ -190,7 +190,7 @@ html {
     background-image: url("../../public/bg-1.webp");
   }
 }
-*/ .bg-2 {
+.bg-2 {
   background-image: url("../../public/bg-2.webp");
   background-position: center;
   background-repeat: no-repeat;

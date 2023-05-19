@@ -53,35 +53,35 @@
           "name": "Leon Scott Kennedy",
           "image_select": "/leon-logo.webp",
           "image_complete": "/leon-character.webp",
-          "description": "asdsadsa"
+          "description": ""
         },
         {
           "id": 7,
           "name": "Claire Redfield",
           "image_select": "/claire-logo.webp",
           "image_complete": "/claire-character.webp",
-          "description": "asdsadsa"
+          "description": ""
         },
         {
           "id": 8,
           "name": "Ada Wong",
           "image_select": "/ada-logo.webp",
           "image_complete": "/ada-character.webp",
-          "description": "asdsadsa"
+          "description": ""
         },
         {
           "id": 9,
           "name": "Sherry Birkin",
           "image_select": "/sherry-logo.webp",
           "image_complete": "/sherry-character.webp",
-          "description": "asdsadsa"
+          "description": ""
         },
         {
           "id": 10,
           "name": "William Birkin",
-          "image_select": "/williamlogo.webp",
+          "image_select": "/william-logo.webp",
           "image_complete": "/william-character.webp",
-          "description": "asdsadsa"
+          "description": ""
         }
       ]
     },
