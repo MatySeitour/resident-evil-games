@@ -13,7 +13,91 @@ export default function ScrollSection() {
   /* get games */
   const games = getGames.games;
 
-  gsap.registerPlugin(ScrollTrigger, SplitType);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger, SplitType);
+
+    const backgroundReveal = gsap.utils.toArray("#section-game");
+    const backgroundHome: any = document.querySelector(".background-home");
+
+    // backgroundReveal.forEach((text: any, i) => {
+    //   console.log(text);
+    //   ScrollTrigger.create({
+    //     trigger: text,
+    //     markers: true,
+    //     start: "300px bottom",
+    //     onEnter: () => {
+    //       gsap.to(backgroundHome, {
+    //         opacity: 0,
+    //         duration: 1,
+    //         onComplete: () => {
+    //           backgroundHome.classList.add(`bg-${i + 1}`);
+    //           backgroundHome.style.opacity = 1;
+    //           backgroundHome.classList.remove(`bg-${i - 1}`);
+    //         },
+    //       });
+    //     },
+    //     // onLeaveBack: () => {
+    //     //   main.classList.add(`bg-${i - 1}`);
+    //     // },
+    //     onLeaveBack: () => {
+    //       gsap.to(backgroundHome, {
+    //         opacity: 0,
+    //         duration: 1,
+    //         onComplete: () => {
+    //           backgroundHome.classList.remove(`bg-${i - 1}`);
+    //           backgroundHome.style.opacity = 1;
+    //         },
+    //       });
+    //     },
+    //   });
+    // });
+
+    // onStart: () => {
+    //   main.classList.add(`bg-${i + 1}`);
+    // },
+    const reveal = gsap.utils.toArray(".game-title");
+    reveal.forEach((text: any, i) => {
+      gsap.to(text, {
+        scrollTrigger: {
+          trigger: text,
+          toggleActions: "restart none none reverse",
+          // markers: true,
+          start: "-100px center",
+
+          end: "-100px center",
+        },
+        opacity: 1,
+        duration: 0.5,
+      });
+    });
+
+    const descriptionGame = gsap.utils.toArray("#description-game");
+    descriptionGame.forEach((description: any, i) => {
+      gsap.to(description, {
+        scrollTrigger: {
+          trigger: description,
+          toggleActions: "restart none none reverse",
+          start: "-50px center",
+        },
+        opacity: 1,
+        duration: 0.5,
+      });
+    });
+
+    const charactersSelectContainer = gsap.utils.toArray(".image-character");
+    charactersSelectContainer.forEach((imageCharacter: any, i) => {
+      gsap.to(imageCharacter, {
+        scrollTrigger: {
+          trigger: imageCharacter,
+          toggleActions: "restart none none reverse",
+          start: "-140px center",
+          // markers: true,
+        },
+        opacity: 1,
+        duration: 0.5,
+      });
+    });
+  }, []);
 
   const [loadingCharacterSelected, setLoadingCharacterSelected] =
     useState<boolean>(false);
