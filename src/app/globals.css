@@ -86,24 +86,24 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   will-change: background;
   width: 100vw;
+  height: auto;
+  /* position: absolute;
+  z-index: -1; */
 }
 
 @media only screen and (max-width: 700px) {
   .background-home {
     background-image: url("../../public/bg-mobile.webp");
     background-size: 160vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    will-change: background;
+    width: 100vw;
   }
-}
-
-.background-home::after {
-  content: "";
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 10;
 }
 
 /* ANIMATION UP*/
@@ -174,91 +174,67 @@ html {
 
 .bg-1 {
   background-image: url("../../public/bg-1.webp");
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  transition: opacity 1s linear;
+  background-size: cover;
+  background-attachment: fixed;
+  will-change: background;
+  width: 100vw;
 }
 
-.bg-2 {
+@keyframes bgChange {
+  0% {
+    background-image: url("../../public/bg.webp");
+  }
+  100% {
+    background-image: url("../../public/bg-1.webp");
+  }
+}
+*/ .bg-2 {
   background-image: url("../../public/bg-2.webp");
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  transition: opacity 1s linear;
+  background-size: cover;
+  background-attachment: fixed;
+  will-change: background;
+  width: 100vw;
 }
 .bg-3 {
   background-image: url("../../public/bg-3.webp");
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  transition: opacity 1s linear;
+  background-size: cover;
+  background-attachment: fixed;
+  will-change: background;
+  width: 100vw;
 }
 .bg-4 {
   background-image: url("../../public/bg-4.webp");
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  transition: opacity 1s linear;
+  background-size: cover;
+  background-attachment: fixed;
+  will-change: background;
+  width: 100vw;
 }
 .bg-5 {
   background-image: url("../../public/bg-5.webp");
-  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  transition: opacity 1s linear;
+  background-size: cover;
+  background-attachment: fixed;
+  will-change: background;
+  width: 100vw;
 }
 
 /* BACKGROUND GRADIENT EFFECT GAMES */
 
-.bg-1::after {
+.character-container__effect::after {
   content: "";
   width: 100%;
   height: 100%;
+  top: 0;
+  right: -40px;
   position: absolute;
-  background: linear-gradient(300deg, transparent, rgba(0, 0, 0, 0.8), #000);
-}
-
-.bg-2::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: linear-gradient(300deg, transparent, rgba(0, 0, 0, 0.8), #000);
-}
-.bg-3::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: linear-gradient(300deg, transparent, rgba(0, 0, 0, 0.8), #000);
-}
-.bg-4::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: linear-gradient(300deg, transparent, rgba(0, 0, 0, 0.8), #000);
-}
-.bg-5::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: linear-gradient(300deg, transparent, rgba(0, 0, 0, 0.8), #000);
+  background: linear-gradient(89deg, transparent, rgba(0, 0, 0, 0.1), #000);
 }
