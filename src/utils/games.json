@@ -9,35 +9,35 @@
           "id": 1,
           "name": "Chris Redfield",
           "image_select": "/chris_logo.webp",
-          "image_complete": "/chris.webp",
+          "image_complete": "/chris-character.webp",
           "description": "Upon joining S.T.A.R.S., he was assigned the position of Alpha Team's scout, consisting of opening up and reconnoitering the ground. As such, exceptional skill in shooting and combat was expected of him, as well as great ability in the use of various weapons."
         },
         {
           "id": 2,
           "name": "Jill Valentine",
           "image_select": "/jill_logo.webp",
-          "image_complete": "/jill.webp",
+          "image_complete": "/jill-character.webp",
           "description": "Upon joining S.T.A.R.S., she was assigned the position of Alpha Team's Back-Up. Notably, Jill was already a specialist in locks and explosives."
         },
         {
           "id": 3,
           "name": "Albert Wesker",
           "image_select": "/wesker_logo.webp",
-          "image_complete": "/wesker.webp",
+          "image_complete": "/wesker-character.webp",
           "description": "Upon joining S.T.A.R.S., he was assigned as Captain of Alpha Team and the entire unit."
         },
         {
           "id": 4,
           "name": "Rebecca Chambers",
           "image_select": "/rebecca_logo.webp",
-          "image_complete": "/rebecca.webp",
+          "image_complete": "/rebecca-character.webp",
           "description": "Rebecca Chambers possesses brilliant intellect and knowledge in medicine (biochemistry). Thanks to such valuable records of hers, they earned her acceptance into the special unit of the R.P.D., known as S.T.A.R.S. she being integrated into it, serving as a doctor within the Bravo Team."
         },
         {
           "id": 5,
           "name": "Barry Burton",
           "image_select": "/barry_logo.webp",
-          "image_complete": "/barry.webp",
+          "image_complete": "/barry-character.webp",
           "description": "Upon joining S.T.A.R.S., He was assigned as a member of Team Alpha under Wekser's orders. he is a great weapons specialist"
         }
       ]
@@ -51,37 +51,37 @@
         {
           "id": 6,
           "name": "Leon Scott Kennedy",
-          "image_select": "/chris_logo.webp",
-          "image_complete": "/chris.webp",
-          "description": ""
+          "image_select": "/leon-logo.webp",
+          "image_complete": "/leon-character.webp",
+          "description": "asdsadsa"
         },
         {
           "id": 7,
           "name": "Claire Redfield",
-          "image_select": "/jill_logo.webp",
-          "image_complete": "/jill.webp",
-          "description": ""
+          "image_select": "/claire-logo.webp",
+          "image_complete": "/claire-character.webp",
+          "description": "asdsadsa"
         },
         {
           "id": 8,
           "name": "Ada Wong",
-          "image_select": "/wesker_logo.webp",
-          "image_complete": "/wesker.webp",
-          "description": ""
+          "image_select": "/ada-logo.webp",
+          "image_complete": "/ada-character.webp",
+          "description": "asdsadsa"
         },
         {
           "id": 9,
           "name": "Sherry Birkin",
-          "image_select": "/rebecca_logo.webp",
-          "image_complete": "/rebecca.webp",
-          "description": ""
+          "image_select": "/sherry-logo.webp",
+          "image_complete": "/sherry-character.webp",
+          "description": "asdsadsa"
         },
         {
           "id": 10,
           "name": "William Birkin",
-          "image_select": "/barry_logo.webp",
-          "image_complete": "/barry.webp",
-          "description": ""
+          "image_select": "/williamlogo.webp",
+          "image_complete": "/william-character.webp",
+          "description": "asdsadsa"
         }
       ]
     },
