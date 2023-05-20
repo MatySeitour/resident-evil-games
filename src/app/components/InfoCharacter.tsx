@@ -27,11 +27,10 @@ export default function InfoCharacter({
 
     gsap.fromTo(
       titleCharacterSelected,
-      { opacity: 0, duration: 1, delay: 0.5 },
+      { opacity: 0, duration: 1 },
       {
         opacity: 1,
         duration: 1.2,
-        delay: 0.5,
       }
     );
 
@@ -46,16 +45,15 @@ export default function InfoCharacter({
 
     gsap.fromTo(
       descriptionCharacterSelected,
-      { opacity: 0, duration: 1, delay: 1 },
+      { opacity: 0, duration: 1 },
       {
         opacity: 1,
         duration: 1,
-        delay: 1,
       }
     );
   }, [characterSelected?.id]);
   return (
-    <div className="h-[auto] w-full relative flex flex-1 flex-row justify-start items-center pr-4 bg-black px-4 max-w-[1200px]">
+    <div className="h-[400px] w-screen relative flex flex-1 info-characters__container opacity-0 flex-row justify-start items-center bg-black image-character__effect">
       <figure
         id={`image-character__full__${characterSelected?.id}`}
         className="w-[500px] h-[400px] mr-2 relative character-container__effect"
@@ -78,14 +76,14 @@ export default function InfoCharacter({
           }}
         />
       </figure>
-      <div className="w-[auto] h-[100%] pt-4 pl-2 flex-1 relative">
+      <div className=" h-[100%] pt-4 pl-2 flex-1 relative">
         <h4
-          className={`text-red-700 scroll-text__effect bg-red-700 scale-x-[1] scale-y-[1.2] opacity-0 text-2xl mb-2 tracking-wider character-selected__title__${characterSelected?.id} mb-4`}
+          className={`text-red-700 scroll-text__effect bg-red-700 scale-y-[1.2] pl-2 text-4xl mb-2 tracking-wider character-selected__title__${characterSelected?.id} mb-4`}
         >
           {characterSelected?.name}
         </h4>
         <p
-          className={`scale-x-[1] scale-y-[1.2] scroll-text__effect bg-white opacity-0 character-selected__description__${characterSelected?.id}`}
+          className={`pl-2 w-[90%] text-xl scale-y-[1.2] scroll-text__effect bg-white character-selected__description__${characterSelected?.id}`}
         >
           {characterSelected?.description}
         </p>
