@@ -20,6 +20,7 @@ interface Props {
     image_complete: string;
     description: string;
   }[];
+  image_prologue: string;
   other_games?: {}[];
 }
 
@@ -35,6 +36,7 @@ export default function SectionGame({
   title,
   description,
   characters,
+  image_prologue,
 }: Props) {
   // useEffect(() => {
   //   const sectionGames = document.querySelectorAll(".section-game");
@@ -157,24 +159,69 @@ export default function SectionGame({
     <article
       key={id}
       id={`section-game`}
-      className={`bg-transparent w-full h-[150vh] relative px-4 flex flex-col justify-center items-center bg-${id}`}
+      className={`bg-transparent article-container__effect w-full h-[auto] pt-[200px] relative flex flex-col justify-center bg-${id}`}
     >
       <div
         className={`opacity-0 absolute z[-1] transition-all background-gradient`}
       ></div>
-      <div className="w-full h-full min-h-screen pt-16 flex flex-col flex-[2] justify-center items-center">
-        <h2 className="relative game-title text-white scale-x-[1] scale-y-[1.2] text-4xl mb-10 tracking-wider opacity-0">
-          {title}
-        </h2>
-        <div className="w-[50%] h-auto">
-          <p
-            id="description-game"
-            className="relative w-full opacity-0 scale-x-[1] scale-y-[1.2] mb-14"
-          >
-            {description}
-          </p>
+      <div className="relative game-title scroll-text__effect text-center bg-red-800 text-red-800 scale-x-[1] scale-y-[1.2] text-6xl mb-20 tracking-wider opacity-0">
+        <h1>{title}</h1>
+      </div>
+      <div className="h-[100%] w-[98%] pt-20 flex flex-row justify-between items-center mb-[100px] px-4">
+        <div className="flex flex-col w-[50%]">
+          <h2 className="relative inline-block game-title scroll-text__effect leading-relaxed bg-red-500 text-red-500 scale-x-[1] scale-y-[1.2] text-5xl mb-20 tracking-wider opacity-0">
+            Prologue
+          </h2>
+          <div className="h-auto w-[100%]">
+            <p
+              id="description-game"
+              className="relative w-[100%] opacity-0 scale-x-[1] scale-y-[1.2] mb-14 scroll-text__effect bg-white text-xl"
+            >
+              {description}
+            </p>
+          </div>
         </div>
-        <div className="characters-game relative w-full flex flex-row justify-center items-center h-auto mb-10">
+        <div className="h-[100%] w-[70%] flex-1 flex justify-center items-center image-prologue opacity-0 pt-20">
+          <Image
+            alt="resident evil 1"
+            src={image_prologue}
+            width="0"
+            height="0"
+            sizes="100%"
+            style={{
+              width: "80%",
+              height: "100%",
+              objectFit: "cover",
+              // objectPosition: "center",
+            }}
+          />
+        </div>
+      </div>
+      {/* <div className=" h-[100%] w-[98%] pt-20 flex flex-row justify-center items-center mb-[100px] pl-4 pr-4">
+        <div className="flex w-full gap-2">
+          <div className="h-[200px] flex-1 bg-black"></div>
+          <div className="flex-1 flex flex-col justify-end items-end">
+            <h2 className="relative inline-block game-title scroll-text__effect leading-relaxed bg-red-500 text-red-500 scale-x-[1] scale-y-[1.2] text-5xl mb-20 tracking-wider opacity-0">
+              Locations
+            </h2>
+            <div className="h-auto w-[100%] flex justify-end">
+              <p
+                id="description-game"
+                className="relative w-[80%] opacity-0 scale-x-[1] scale-y-[1.2] mb-14 scroll-text__effect text-right bg-white text-xl"
+              >
+                {description}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> */}
+      <div className="characters-game z-[99999] w-[98%] flex flex-col justify-center items-end relative h-auto mb-10 px-4">
+        <div className="">
+          <h2 className="relative inline-block game-title scroll-text__effect bg-red-500 text-red-500 scale-x-[1] scale-y-[1.2] text-4xl mb-20 tracking-wider opacity-0">
+            Characters
+          </h2>
+        </div>
+        <div className="flex flex-row w-full items-center justify-end h-auto">
           {characters?.map((character) => (
             <CharactersSelect
               character_id={character.id}
@@ -193,6 +240,7 @@ export default function SectionGame({
         characterSelected={characterSelected}
         setCharacterSelected={characterSelected}
       />
+      <div className="bg-black relative w-full h-[50px] gradient-end__section__end"></div>
     </article>
   );
 }
