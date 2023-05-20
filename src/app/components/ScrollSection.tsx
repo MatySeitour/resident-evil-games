@@ -71,6 +71,22 @@ export default function ScrollSection() {
       });
     });
 
+    const imagePrologue = gsap.utils.toArray(".image-prologue");
+    imagePrologue.forEach((iamge: any, i) => {
+      gsap.to(iamge, {
+        scrollTrigger: {
+          trigger: iamge,
+          toggleActions: "restart none none reverse",
+          markers: true,
+          start: "100px center",
+
+          end: "-100px center",
+        },
+        opacity: 1,
+        duration: 0.5,
+      });
+    });
+
     const descriptionGame = gsap.utils.toArray("#description-game");
     descriptionGame.forEach((description: any, i) => {
       gsap.to(description, {
@@ -84,19 +100,57 @@ export default function ScrollSection() {
       });
     });
 
-    const charactersSelectContainer = gsap.utils.toArray(".image-character");
-    charactersSelectContainer.forEach((imageCharacter: any, i) => {
+    const characterSelectContainer = gsap.utils.toArray(".characters-game");
+    characterSelectContainer.forEach((imagesContainer: any, i) => {
+      gsap.to(imagesContainer, {
+        scrollTrigger: {
+          trigger: imagesContainer,
+          toggleActions: "restart none none reverse",
+          start: "500px center",
+          // markers: true,
+          // pin: true,
+          end: "600px center",
+        },
+        // opacity: 1,
+        // xPercent: "-100",
+        // yPercent: "100",
+        // duration: 0.1,
+        // flexDirection: "row",
+      });
+    });
+
+    const characterSelect = gsap.utils.toArray(".image-character");
+    characterSelect.forEach((imageCharacter: any, i) => {
       gsap.to(imageCharacter, {
         scrollTrigger: {
           trigger: imageCharacter,
           toggleActions: "restart none none reverse",
           start: "-140px center",
           // markers: true,
+          // pin: true,
+          // end: "-200px center",
         },
         opacity: 1,
         duration: 0.5,
       });
     });
+
+    const infoCharactersContainer = gsap.utils.toArray(
+      ".info-characters__container"
+    );
+    infoCharactersContainer.forEach((characterContainer: any) => {
+      gsap.to(characterContainer, {
+        scrollTrigger: {
+          trigger: characterContainer,
+          toggleActions: "restart none none reverse",
+          start: "-400px center",
+          // markers: true,
+        },
+        opacity: 1,
+        duration: 0.5,
+      });
+    });
+    console.log(infoCharactersContainer);
   }, []);
 
   const [loadingCharacterSelected, setLoadingCharacterSelected] =
@@ -111,6 +165,7 @@ export default function ScrollSection() {
           title={game.title}
           description={game.description}
           characters={game.characters}
+          image_prologue={game.image_prologue}
         />
       ))}
     </>
