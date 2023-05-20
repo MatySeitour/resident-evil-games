@@ -8,39 +8,40 @@
         {
           "id": 1,
           "name": "Chris Redfield",
-          "image_select": "/chris_logo.webp",
+          "image_select": "/chris-select.webp",
           "image_complete": "/chris-character.webp",
           "description": "Upon joining S.T.A.R.S., he was assigned the position of Alpha Team's scout, consisting of opening up and reconnoitering the ground. As such, exceptional skill in shooting and combat was expected of him, as well as great ability in the use of various weapons."
         },
         {
           "id": 2,
           "name": "Jill Valentine",
-          "image_select": "/jill_logo.webp",
+          "image_select": "/jill-select.webp",
           "image_complete": "/jill-character.webp",
           "description": "Upon joining S.T.A.R.S., she was assigned the position of Alpha Team's Back-Up. Notably, Jill was already a specialist in locks and explosives."
         },
         {
           "id": 3,
           "name": "Albert Wesker",
-          "image_select": "/wesker_logo.webp",
+          "image_select": "/wesker-select.webp",
           "image_complete": "/wesker-character.webp",
           "description": "Upon joining S.T.A.R.S., he was assigned as Captain of Alpha Team and the entire unit."
         },
         {
           "id": 4,
           "name": "Rebecca Chambers",
-          "image_select": "/rebecca_logo.webp",
+          "image_select": "/rebecca-select.webp",
           "image_complete": "/rebecca-character.webp",
           "description": "Rebecca Chambers possesses brilliant intellect and knowledge in medicine (biochemistry). Thanks to such valuable records of hers, they earned her acceptance into the special unit of the R.P.D., known as S.T.A.R.S. she being integrated into it, serving as a doctor within the Bravo Team."
         },
         {
           "id": 5,
           "name": "Barry Burton",
-          "image_select": "/barry_logo.webp",
+          "image_select": "/barry-select.webp",
           "image_complete": "/barry-character.webp",
           "description": "Upon joining S.T.A.R.S., He was assigned as a member of Team Alpha under Wekser's orders. he is a great weapons specialist"
         }
-      ]
+      ],
+      "image_prologue": "/re1-prologue.jpg"
     },
     {
       "id": 2,
@@ -51,39 +52,40 @@
         {
           "id": 6,
           "name": "Leon Scott Kennedy",
-          "image_select": "/leon-logo.webp",
-          "image_complete": "/leon-character.webp",
+          "image_select": "/leon-select.webp",
+          "image_complete": "/leon-2.png",
           "description": ""
         },
         {
           "id": 7,
           "name": "Claire Redfield",
-          "image_select": "/claire-logo.webp",
-          "image_complete": "/claire-character.webp",
+          "image_select": "/claire-select.webp",
+          "image_complete": "/claire-2.png",
           "description": ""
         },
         {
           "id": 8,
           "name": "Ada Wong",
-          "image_select": "/ada-logo.webp",
-          "image_complete": "/ada-character.webp",
+          "image_select": "/ada-select.webp",
+          "image_complete": "/ada-2.png",
           "description": ""
         },
         {
           "id": 9,
           "name": "Sherry Birkin",
-          "image_select": "/sherry-logo.webp",
-          "image_complete": "/sherry-character.webp",
+          "image_select": "/sherry-select.webp",
+          "image_complete": "/sherry.webp",
           "description": ""
         },
         {
           "id": 10,
           "name": "William Birkin",
-          "image_select": "/william-logo.webp",
+          "image_select": "/william-select.webp",
           "image_complete": "/william-character.webp",
           "description": ""
         }
-      ]
+      ],
+      "image_prologue": "/re2-prologue.jpg"
     },
     {
       "id": 3,
@@ -94,39 +96,40 @@
         {
           "id": 11,
           "name": "Jill Valentine",
-          "image_select": "/chris_logo.webp",
+          "image_select": "/chris-select.webp",
           "image_complete": "/chris.webp",
           "description": ""
         },
         {
           "id": 12,
           "name": "Carlos Oliveira",
-          "image_select": "/jill_logo.webp",
+          "image_select": "/jill-select.webp",
           "image_complete": "/jill.webp",
           "description": ""
         },
         {
           "id": 13,
           "name": "Nemesis",
-          "image_select": "/wesker_logo.webp",
+          "image_select": "/wesker-select.webp",
           "image_complete": "/wesker.webp",
           "description": ""
         },
         {
           "id": 14,
           "name": "Nicholai Ginovaef",
-          "image_select": "/rebecca_logo.webp",
+          "image_select": "/rebecca-select.webp",
           "image_complete": "/rebecca.webp",
           "description": ""
         },
         {
           "id": 15,
           "name": "Mikhail Victor",
-          "image_select": "/barry_logo.webp",
+          "image_select": "/barry-select.webp",
           "image_complete": "/barry.webp",
           "description": ""
         }
-      ]
+      ],
+      "image_prologue": "/re3-prologue.webp"
     },
     {
       "id": 4,
@@ -137,39 +140,40 @@
         {
           "id": 16,
           "name": "Leon Scott Kennedy",
-          "image_select": "/chris_logo.webp",
+          "image_select": "/chris-select.webp",
           "image_complete": "/chris.webp",
           "description": ""
         },
         {
           "id": 17,
           "name": "Ashley Graham",
-          "image_select": "/jill_logo.webp",
+          "image_select": "/jill-select.webp",
           "image_complete": "/jill.webp",
           "description": ""
         },
         {
           "id": 18,
           "name": "Ada Wong",
-          "image_select": "/wesker_logo.webp",
+          "image_select": "/wesker-select.webp",
           "image_complete": "/wesker.webp",
           "description": ""
         },
         {
           "id": 19,
           "name": "Jack Krauser",
-          "image_select": "/rebecca_logo.webp",
+          "image_select": "/rebecca-select.webp",
           "image_complete": "/rebecca.webp",
           "description": ""
         },
         {
           "id": 20,
           "name": "Osmund Saddler",
-          "image_select": "/barry_logo.webp",
+          "image_select": "/barry-select.webp",
           "image_complete": "/barry.webp",
           "description": ""
         }
-      ]
+      ],
+      "image_prologue": "/re4-prologue.jpg"
     },
     {
       "id": 5,
@@ -179,39 +183,40 @@
         {
           "id": 21,
           "name": "Chris Redfield",
-          "image_select": "/chris_logo.webp",
+          "image_select": "/chris-select.webp",
           "image_complete": "/chris.webp",
           "description": ""
         },
         {
           "id": 22,
           "name": "Albert Wesker",
-          "image_select": "/jill_logo.webp",
+          "image_select": "/jill-select.webp",
           "image_complete": "/jill.webp",
           "description": ""
         },
         {
           "id": 23,
           "name": "Sheva alomar",
-          "image_select": "/wesker_logo.webp",
+          "image_select": "/wesker-select.webp",
           "image_complete": "/wesker.webp",
           "description": ""
         },
         {
           "id": 24,
           "name": "Jill Valentine",
-          "image_select": "/rebecca_logo.webp",
+          "image_select": "/rebecca-select.webp",
           "image_complete": "/rebecca.webp",
           "description": ""
         },
         {
           "id": 25,
           "name": "Josh Stone",
-          "image_select": "/barry_logo.webp",
+          "image_select": "/barry-select.webp",
           "image_complete": "/barry.webp",
           "description": ""
         }
-      ]
+      ],
+      "image_prologue": "/re5-prologue.webp"
     }
   ]
 }
