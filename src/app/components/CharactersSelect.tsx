@@ -2,9 +2,6 @@
 
 import { useEffect, useState } from "react";
 import getGames from "../../utils/games.json";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
-import SplitType from "split-type";
 import Image from "next/image";
 
 interface CharacterProps {
@@ -39,22 +36,22 @@ export default function CharactersSelect({
   /* search character by id */
 
   return (
-    <div key={character_id} className="image-character opacity-0">
-      <figure className="w-[70px] h-[70px] rounded-full mr-4">
+    <div key={character_id} className="image-character opacity-0 relative">
+      <figure className="w-[100px] h-[70px] mr-[2.5px]">
         <Image
           onClick={() => handleSearchCharacter(character_id)}
           className={
             characterSelected?.id != character_id
-              ? `rounded-full grayscale-[10] shadow-none hover:grayscale-0 hover:scale-110 transition-all`
-              : `rounded-full grayscale-[0] shadow-md shadow-red-500 scale-110 transition-all`
+              ? `grayscale-[10] character-selected__style shadow-none hover:grayscale-0 transition-all p-[0.5px]`
+              : `grayscale-[0] character-selected__style character-selected__style__active  transition-all p-[0.5px]`
           }
           src={`${character_image_select}`}
           alt={`${character_name}`}
           width="0"
           height="0"
-          sizes="50vh"
+          sizes="100vh"
           style={{
-            width: "70px",
+            width: "100px",
             height: "70px",
             objectFit: "cover",
           }}
