@@ -26,8 +26,8 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-w-screen min-h-screen h-auto flex-col items-center justify-center">
-      <div className="background-home">
+    <main className="w-screen h-auto flex-col items-center justify-center">
+      <div className="background-home relative">
         {loadingPageState && (
           <div className="w-screen h-screen fixed flex justify-center bg-black z-[999]">
             <div className="w-auto h-auto flex flex-col justify-center items-center">
@@ -49,7 +49,7 @@ export default function Home() {
         )}
         <div
           // id="section-container"
-          className="min-h-screen min-w-screen relative flex justify-end items-end overflow-hidden"
+          className="min-h-screen min-w-screen relative flex justify-end items-end home-container__effect"
         >
           <TitleHome />
           <div className="h-[50px] z-[100] text-3xl inline-block absolute top-[60%] translate-y-[-60%] opacity-0 right-[10%] max-[700px]:bottom-[0%] max-[700px]:top-auto max-[700px]:translate-y-[100%] max-[700px]:right-[50%] max-[700px]:translate-x-[50%] element-up max-[700px]:text-base">
@@ -63,6 +63,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="bg-black w-full h-[100px]"></div>
         <ScrollSection />
       </div>
     </main>
