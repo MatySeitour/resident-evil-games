@@ -55,21 +55,21 @@ export default function ScrollSection() {
     // onStart: () => {
     //   main.classList.add(`bg-${i + 1}`);
     // },
-    const reveal = gsap.utils.toArray(".game-title");
-    reveal.forEach((text: any, i) => {
-      gsap.to(text, {
-        scrollTrigger: {
-          trigger: text,
-          toggleActions: "restart none none reverse",
-          // markers: true,
-          start: "-100px center",
+    // const reveal = gsap.utils.toArray(".game-title");
+    // reveal.forEach((text: any, i) => {
+    //   gsap.to(text, {
+    //     scrollTrigger: {
+    //       trigger: text,
+    //       toggleActions: "restart none none reverse",
+    //       // markers: true,
+    //       start: "-100px center",
 
-          end: "-100px center",
-        },
-        opacity: 1,
-        duration: 0.5,
-      });
-    });
+    //       end: "-100px center",
+    //     },
+    //     opacity: 1,
+    //     duration: 0.5,
+    //   });
+    // });
 
     const imagePrologue = gsap.utils.toArray(".image-prologue");
     imagePrologue.forEach((iamge: any, i) => {
@@ -77,7 +77,7 @@ export default function ScrollSection() {
         scrollTrigger: {
           trigger: iamge,
           toggleActions: "restart none none reverse",
-          markers: true,
+          // markers: true,
           start: "100px center",
 
           end: "-100px center",
@@ -151,6 +151,20 @@ export default function ScrollSection() {
       });
     });
     console.log(infoCharactersContainer);
+
+    const prologueTitle = gsap.utils.toArray(".prologue-title");
+    prologueTitle.forEach((prologue: any) => {
+      gsap.to(prologue, {
+        scrollTrigger: {
+          trigger: prologue,
+          toggleActions: "restart none none reverse",
+          start: "0px center",
+          // markers: true,
+        },
+        opacity: 1,
+        duration: 0.5,
+      });
+    });
   }, []);
 
   const [loadingCharacterSelected, setLoadingCharacterSelected] =
