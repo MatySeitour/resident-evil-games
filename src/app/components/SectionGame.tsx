@@ -38,6 +38,28 @@ export default function SectionGame({
   characters,
   image_prologue,
 }: Props) {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger, SplitType);
+
+    const title = document.querySelector(`.game-title__${id}`);
+    const titleSplit = new SplitType(`.game-title__${id}`);
+    console.log(title);
+    gsap.from(`.game-title__${id} .char`, {
+      scrollTrigger: {
+        trigger: `.game-title__${id} .char`,
+        toggleActions: "restart none none reverse",
+        start: "top center",
+        // markers: true,
+        // pin: true,
+        end: "600px center",
+      },
+      x: 0,
+      stagger: 0.05,
+      opacity: 0,
+      duration: 0.1,
+      delay: 0,
+    });
+  }, []);
   // useEffect(() => {
   //   const sectionGames = document.querySelectorAll(".section-game");
 
@@ -164,12 +186,14 @@ export default function SectionGame({
       <div
         className={`opacity-0 absolute z[-1] transition-all background-gradient`}
       ></div>
-      <div className="relative game-title scroll-text__effect text-center bg-red-800 text-red-800 scale-x-[1] scale-y-[1.2] text-6xl mb-20 tracking-wider opacity-0">
-        <h1>{title}</h1>
+      <div
+        className={`relative w-auto game-title__${id} text-center text__effect text-red-800 scale-x-[1] scale-y-[1.2] text-6xl mb-20 tracking-wider `}
+      >
+        <h1 className="inline-block">{title}</h1>
       </div>
       <div className="h-[100%] w-[98%] pt-20 flex flex-row justify-between items-center mb-[100px] px-4">
         <div className="flex flex-col w-[50%]">
-          <h2 className="relative inline-block game-title scroll-text__effect leading-relaxed bg-red-500 text-red-500 scale-x-[1] scale-y-[1.2] text-5xl mb-20 tracking-wider opacity-0">
+          <h2 className="relative inline-block prologue-title scroll-text__effect leading-relaxed bg-red-800 text-red-500 scale-x-[1] scale-y-[1.2] text-5xl mb-20 tracking-wider opacity-0">
             Prologue
           </h2>
           <div className="h-auto w-[100%]">
