@@ -9,14 +9,14 @@
           "id": 1,
           "name": "Chris Redfield",
           "image_select": "/chris-select.webp",
-          "image_complete": "/chris-character.webp",
+          "image_complete": "/chris-1.png",
           "description": "Upon joining S.T.A.R.S., he was assigned the position of Alpha Team's scout, consisting of opening up and reconnoitering the ground. As such, exceptional skill in shooting and combat was expected of him, as well as great ability in the use of various weapons."
         },
         {
           "id": 2,
           "name": "Jill Valentine",
           "image_select": "/jill-select.webp",
-          "image_complete": "/jill-character.webp",
+          "image_complete": "/jill-1.png",
           "description": "Upon joining S.T.A.R.S., she was assigned the position of Alpha Team's Back-Up. Notably, Jill was already a specialist in locks and explosives."
         },
         {
