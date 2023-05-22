@@ -37,12 +37,12 @@ export default function CharactersSelect({
 
   return (
     <div key={character_id} className="image-character opacity-0 relative">
-      <figure className="w-[100px] h-[70px] mr-[2.5px]">
+      <figure className="w-[100px] h-[70px] mr-[2.5px] cursor-pointer">
         <Image
           onClick={() => handleSearchCharacter(character_id)}
           className={
             characterSelected?.id != character_id
-              ? `grayscale-[10] character-selected__style shadow-none hover:grayscale-0 transition-all p-[0.5px]`
+              ? `grayscale-[10] character-selected__style shadow-none transition-all p-[0.5px]`
               : `grayscale-[0] character-selected__style character-selected__style__active  transition-all p-[0.5px]`
           }
           src={`${character_image_select}`}
@@ -56,6 +56,13 @@ export default function CharactersSelect({
             objectFit: "cover",
           }}
         />
+        <span
+          className={
+            characterSelected?.id != character_id
+              ? "span-select inline-block w-[0%] h-[2px] bg-red-800 absolute left-[49%] translate-x-[-50%] bottom-[2px]"
+              : "span-select inline-block w-[92%] h-[2px] bg-red-600 absolute left-[49%] translate-x-[-50%] bottom-[2px] transition-[width]"
+          }
+        ></span>
       </figure>
     </div>
   );
