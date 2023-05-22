@@ -71,7 +71,11 @@ export default function InfoCharacter({
           style={{
             width: "100%",
             height: "100%",
-            objectFit: "cover",
+            objectFit: `${
+              characterSelected?.id == 1 || characterSelected?.id == 2
+                ? "contain"
+                : "cover"
+            }`,
             objectPosition: "center",
           }}
         />
