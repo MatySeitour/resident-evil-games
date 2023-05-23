@@ -1,6 +1,4 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import getGames from "../../utils/games.json";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -69,6 +67,23 @@ export default function SectionGame({
             trigger: title,
             toggleActions: "restart none none reverse",
             // markers: true,
+            start: "-100px center",
+
+            end: "-100px center",
+          },
+          opacity: 1,
+          duration: 0.5,
+        });
+      });
+
+      const charactersTitleContainer = gsap.utils.toArray(
+        `.characters-title__container`
+      );
+      charactersTitleContainer.forEach((title: any, i) => {
+        gsap.to(title, {
+          scrollTrigger: {
+            trigger: title,
+            toggleActions: "restart none none reverse",
             start: "-100px center",
 
             end: "-100px center",
@@ -205,33 +220,33 @@ export default function SectionGame({
         className={`opacity-0 absolute z[-1] transition-all background-gradient`}
       ></div>
       <div
-        className={`relative w-auto game-title__${id} text-center text__effect text-red-800 scale-x-[1] scale-y-[1.2] text-6xl mb-20 tracking-wider max-[700px]:opacity-0`}
+        className={`relative w-auto game-title__${id} text-center text__effect text-red-800 scale-x-[1] scale-y-[1.2] text-6xl mb-20 tracking-wider max-[700px]:opacity-0 max-[700px]:text-5xl`}
       >
         <h1 className="inline-block">{title}</h1>
       </div>
-      <div className="h-[100%] w-[98%] pt-20 flex flex-row justify-between items-center mb-[100px] px-4">
-        <div className="flex flex-col w-[50%]">
-          <h2 className="relative inline-block prologue-title scroll-text__effect leading-relaxed bg-red-800 text-red-500 scale-x-[1] scale-y-[1.2] text-5xl mb-20 tracking-wider opacity-0">
+      <div className="h-[100%] w-[98%] pt-20 flex flex-row justify-between items-center mb-[100px] px-4 max-[700px]:flex-col">
+        <div className="flex flex-col w-[50%] max-[700px]:w-full">
+          <h2 className="relative inline-block prologue-title scroll-text__effect leading-relaxed bg-red-800 text-red-500 scale-x-[1] scale-y-[1.2] text-5xl mb-20 tracking-wider opacity-0 max-[700px]:text-center max-[700px]:text-4xl max-[700px]:pb-[2px]">
             Prologue
           </h2>
           <div className="h-auto w-[100%]">
             <p
               id="description-game"
-              className="relative w-[100%] opacity-0 scale-x-[1] scale-y-[1.2] mb-14 scroll-text__effect bg-white text-xl"
+              className="relative w-[100%] opacity-0 scale-x-[1] scale-y-[1.2] mb-14 scroll-text__effect bg-white text-xl max-[700px]:text-center"
             >
               {description}
             </p>
           </div>
         </div>
-        <div className="h-[100%] w-[70%] flex-1 flex justify-center items-center image-prologue opacity-0 pt-20">
+        <div className="h-[100%] w-[70%] flex-1 flex justify-center items-center image-prologue opacity-0 pt-20 max-[700px]:w-[320px] max-[700px]:pt-14">
           <Image
             alt="resident evil 1"
             src={image_prologue}
             width="0"
             height="0"
-            sizes="100%"
+            sizes="(max-width: 700px) 100vw, (max-width: 1200px) 100%"
             style={{
-              width: "80%",
+              width: "100%",
               height: "100%",
               objectFit: "cover",
               // objectPosition: "center",
@@ -258,12 +273,12 @@ export default function SectionGame({
         </div>
       </div> */}
       <div className="characters-game z-[99999] w-[98%] flex flex-col justify-center items-end relative h-auto mb-10 px-4">
-        <div className="">
-          <h2 className="relative inline-block game-title scroll-text__effect bg-red-500 text-red-500 scale-x-[1] scale-y-[1.2] text-4xl mb-20 tracking-wider opacity-0">
+        <div className="w-full text-center">
+          <h2 className="relative inline-block characters-title__container scroll-text__effect bg-red-800 text-red-800 scale-x-[1] scale-y-[1.2] text-4xl mb-20 tracking-wider opacity-0">
             Characters
           </h2>
         </div>
-        <div className="flex flex-row w-full items-center justify-end h-auto">
+        <div className="flex flex-row w-full items-center justify-end h-auto max-[700px]:flex-wrap max-[700px]:justify-center">
           {characters?.map((character) => (
             <CharactersSelect
               character_id={character.id}
