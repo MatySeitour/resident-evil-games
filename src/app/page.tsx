@@ -21,7 +21,7 @@ export default function Home() {
       stagger: 0.05,
       opacity: 1,
       duration: 0.5,
-      delay: 6,
+      delay: 4,
     });
   }, []);
 
@@ -52,7 +52,7 @@ export default function Home() {
           className="min-h-screen min-w-screen relative flex justify-end items-end home-container__effect"
         >
           <TitleHome />
-          <div className="h-[50px] z-[100] text-3xl inline-block absolute top-[60%] translate-y-[-60%] opacity-0 right-[10%] max-[700px]:bottom-[0%] max-[700px]:top-auto max-[700px]:translate-y-[100%] max-[700px]:right-[50%] max-[700px]:translate-x-[50%] element-up max-[700px]:text-base">
+          <div className="h-[50px] z-[1000000] text-3xl inline-block absolute top-[60%] translate-y-[-60%] opacity-0 right-[10%] max-[700px]:bottom-[20%] max-[700px]:top-auto max-[700px]:translate-y-[20%] max-[700px]:right-[35%] max-[700px]:translate-x-[50%] element-up max-[700px]:text-base">
             <p className="mb-2 tracking-wide text-white scroll-text__effect bg-white">
               SCROLL TO START
             </p>
