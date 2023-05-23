@@ -125,10 +125,8 @@ body::-webkit-scrollbar-track {
   background-attachment: fixed;
   will-change: background;
   height: auto;
-  /* position: absolute;
-  z-index: -1; */
 }
-/* 
+
 @media only screen and (max-width: 700px) {
   .background-home {
     background-image: url("../../public/bg-mobile.webp");
@@ -138,28 +136,9 @@ body::-webkit-scrollbar-track {
     background-attachment: fixed;
     will-change: background;
   }
-} */
+}
 
 /* ANIMATION UP*/
-
-@media only screen and (max-width: 700px) {
-  .element-up {
-    animation: up 0.2s linear;
-    animation-fill-mode: forwards;
-    animation-delay: 6s;
-    right: 50%;
-    opacity: 1;
-  }
-
-  @keyframes up {
-    0% {
-      transform: translate(50%, 100%);
-    }
-    100% {
-      transform: translate(50%, -40%);
-    }
-  }
-}
 
 /* ANIMATION SCROLL TEXT */
 
@@ -215,14 +194,17 @@ body::-webkit-scrollbar-track {
   will-change: background;
 }
 
-@keyframes bgChange {
-  0% {
-    background-image: url("../../public/bg.webp");
-  }
-  100% {
-    background-image: url("../../public/bg-1.webp");
+@media only screen and (max-width: 700px) {
+  .bg-1 {
+    background-image: url("../../public/bg-1-mobile.webp");
+    background-size: 160vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    will-change: background;
   }
 }
+
 .bg-2 {
   background-image: url("../../public/bg-2.webp");
   background-position: center;
@@ -374,4 +356,52 @@ body::-webkit-scrollbar-track {
   font-weight: 400;
   z-index: 1999;
   transform: scale(1, 1.2);
+}
+
+@media only screen and (max-width: 800px) {
+  .text__effect {
+    background-image: url("../../public/details.png") !important;
+    background-position: center;
+    background-size: 1000px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    filter: drop-shadow(5px 0 10px rgba(0, 0, 0, 0.8));
+    display: inline-block;
+    color: rgba(187, 16, 32, 0);
+    background-color: #a00;
+    display: inline-block;
+    font-weight: 400;
+    z-index: 1999;
+    transform: scale(1, 1.2);
+  }
+
+  .title-archives__effect {
+    background-image: url("../../public/details.png") !important;
+    background-position: center;
+    background-size: 1000px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    filter: drop-shadow(5px 0 10px rgba(0, 0, 0, 0.8));
+    display: inline-block;
+    color: rgba(187, 16, 32, 0);
+    background-color: #fff;
+    display: inline-block;
+    font-weight: 400;
+    z-index: 1999;
+  }
+
+  .text__effect__test {
+    background-image: url("../../public/details.png") !important;
+    background-position: center;
+    background-size: 1000px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    filter: drop-shadow(5px 0 10px rgba(0, 0, 0, 0.8));
+    display: inline-block;
+    color: rgba(187, 16, 32, 0);
+    background-color: #a00;
+    display: inline-block;
+    font-weight: 400;
+    z-index: 1999;
+  }
 }
