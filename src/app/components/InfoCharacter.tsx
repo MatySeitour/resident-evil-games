@@ -56,7 +56,7 @@ export default function InfoCharacter({
     <div className="h-[400px] w-screen relative flex flex-1 info-characters__container opacity-0 flex-row justify-start items-center bg-black image-character__effect">
       <figure
         id={`image-character__full__${characterSelected?.id}`}
-        className="w-[500px] h-[400px] mr-2 relative character-container__effect"
+        className="w-[500px] h-[550px] mr-2 relative character-container__effect"
       >
         <Image
           src={
