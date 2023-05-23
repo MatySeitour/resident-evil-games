@@ -41,23 +41,42 @@ export default function SectionGame({
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, SplitType);
 
-    const title = document.querySelector(`.game-title__${id}`);
-    const titleSplit = new SplitType(`.game-title__${id}`);
-    console.log(title);
-    gsap.from(`.game-title__${id} .char`, {
-      scrollTrigger: {
-        trigger: `.game-title__${id} .char`,
-        toggleActions: "restart none none reverse",
-        start: "top center",
-        // markers: true,
-        // pin: true,
-        end: "600px center",
-      },
-      x: 0,
-      stagger: 0.05,
-      opacity: 0,
-      duration: 0.1,
-      delay: 0,
+    let mm = gsap.matchMedia();
+    mm.add("(min-width: 800px)", () => {
+      const title = document.querySelector(`.game-title__${id}`);
+      const titleSplit = new SplitType(`.game-title__${id}`);
+      gsap.from(`.game-title__${id} .char`, {
+        scrollTrigger: {
+          trigger: `.game-title__${id} .char`,
+          toggleActions: "restart none none reverse",
+          start: "top center",
+          // markers: true,
+          // pin: true,
+          end: "600px center",
+        },
+        x: 0,
+        stagger: 0.05,
+        opacity: 0,
+        duration: 0.1,
+        delay: 0,
+      });
+    });
+    mm.add("(max-width: 800px)", () => {
+      const gameTitle = gsap.utils.toArray(`.game-title__${id}`);
+      gameTitle.forEach((title: any, i) => {
+        gsap.to(title, {
+          scrollTrigger: {
+            trigger: title,
+            toggleActions: "restart none none reverse",
+            // markers: true,
+            start: "-100px center",
+
+            end: "-100px center",
+          },
+          opacity: 1,
+          duration: 0.5,
+        });
+      });
     });
   }, []);
   // useEffect(() => {
@@ -174,7 +193,6 @@ export default function SectionGame({
         }
       }
     }
-    console.log("entrsa");
   };
 
   return (
@@ -187,7 +205,7 @@ export default function SectionGame({
         className={`opacity-0 absolute z[-1] transition-all background-gradient`}
       ></div>
       <div
-        className={`relative w-auto game-title__${id} text-center text__effect text-red-800 scale-x-[1] scale-y-[1.2] text-6xl mb-20 tracking-wider `}
+        className={`relative w-auto game-title__${id} text-center text__effect text-red-800 scale-x-[1] scale-y-[1.2] text-6xl mb-20 tracking-wider max-[700px]:opacity-0`}
       >
         <h1 className="inline-block">{title}</h1>
       </div>
