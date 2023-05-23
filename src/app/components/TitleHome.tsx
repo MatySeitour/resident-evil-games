@@ -24,7 +24,7 @@ export default function TitleHome() {
         stagger: 0.03,
         opacity: 0,
         duration: 0.1,
-        delay: 4,
+        delay: 3,
       });
     });
     mm.add("(max-width: 800px)", () => {
@@ -43,13 +43,14 @@ export default function TitleHome() {
   }, []);
 
   return (
-    <div className="w-[auto] h-auto absolute top-[60%] translate-y-[-60%] left-0 pl-4 z-[100] max-[700px]:top-[50%]">
-      <div className="title-container background-details__title overflow-hidden relative">
+    <div className="w-[auto] h-auto absolute top-[60%] translate-y-[-60%] left-0 pl-4 z-[100] max-[700px]:top-[50%] max-[700px]:translate-y-[-50%] max-[700px]:px-2">
+      <div className="title-container background-details__title overflow-hidden relative flex justify-center items-center flex-col">
         <h1
           id="title-home"
-          className="scale-x-[1] scale-y-[1.2] text-4xl mb-2 tracking-wider text__effect"
+          className="scale-x-[1] scale-y-[1.2] text-4xl mb-2 tracking-wider text__effect text-center max-[700px]:mb-4"
         >
-          RESIDENT EVIL <b className="title-archives__effect">ARCHIVES</b>
+          RESIDENT EVIL{" "}
+          <b className="title-archives__effect text-center">ARCHIVES</b>
         </h1>
         <h2
           id="archives-title"
