@@ -23,22 +23,43 @@
           "id": 3,
           "name": "Albert Wesker",
           "image_select": "/wesker-select.webp",
-          "image_complete": "/wesker-character.webp",
+          "image_complete": "/wesker.webp",
           "description": "Upon joining S.T.A.R.S., he was assigned as Captain of Alpha Team and the entire unit."
         },
         {
           "id": 4,
           "name": "Rebecca Chambers",
           "image_select": "/rebecca-select.webp",
-          "image_complete": "/rebecca-character.webp",
+          "image_complete": "/rebecca.webp",
           "description": "Rebecca Chambers possesses brilliant intellect and knowledge in medicine (biochemistry). Thanks to such valuable records of hers, they earned her acceptance into the special unit of the R.P.D., known as S.T.A.R.S. she being integrated into it, serving as a doctor within the Bravo Team."
         },
         {
           "id": 5,
           "name": "Barry Burton",
           "image_select": "/barry-select.webp",
-          "image_complete": "/barry-character.webp",
+          "image_complete": "/barry.webp",
           "description": "Upon joining S.T.A.R.S., He was assigned as a member of Team Alpha under Wekser's orders. he is a great weapons specialist"
+        },
+        {
+          "id": 6,
+          "name": "Zombie",
+          "image_select": "/zombie-logo.webp",
+          "image_complete": "/zombie.webp",
+          "description": "a human being infected with the T-virus. a kind of virus that can make the host a kind of undead"
+        },
+        {
+          "id": 7,
+          "name": "MA-39 Cerberus",
+          "image_select": "/cerberus-logo.webp",
+          "image_complete": "/cerberus.webp",
+          "description": "Doberman dogs infected with the T-Virus that have escaped from the research labs under the mansion."
+        },
+        {
+          "id": 8,
+          "name": "Tyrant T-002",
+          "image_select": "/tyrant-1-logo.webp",
+          "image_complete": "/tyrant-1.webp",
+          "description": "The Tyrant T-002 was the first Tyrant Created on the basis of the T-Virus in a living human being, superior in every aspect to its predecessor, the Proto Tyrant. It was a B.O.W. (Big Organic Weapong) created in the laboratory of the Arklay mountains, in the Spencer mansion."
         }
       ],
       "image_prologue": "/re1-prologue.jpg"
@@ -50,39 +71,53 @@
       "other_games": [{}],
       "characters": [
         {
-          "id": 6,
+          "id": 9,
           "name": "Leon Scott Kennedy",
           "image_select": "/leon-select.webp",
           "image_complete": "/leon-2.png",
-          "description": ""
-        },
-        {
-          "id": 7,
-          "name": "Claire Redfield",
-          "image_select": "/claire-select.webp",
-          "image_complete": "/claire-2.png",
-          "description": ""
-        },
-        {
-          "id": 8,
-          "name": "Ada Wong",
-          "image_select": "/ada-select.webp",
-          "image_complete": "/ada-2.png",
-          "description": ""
-        },
-        {
-          "id": 9,
-          "name": "Sherry Birkin",
-          "image_select": "/sherry-select.webp",
-          "image_complete": "/sherry.webp",
-          "description": ""
+          "description": "Leon, at the young age of 21, was assigned to work for the Raccoon City Police Department (Raccoon Police Department abbreviated R.P.D.) in its division, the Select Police Forces (S.P.F.). After graduating from the police academy, he arrived in Raccoon City on September 29, 1998 as his first day on the job, but was met with a terrifying experience that would change his life forever."
         },
         {
           "id": 10,
+          "name": "Claire Redfield",
+          "image_select": "/claire-select.webp",
+          "image_complete": "/claire.webp",
+          "description": "Claire begins to worry about her brother, Chris Redfield, after losing contact with him, then she goes to Raccoon City to look for him, but far from finding him it is Umbrella who crosses her path."
+        },
+        {
+          "id": 11,
+          "name": "Ada Wong",
+          "image_select": "/ada-select.webp",
+          "image_complete": "/ada-test.webp",
+          "description": "Ada is a corporate spy working for an unidentified competitor of the Umbrella Corporation, who intends to acquire from Umbrella all kinds of bio-organic weapons and a sample of the G-Virus developed by William Birkin."
+        },
+        {
+          "id": 12,
+          "name": "Sherry Birkin",
+          "image_select": "/sherry-select.webp",
+          "image_complete": "/sherry-test.webp",
+          "description": "She is the daughter of Annette Birkin and William Birkin, the scientists who gave rise to the G-virus."
+        },
+        {
+          "id": 13,
           "name": "William Birkin",
           "image_select": "/william-select.webp",
-          "image_complete": "/william-character.webp",
-          "description": ""
+          "image_complete": "/william.webp",
+          "description": "He is a scientist working for the Umbrella Corporation and developer of the powerful G-Virus. After a series of disagreements with the Umbrella Corporation, the latter sends a team to execute William and thus obtain the virus samples. before his death, Birkin injected himself with a sample of the G-Virus and survived, though he ended up mutating into a hideous monster known as G."
+        },
+        {
+          "id": 15,
+          "name": "Tyrant T-103",
+          "image_select": "/tyrant-re2-logo.webp",
+          "image_complete": "/tyrant-2.webp",
+          "description": "Tyrant-class bioweapon model, sent by the Umbrella Corporation to retrieve a sample of the Birkin-created virus. Said sample is found in Sherry's necklace."
+        },
+        {
+          "id": 16,
+          "name": "Annette Birkin",
+          "image_select": "/annette-logo.webp",
+          "image_complete": "/annette.webp",
+          "description": "She is a scientist who works with her husband Dr. William Birkin for the Umbrella Corporation. mother of Sherry Birkin, and one of the creators of the G-Virus"
         }
       ],
       "image_prologue": "/re2-prologue.jpg"
@@ -94,36 +129,57 @@
       "other_games": [{}],
       "characters": [
         {
-          "id": 11,
+          "id": 17,
           "name": "Jill Valentine",
-          "image_select": "/chris-select.webp",
-          "image_complete": "/chris.webp",
-          "description": ""
+          "image_select": "/jill-re3-logo.webp",
+          "image_complete": "/jill-r3.webp",
+          "description": "She had been removed from police forces after the Spencer Mansion Incident. During the Raccoon City incident, she was in her apartment when she is suddenly attacked by an intelligent bioweapon known as the Nemesis, which tries to kill her and all the remaining members of S.T.A.R.S. She will have to escape from the city and from nemesis."
         },
         {
-          "id": 12,
+          "id": 18,
           "name": "Carlos Oliveira",
-          "image_select": "/jill-select.webp",
-          "image_complete": "/jill.webp",
-          "description": ""
+          "image_select": "/carlos-re3-logo.webp",
+          "image_complete": "/carlos-re3.webp",
+          "description": "He is a former member of the Umbrella Biohazard Countermeasure Service (U.B.C.S.). Umbrella gave orders to the UBCS squad to obtain the virus sample, but almost the entire squad is wiped out by the t-virus disaster, so Carlos decides to search for survivors in the city."
         },
         {
-          "id": 13,
+          "id": 19,
           "name": "Nemesis",
-          "image_select": "/wesker-select.webp",
-          "image_complete": "/wesker.webp",
+          "image_select": "/nemesis-logo.webp",
+          "image_complete": "/nemesis-3.webp",
           "description": ""
         },
         {
-          "id": 14,
+          "id": 20,
           "name": "Nicholai Ginovaef",
-          "image_select": "/rebecca-select.webp",
-          "image_complete": "/rebecca.webp",
+          "image_select": "/nicholai-logo.webp",
+          "image_complete": "/nicholai-test.webp",
           "description": ""
         },
         {
-          "id": 15,
+          "id": 21,
           "name": "Mikhail Victor",
+          "image_select": "/barry-select.webp",
+          "image_complete": "/barry.webp",
+          "description": ""
+        },
+        {
+          "id": 22,
+          "name": "Brain Sucker",
+          "image_select": "/barry-select.webp",
+          "image_complete": "/barry.webp",
+          "description": ""
+        },
+        {
+          "id": 23,
+          "name": "Drain Deimos",
+          "image_select": "/barry-select.webp",
+          "image_complete": "/barry.webp",
+          "description": ""
+        },
+        {
+          "id": 24,
+          "name": " Hunter alpha",
           "image_select": "/barry-select.webp",
           "image_complete": "/barry.webp",
           "description": ""
@@ -138,36 +194,57 @@
       "other_games": [{}],
       "characters": [
         {
-          "id": 16,
+          "id": 25,
           "name": "Leon Scott Kennedy",
           "image_select": "/chris-select.webp",
           "image_complete": "/chris.webp",
           "description": ""
         },
         {
-          "id": 17,
+          "id": 26,
           "name": "Ashley Graham",
           "image_select": "/jill-select.webp",
           "image_complete": "/jill.webp",
           "description": ""
         },
         {
-          "id": 18,
+          "id": 27,
           "name": "Ada Wong",
           "image_select": "/wesker-select.webp",
           "image_complete": "/wesker.webp",
           "description": ""
         },
         {
-          "id": 19,
+          "id": 28,
+          "name": "Luis Sera",
+          "image_select": "/rebecca-select.webp",
+          "image_complete": "/rebecca.webp",
+          "description": ""
+        },
+        {
+          "id": 29,
           "name": "Jack Krauser",
           "image_select": "/rebecca-select.webp",
           "image_complete": "/rebecca.webp",
           "description": ""
         },
         {
-          "id": 20,
+          "id": 30,
           "name": "Osmund Saddler",
+          "image_select": "/barry-select.webp",
+          "image_complete": "/barry.webp",
+          "description": ""
+        },
+        {
+          "id": 31,
+          "name": "Ramón Salazar",
+          "image_select": "/barry-select.webp",
+          "image_complete": "/barry.webp",
+          "description": ""
+        },
+        {
+          "id": 32,
+          "name": "Bitores Méndez",
           "image_select": "/barry-select.webp",
           "image_complete": "/barry.webp",
           "description": ""
@@ -181,42 +258,258 @@
       "description": "Five years after the events of Resident Evil 4, in 2009, Chris Redfield as a member of the B.S.A.A., is sent to a remote African town, precisely to Kijuju, following in the footsteps of a bioterrorist named Ricardo Irving, who is wanted by the B.S.A.A for selling biological weapons to terrorists. In the mission he is assigned as a partner a young agent from the African division of the B.S.A.A. called Sheva Alomar, along with several agents scattered throughout Kijuju (known as the Alpha Group)",
       "characters": [
         {
-          "id": 21,
+          "id": 33,
           "name": "Chris Redfield",
           "image_select": "/chris-select.webp",
           "image_complete": "/chris.webp",
           "description": ""
         },
         {
-          "id": 22,
+          "id": 34,
           "name": "Albert Wesker",
           "image_select": "/jill-select.webp",
           "image_complete": "/jill.webp",
           "description": ""
         },
         {
-          "id": 23,
+          "id": 35,
           "name": "Sheva alomar",
           "image_select": "/wesker-select.webp",
           "image_complete": "/wesker.webp",
           "description": ""
         },
         {
-          "id": 24,
+          "id": 36,
           "name": "Jill Valentine",
           "image_select": "/rebecca-select.webp",
           "image_complete": "/rebecca.webp",
           "description": ""
         },
         {
-          "id": 25,
+          "id": 37,
           "name": "Josh Stone",
+          "image_select": "/barry-select.webp",
+          "image_complete": "/barry.webp",
+          "description": ""
+        },
+        {
+          "id": 38,
+          "name": "Excella Gionne",
+          "image_select": "/barry-select.webp",
+          "image_complete": "/barry.webp",
+          "description": ""
+        },
+        {
+          "id": 39,
+          "name": "Ricardo Irving",
+          "image_select": "/barry-select.webp",
+          "image_complete": "/barry.webp",
+          "description": ""
+        },
+        {
+          "id": 40,
+          "name": "Oswell E. Spencer",
           "image_select": "/barry-select.webp",
           "image_complete": "/barry.webp",
           "description": ""
         }
       ],
       "image_prologue": "/re5-prologue.webp"
+    },
+    {
+      "id": 6,
+      "title": "Resident Evil 6",
+      "description": "The game begins in a flashback of Leon Scott Kennedy where he pays a visit to the president in 2013. Fifteen years have passed since the events in Raccoon City and the president of the United States, a personal friend of Leon's, is determined to tell the whole story. truth about those facts. However, a bioterrorist attack prevents the appearance and transforms the president into a deformed being, forcing Leon to make a difficult decision, along with a mysterious new partner named Helena Harper. /n At the same time, Chris Redfield and Piers Nivans, both part of the B.S.A.A., are in China, a country where a bioterrorist threat has been unleashed.there is also a third story that stars Jake Muller and Sherry Birkin. (This first, being the son of Albert Wesker). Sherry protects Jake in order to save his blood, which is apparently the only antidote to the C-Virus. It has also been confirmed that the place where these two characters are located is Eastern Europe.",
+      "other_games": [{}],
+      "characters": [
+        {
+          "id": 41,
+          "name": "Leon Scott Kennedy",
+          "image_select": "/leon-select.webp",
+          "image_complete": "/leon-2.png",
+          "description": ""
+        },
+        {
+          "id": 42,
+          "name": "Chris Redfield",
+          "image_select": "/claire-select.webp",
+          "image_complete": "/claire-2.png",
+          "description": ""
+        },
+        {
+          "id": 43,
+          "name": "Ada Wong",
+          "image_select": "/ada-select.webp",
+          "image_complete": "/ada-2.png",
+          "description": ""
+        },
+        {
+          "id": 44,
+          "name": "Jake Muller",
+          "image_select": "/sherry-select.webp",
+          "image_complete": "/sherry.webp",
+          "description": ""
+        },
+        {
+          "id": 45,
+          "name": "Sherry Birkin",
+          "image_select": "/william-select.webp",
+          "image_complete": "/william-character.webp",
+          "description": ""
+        },
+        {
+          "id": 46,
+          "name": "Helena Harper",
+          "image_select": "/william-select.webp",
+          "image_complete": "/william-character.webp",
+          "description": ""
+        },
+        {
+          "id": 47,
+          "name": "Piers Nivans",
+          "image_select": "/william-select.webp",
+          "image_complete": "/william-character.webp",
+          "description": ""
+        },
+        {
+          "id": 48,
+          "name": "Derek Simmons",
+          "image_select": "/william-select.webp",
+          "image_complete": "/william-character.webp",
+          "description": ""
+        }
+      ],
+      "image_prologue": "/re2-prologue.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Resident Evil 7",
+      "description": "The game begins in a flashback of Leon Scott Kennedy where he pays a visit to the president in 2013. Fifteen years have passed since the events in Raccoon City and the president of the United States, a personal friend of Leon's, is determined to tell the whole story. truth about those facts. However, a bioterrorist attack prevents the appearance and transforms the president into a deformed being, forcing Leon to make a difficult decision, along with a mysterious new partner named Helena Harper. /n At the same time, Chris Redfield and Piers Nivans, both part of the B.S.A.A., are in China, a country where a bioterrorist threat has been unleashed.there is also a third story that stars Jake Muller and Sherry Birkin. (This first, being the son of Albert Wesker). Sherry protects Jake in order to save his blood, which is apparently the only antidote to the C-Virus. It has also been confirmed that the place where these two characters are located is Eastern Europe.",
+      "other_games": [{}],
+      "characters": [
+        {
+          "id": 49,
+          "name": "Ethan Winters",
+          "image_select": "/leon-select.webp",
+          "image_complete": "/leon-2.png",
+          "description": ""
+        },
+        {
+          "id": 50,
+          "name": "Mia Winters",
+          "image_select": "/claire-select.webp",
+          "image_complete": "/claire-2.png",
+          "description": ""
+        },
+        {
+          "id": 51,
+          "name": "Jack Baker",
+          "image_select": "/ada-select.webp",
+          "image_complete": "/ada-2.png",
+          "description": ""
+        },
+        {
+          "id": 52,
+          "name": "Marguerite Baker",
+          "image_select": "/sherry-select.webp",
+          "image_complete": "/sherry.webp",
+          "description": ""
+        },
+        {
+          "id": 53,
+          "name": "Lucas Baker",
+          "image_select": "/william-select.webp",
+          "image_complete": "/william-character.webp",
+          "description": ""
+        },
+        {
+          "id": 54,
+          "name": "Zoe Baker",
+          "image_select": "/william-select.webp",
+          "image_complete": "/william-character.webp",
+          "description": ""
+        },
+        {
+          "id": 55,
+          "name": "Eveline",
+          "image_select": "/william-select.webp",
+          "image_complete": "/william-character.webp",
+          "description": ""
+        },
+        {
+          "id": 56,
+          "name": "Chris Redfield",
+          "image_select": "/william-select.webp",
+          "image_complete": "/william-character.webp",
+          "description": ""
+        }
+      ],
+      "image_prologue": "/re2-prologue.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Resident Evil 8",
+      "description": "The game begins in a flashback of Leon Scott Kennedy where he pays a visit to the president in 2013. Fifteen years have passed since the events in Raccoon City and the president of the United States, a personal friend of Leon's, is determined to tell the whole story. truth about those facts. However, a bioterrorist attack prevents the appearance and transforms the president into a deformed being, forcing Leon to make a difficult decision, along with a mysterious new partner named Helena Harper. /n At the same time, Chris Redfield and Piers Nivans, both part of the B.S.A.A., are in China, a country where a bioterrorist threat has been unleashed.there is also a third story that stars Jake Muller and Sherry Birkin. (This first, being the son of Albert Wesker). Sherry protects Jake in order to save his blood, which is apparently the only antidote to the C-Virus. It has also been confirmed that the place where these two characters are located is Eastern Europe.",
+      "other_games": [{}],
+      "characters": [
+        {
+          "id": 57,
+          "name": "Ethan Winters",
+          "image_select": "/leon-select.webp",
+          "image_complete": "/leon-2.png",
+          "description": ""
+        },
+        {
+          "id": 58,
+          "name": "Mia Winters",
+          "image_select": "/claire-select.webp",
+          "image_complete": "/claire-2.png",
+          "description": ""
+        },
+        {
+          "id": 59,
+          "name": "Rosemary Winters",
+          "image_select": "/ada-select.webp",
+          "image_complete": "/ada-2.png",
+          "description": ""
+        },
+        {
+          "id": 60,
+          "name": "Chris Redfield",
+          "image_select": "/sherry-select.webp",
+          "image_complete": "/sherry.webp",
+          "description": ""
+        },
+        {
+          "id": 61,
+          "name": "Miranda",
+          "image_select": "/william-select.webp",
+          "image_complete": "/william-character.webp",
+          "description": ""
+        },
+        {
+          "id": 62,
+          "name": "Alcina Dimitrescu",
+          "image_select": "/william-select.webp",
+          "image_complete": "/william-character.webp",
+          "description": ""
+        },
+        {
+          "id": 63,
+          "name": "Karl Heisenberg",
+          "image_select": "/william-select.webp",
+          "image_complete": "/william-character.webp",
+          "description": ""
+        },
+        {
+          "id": 64,
+          "name": "Donna Beneviento",
+          "image_select": "/william-select.webp",
+          "image_complete": "/william-character.webp",
+          "description": ""
+        }
+      ],
+      "image_prologue": "/re2-prologue.jpg"
     }
   ]
 }
