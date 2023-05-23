@@ -150,7 +150,6 @@ export default function ScrollSection() {
         duration: 0.5,
       });
     });
-    console.log(infoCharactersContainer);
 
     const prologueTitle = gsap.utils.toArray(".prologue-title");
     prologueTitle.forEach((prologue: any) => {
