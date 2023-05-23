@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import getGames from "../../utils/games.json";
+import { useState } from "react";
 import Image from "next/image";
 
 interface CharacterProps {
@@ -29,7 +28,6 @@ export default function CharactersSelect({
   characterSelected,
   setCharacterSelected,
 }: CharacterProps) {
-  const games = getGames.games;
   /* state that contains the id of the selected character */
   const [characterShowId, setCharacterShowId] = useState<number>(0);
 
