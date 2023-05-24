@@ -453,4 +453,44 @@ body::-webkit-scrollbar-track {
 
 .opacity-on {
   opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.opacity-off {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+/* Image Loader */
+
+.lds-dual-ring {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: inline-block;
+  /* position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%); */
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #a00 transparent #a00 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
