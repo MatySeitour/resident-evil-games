@@ -196,37 +196,37 @@
         {
           "id": 28,
           "name": "Luis Sera",
-          "image_select": "/rebecca-select.webp",
-          "image_complete": "/rebecca.webp",
-          "description": ""
+          "image_select": "/sera-logo.webp",
+          "image_complete": "/sera.webp",
+          "description": "He was an ex-policeman who worked in Madrid and later a great scientist who helped Saddler with his experiments. Ada Wong helped him remove the plague from Luis's body, and as a reward for her, he would help her get the sample of the plagues, but she is captured by Saddler's men. Luis also developed a machine that destroyed the Las Plagas parasite. Throughout the story, Luis will help Leon and Ada."
         },
         {
           "id": 29,
           "name": "Jack Krauser",
-          "image_select": "/rebecca-select.webp",
-          "image_complete": "/rebecca.webp",
-          "description": ""
+          "image_select": "/krauser-logo.webp",
+          "image_complete": "/krauser.webp",
+          "description": "Former colleague of Leon Scott Kennedy. He was presumed dead in 2002 and hired by Albert Wesker. his task was to enter the sect to extract one more sample of the supposed Plague developed by Luis Sera. he had to infiltrate them and prove that he was infinitely loyal to Saddler, he ordered him to kidnap the President's daughter, Ashley Graham to gain access to the cult, and Krauser himself took care of directing the operation while the girl returned home."
         },
         {
           "id": 30,
           "name": "Osmund Saddler",
-          "image_select": "/barry-select.webp",
-          "image_complete": "/barry.webp",
-          "description": ""
+          "image_select": "/saddler-logo-test.png",
+          "image_complete": "/saddler-test.png",
+          "description": "`main prophet` and maximum leader of Los Illuminados, a sect and paramilitary organization that sought world domination and the establishment of a new world order through the parasites known as Las Plagas, using the kidnapping of Ashley Graham, daughter of the President of The USA."
         },
         {
           "id": 31,
           "name": "Ramón Salazar",
-          "image_select": "/barry-select.webp",
-          "image_complete": "/barry.webp",
-          "description": ""
+          "image_select": "/salazar-logo.webp",
+          "image_complete": "/salazar.webp",
+          "description": "Eighth Castilian prince, owner of the castle of Salazar. Saddler's Right Hand"
         },
         {
           "id": 32,
           "name": "Bitores Méndez",
-          "image_select": "/barry-select.webp",
-          "image_complete": "/barry.webp",
-          "description": ""
+          "image_select": "/mendez-logo.webp",
+          "image_complete": "/mendez.webp",
+          "description": "mayor of the town, and was very loved by all the residents, until the arrival of Osmund Saddler to the town. Saddler took over Mendez's mind so that the town would follow him. Saddler observed that the loyalty that the people of El Pueblo had to him was too valuable, so in addition to the normal Plague in his body, he inoculated him with the Control Plague, which allowed him to manipulate the Ganados as well, but would be forced to remain faithful to him."
         }
       ],
       "image_prologue": "/re4-prologue.jpg"
