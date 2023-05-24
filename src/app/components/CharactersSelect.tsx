@@ -35,7 +35,7 @@ export default function CharactersSelect({
 
   return (
     <div key={character_id} className="image-character opacity-0 relative">
-      <figure className="w-[100px] h-[70px] mr-[2.5px] cursor-pointer">
+      <figure className="w-[100px] h-[70px] mr-[2.5px] cursor-pointer max-[700px]:mb-[2.5px]">
         <Image
           onClick={() => handleSearchCharacter(character_id)}
           className={
