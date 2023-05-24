@@ -182,16 +182,16 @@
         {
           "id": 26,
           "name": "Ashley Graham",
-          "image_select": "/jill-select.webp",
-          "image_complete": "/jill.webp",
-          "description": ""
+          "image_select": "/ashley-logo.webp",
+          "image_complete": "/ashley.webp",
+          "description": "She is the daughter of the President of the United States. When Ashley was on her way home from school, she was kidnapped by Jack Krauser. Leon must save her, protect her and escape from her together."
         },
         {
           "id": 27,
           "name": "Ada Wong",
-          "image_select": "/wesker-select.webp",
-          "image_complete": "/wesker.webp",
-          "description": ""
+          "image_select": "/ada-logo-re4.webp",
+          "image_complete": "/ada-re4.webp",
+          "description": "Ada had been left for dead after the events in Raccoon City six years ago, but the truth about her fate turned out to be something different. Against all odds she survived and was helped by Albert Wesker. In exchange for this help she agreed to continue working for her organization and quickly became her best agent. Therefore, she must enter Osmund Saddler's domain and snatch the samples of the Las Plagas parasite from him."
         },
         {
           "id": 28,
