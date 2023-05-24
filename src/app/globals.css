@@ -237,6 +237,30 @@ body::-webkit-scrollbar-track {
   background-attachment: fixed;
   will-change: background;
 }
+.bg-6 {
+  background-image: url("../../public/bg-6.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  will-change: background;
+}
+.bg-7 {
+  background-image: url("../../public/bg-7.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  will-change: background;
+}
+.bg-8 {
+  background-image: url("../../public/bg-8.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  will-change: background;
+}
 
 /* BACKGROUND GRADIENT EFFECT GAMES */
 
