@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
-import LoaderImage from "./loaderImage";
+import LoaderImage from "./LoaderImage";
 
 interface InfoCharacterProps {
   characterSelected: any;
