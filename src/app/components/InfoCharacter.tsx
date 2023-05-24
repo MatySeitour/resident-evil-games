@@ -23,6 +23,8 @@ export default function InfoCharacter({
       `.character-selected__description__${characterSelected?.id}`
     );
 
+    imageFull?.classList.add("opacity-on");
+
     gsap.fromTo(
       titleCharacterSelected,
       { opacity: 0, duration: 1 },
@@ -32,17 +34,14 @@ export default function InfoCharacter({
       }
     );
 
-    console.log(loaded);
-    if (loaded) {
-      gsap.fromTo(
-        imageFull,
-        { opacity: 0, duration: 1 },
-        {
-          opacity: 1,
-          duration: 1,
-        }
-      );
-    }
+    // gsap.fromTo(
+    //   imageFull,
+    //   { opacity: 0, duration: 1 },
+    //   {
+    //     opacity: 1,
+    //     duration: 1,
+    //   }
+    // );
 
     gsap.fromTo(
       descriptionCharacterSelected,
@@ -57,12 +56,10 @@ export default function InfoCharacter({
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <div className="h-[400px] w-screen relative flex flex-1 info-characters__container opacity-0 flex-row justify-start items-center bg-black image-character__effect max-[700px]:flex-col max-[700px]:h-[auto] max-[700px]:min-h-[auto]">
-      <figure
-        id={`image-character__full__${characterSelected?.id}`}
-        className="w-[500px] h-[550px] mr-2 relative character-container__effect max-[700px]:w-[300px] max-[700px]:h-[400px] opacity-0"
-      >
+    <div className="h-[400px] w-screen relative flex flex-1 info-characters__container opacity-1 flex-row justify-start items-center bg-black image-character__effect max-[700px]:flex-col max-[700px]:h-[auto] max-[700px]:min-h-[auto]">
+      <figure className="w-[500px] h-[550px] mr-2 relative character-container__effect max-[700px]:w-[300px] max-[700px]:h-[400px] opacity-1">
         <Image
+          id={`image-character__full__${characterSelected?.id}`}
           src={
             characterSelected?.id
               ? `${characterSelected?.image_complete}`
@@ -74,7 +71,7 @@ export default function InfoCharacter({
           sizes="100%"
           quality={100}
           priority={true}
-          onLoadingComplete={() => setLoaded(true)}
+          onLoadingComplete={(img) => img.classList.remove("opacity-on")}
           style={{
             width: "100%",
             height: "100%",
