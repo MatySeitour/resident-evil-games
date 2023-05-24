@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
+import LoaderImage from "./loaderImage";
 
 interface InfoCharacterProps {
   characterSelected: any;
@@ -12,6 +13,7 @@ export default function InfoCharacter({
   setCharacterSelected,
 }: InfoCharacterProps) {
   useEffect(() => {
+    setLoaded(false);
     const imageFull = document.querySelector(
       `#image-character__full__${characterSelected?.id}`
     );
@@ -56,8 +58,9 @@ export default function InfoCharacter({
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <div className="h-[400px] w-screen relative flex flex-1 info-characters__container opacity-1 flex-row justify-start items-center bg-black image-character__effect max-[700px]:flex-col max-[700px]:h-[auto] max-[700px]:min-h-[auto]">
-      <figure className="w-[500px] h-[550px] mr-2 relative character-container__effect max-[700px]:w-[300px] max-[700px]:h-[400px] opacity-1">
+    <div className="h-[400px] w-screen relative flex flex-1 info-characters__container opacity-1 transition-all flex-row justify-start items-center bg-black image-character__effect max-[700px]:flex-col max-[700px]:h-[auto] max-[700px]:min-h-[auto]">
+      <figure className="w-[500px] h-[550px] mr-2 relative character-container__effect max-[700px]:w-[300px] max-[700px]:h-[400px] opacity-1 transition-all">
+        {!loaded && <LoaderImage />}
         <Image
           id={`image-character__full__${characterSelected?.id}`}
           src={
@@ -71,15 +74,14 @@ export default function InfoCharacter({
           sizes="100%"
           quality={100}
           priority={true}
-          onLoadingComplete={(img) => img.classList.remove("opacity-on")}
+          onLoadingComplete={(img) => {
+            img.classList.remove("opacity-on");
+            setLoaded(true);
+          }}
           style={{
             width: "100%",
             height: "100%",
-            objectFit: `${
-              characterSelected?.id == 1 || characterSelected?.id == 2
-                ? "contain"
-                : "cover"
-            }`,
+            objectFit: `${characterSelected?.id == 1 ? "contain" : "cover"}`,
             objectPosition: "center",
           }}
         />
