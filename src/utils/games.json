@@ -147,42 +147,21 @@
           "name": "Nemesis",
           "image_select": "/nemesis-logo.webp",
           "image_complete": "/nemesis-3.webp",
-          "description": ""
+          "description": "It is one of the Umbrella Corporation's deadliest biological weapons. It is the next step in the investigations of the pharmaceutical company Umbrella, the evolution of T-103 (Tyrant with a human appearance in principle, which appears in Resident Evil 2). Nemesis's mission is very simple: exterminate the members of S.T.A.R.S. that remain in Raccoon City, so Jill Valentine must prepare for her worst nightmare"
         },
         {
           "id": 20,
           "name": "Nicholai Ginovaef",
           "image_select": "/nicholai-logo.webp",
           "image_complete": "/nicholai-test.webp",
-          "description": ""
+          "description": "He is one of the members of Umbrella's private army, the U.B.C.S., as well as the leader of Section B of Delta Squad. In the Raccoon City incident, he was serving as a squad leader, with the rank of Sergeant, sent by Umbrella to contain the virus outbreak and save civilians. but his true nature was as a member of the company's secret internal spy organization known as the `Overseers`, with a secret mission to collect combat data on those infected with the virus and the B.O.W.s. of Umbrella, along with other dangers in the infested city."
         },
         {
           "id": 21,
           "name": "Mikhail Victor",
-          "image_select": "/barry-select.webp",
-          "image_complete": "/barry.webp",
-          "description": ""
-        },
-        {
-          "id": 22,
-          "name": "Brain Sucker",
-          "image_select": "/barry-select.webp",
-          "image_complete": "/barry.webp",
-          "description": ""
-        },
-        {
-          "id": 23,
-          "name": "Drain Deimos",
-          "image_select": "/barry-select.webp",
-          "image_complete": "/barry.webp",
-          "description": ""
-        },
-        {
-          "id": 24,
-          "name": " Hunter alpha",
-          "image_select": "/barry-select.webp",
-          "image_complete": "/barry.webp",
-          "description": ""
+          "image_select": "/mikhail-logo-test.png",
+          "image_complete": "/mikhail-re3.webp",
+          "description": "He is a member of Umbrella's private army, the U.B.C.S., as well as being the leader of Delta Squad."
         }
       ],
       "image_prologue": "/re3-prologue.webp"
@@ -196,9 +175,9 @@
         {
           "id": 25,
           "name": "Leon Scott Kennedy",
-          "image_select": "/chris-select.webp",
-          "image_complete": "/chris.webp",
-          "description": ""
+          "image_select": "/leon-re4-logo.webp",
+          "image_complete": "/leon-r4.webp",
+          "description": "He went from being a rookie cop to becoming a secret service agent under the direct orders of the president.For 6 years, Leon went through a series of tough training and ruthless missions, making him a highly regarded agent.He was entrusted with the mission of rescuing the president's daughter who was kidnapped and is located in a small town in Europe. Not even Leon will be prepared for what is coming..."
         },
         {
           "id": 26,
