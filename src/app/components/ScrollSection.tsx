@@ -60,7 +60,7 @@ export default function ScrollSection() {
     //   gsap.to(text, {
     //     scrollTrigger: {
     //       trigger: text,
-    //       toggleActions: "restart none none reverse",
+    //       toggleActions: "play none none none",
     //       // markers: true,
     //       start: "-100px center",
 
@@ -76,7 +76,7 @@ export default function ScrollSection() {
       gsap.to(iamge, {
         scrollTrigger: {
           trigger: iamge,
-          toggleActions: "restart none none reverse",
+          toggleActions: "play none none none",
           // markers: true,
           start: "100px center",
 
@@ -92,7 +92,7 @@ export default function ScrollSection() {
       gsap.to(description, {
         scrollTrigger: {
           trigger: description,
-          toggleActions: "restart none none reverse",
+          toggleActions: "play none none none",
           start: "-50px center",
         },
         opacity: 1,
@@ -105,7 +105,7 @@ export default function ScrollSection() {
       gsap.to(imagesContainer, {
         scrollTrigger: {
           trigger: imagesContainer,
-          toggleActions: "restart none none reverse",
+          toggleActions: "play none none none",
           start: "500px center",
           // markers: true,
           // pin: true,
@@ -124,7 +124,7 @@ export default function ScrollSection() {
       gsap.to(imageCharacter, {
         scrollTrigger: {
           trigger: imageCharacter,
-          toggleActions: "restart none none reverse",
+          toggleActions: "play none none none",
           start: "-140px center",
           // markers: true,
           // pin: true,
@@ -142,7 +142,7 @@ export default function ScrollSection() {
       gsap.to(characterContainer, {
         scrollTrigger: {
           trigger: characterContainer,
-          toggleActions: "restart none none reverse",
+          toggleActions: "play none none none",
           start: "-400px center",
           // markers: true,
         },
@@ -156,7 +156,7 @@ export default function ScrollSection() {
       gsap.to(prologue, {
         scrollTrigger: {
           trigger: prologue,
-          toggleActions: "restart none none reverse",
+          toggleActions: "play none none none",
           start: "0px center",
           // markers: true,
         },
