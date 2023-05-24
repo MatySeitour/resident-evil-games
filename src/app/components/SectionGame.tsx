@@ -46,7 +46,7 @@ export default function SectionGame({
       gsap.from(`.game-title__${id} .char`, {
         scrollTrigger: {
           trigger: `.game-title__${id} .char`,
-          toggleActions: "restart none none reverse",
+          toggleActions: "play none none none",
           start: "top center",
           // markers: true,
           // pin: true,
@@ -65,7 +65,7 @@ export default function SectionGame({
         gsap.to(title, {
           scrollTrigger: {
             trigger: title,
-            toggleActions: "restart none none reverse",
+            toggleActions: "play none none none",
             // markers: true,
             start: "-100px center",
 
@@ -83,7 +83,7 @@ export default function SectionGame({
         gsap.to(title, {
           scrollTrigger: {
             trigger: title,
-            toggleActions: "restart none none reverse",
+            toggleActions: "play none none none",
             start: "-100px center",
 
             end: "-100px center",
@@ -239,19 +239,21 @@ export default function SectionGame({
           </div>
         </div>
         <div className="h-[100%] w-[70%] flex-1 flex justify-center items-center image-prologue opacity-0 pt-20 max-[700px]:w-[320px] max-[700px]:pt-14">
-          <Image
-            alt="resident evil 1"
-            src={image_prologue}
-            width="0"
-            height="0"
-            sizes="(max-width: 700px) 100vw, (max-width: 1200px) 100%"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              // objectPosition: "center",
-            }}
-          />
+          <figure className="h-[70%] w-[70%] max-[700px]:h-[100%] max-[700px]:w-[100%]">
+            <Image
+              alt="resident evil 1"
+              src={image_prologue}
+              width="0"
+              height="0"
+              sizes="100vw"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                // objectPosition: "center",
+              }}
+            />
+          </figure>
         </div>
       </div>
       {/* <div className=" h-[100%] w-[98%] pt-20 flex flex-row justify-center items-center mb-[100px] pl-4 pr-4">
