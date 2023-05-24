@@ -1,9 +1,6 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
-import SplitType from "split-type";
-import Loader from "./Loader";
 
 interface InfoCharacterProps {
   characterSelected: any;
