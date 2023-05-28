@@ -239,15 +239,15 @@
         {
           "id": 33,
           "name": "Chris Redfield",
-          "image_select": "/chris-select.webp",
-          "image_complete": "/chris.webp",
-          "description": ""
+          "image_select": "/chris-re5-logo.webp",
+          "image_complete": "/chris-re5.webp",
+          "description": "In 2006, the B.S.A.A. receives information on the whereabouts of Umbrella founder Oswell E. Spencer. Jill Valentine and Chris Redfield are ordained by the European Headquarters of the B.S.A.A. to stop him, and they accept the mission, hoping to discover some information that can lead them to the whereabouts of Albert Wesker, but after an encounter with wesker, jill sacrifices herself to save chris. six years after the destruction of the Umbrella Pharmaceutical Corporation, and 11 years after the Raccoon City Destruction Incident. Chris Redfield is dispatched by the B.S.A.A. to investigate a possible smuggling of bio-organic weapons in Africa along with his partner sheeva alomar."
         },
         {
           "id": 34,
           "name": "Albert Wesker",
           "image_select": "/jill-select.webp",
-          "image_complete": "/jill.webp",
+          "image_complete": "/wesker-test-3.png",
           "description": ""
         },
         {
