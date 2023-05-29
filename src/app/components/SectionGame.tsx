@@ -313,7 +313,7 @@ export default function SectionGame({
         setCharacterSelected={characterSelected}
       />
       <div className="bg-black relative w-full h-[50px] gradient-end__section__end"></div>
-      <div className="bg-black h-[auto] w-full pb-10 flex flex-col justify-center items-center">
+      {/* <div className="bg-black h-[auto] w-full pb-10 flex flex-col justify-center items-center">
         <h5 className="relative text-epilogue__effect leading-relaxed bg-red-800 text-red-500 scale-x-[1] scale-y-[1.2] text-5xl mb-10 tracking-wider opacity-1 max-[870px]:text-center max-[870px]:text-4xl max-[870px]:pb-[2px]">
           Epilogue
         </h5>
@@ -348,7 +348,7 @@ export default function SectionGame({
             the game finally ends.
           </p>
         </div>
-      </div>
+      </div> */}
     </article>
   );
 }
