@@ -271,7 +271,7 @@ export default function SectionGame({
         <div className="h-[100%] w-[70%] flex-1 flex justify-center items-center image-prologue opacity-0 pt-20 max-[870px]:w-[320px] max-[870px]:pt-14">
           <figure className="h-[70%] translate-x-[10%] w-[70%] max-[870px]:h-[100%] max-[870px]:w-[100%] max-[870px]:translate-x-0">
             <Image
-              className={`img-prologue__effect__${id}`}
+              className={`img-prologue__effect__${id} img-prologue__effect`}
               alt="resident evil 1"
               src={image_prologue}
               width="0"
@@ -313,6 +313,42 @@ export default function SectionGame({
         setCharacterSelected={characterSelected}
       />
       <div className="bg-black relative w-full h-[50px] gradient-end__section__end"></div>
+      <div className="bg-black h-[auto] w-full pb-10 flex flex-col justify-center items-center">
+        <h5 className="relative text-epilogue__effect leading-relaxed bg-red-800 text-red-500 scale-x-[1] scale-y-[1.2] text-5xl mb-10 tracking-wider opacity-1 max-[870px]:text-center max-[870px]:text-4xl max-[870px]:pb-[2px]">
+          Epilogue
+        </h5>
+        <div className="h-14 w-full bg-black flex justify-evenly items-center mb-4">
+          <div className="h-[2px] w-[40%] bg-red-800"></div>
+          <div className="h-full w-[auto] flex justify-center items-center">
+            <Image
+              src={"/umbrella-epilogue.png"}
+              alt="umbrella-epilogue"
+              width={48}
+              height={48}
+            />
+          </div>
+          <div className="h-[2px] w-[40%] bg-red-800"></div>
+        </div>
+        <div className="flex w-[100%] justify-center items-center pr-4 pl-2">
+          <p className="text-center relative w-[100%] opacity-1 text-epilogue__effect scale-x-[1] scale-y-[1.2] bg-white text-xl max-[870px]:text-center pt-4">
+            In the lab, Wesker reveals his identity: he is a double agent
+            working for Umbrella who has used his minions as guinea pigs to test
+            them against the biological weapons created by the T-Virus and
+            ultimately unleashes "Tyrant T-002." ", a giant humanoid monster
+            created through prolonged exposure to the T-Virus. Upon release, the
+            Tyrant kills Wesker by running its claws through him. Chris/Jill
+            apparently kill the Tyrant using firearms and then activate the
+            self-destruct program to end the lab experiments. Later Chris/Jill
+            contacts the rescue helicopter, when the Tyrant reappears through
+            the roof of the lab onto the helicopter's landing pad and suddenly
+            attacks them. Bullet resistant, the Tyrant is eventually killed when
+            Brad, the helicopter pilot, drops a rocket launcher and Chris/Jill
+            uses it to completely destroy the creature. Chris Redfield and Jill
+            Valentine escape in the helicopter before the mansion explodes and
+            the game finally ends.
+          </p>
+        </div>
+      </div>
     </article>
   );
 }
