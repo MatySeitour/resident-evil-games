@@ -253,14 +253,14 @@ body::-webkit-scrollbar-track {
   background-attachment: fixed;
   will-change: background;
 }
-.bg-8 {
+/* .bg-8 {
   background-image: url("../../public/bg-8.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   will-change: background;
-}
+} */
 
 /* BACKGROUND GRADIENT EFFECT GAMES */
 
@@ -382,6 +382,26 @@ body::-webkit-scrollbar-track {
   transform: scale(1, 1.2);
 }
 
+.image-effect__top {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  transform: translateY(4px);
+  right: -1%;
+  top: -1%;
+  position: absolute;
+  background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.5), #000);
+}
+
+.image-effect__left {
+  width: 50px;
+  height: 100%;
+  transform: translateY(4px);
+  left: 0;
+  position: absolute;
+  background: linear-gradient(270deg, transparent, rgba(0, 0, 0, 0.9), #000);
+}
+
 @media only screen and (max-width: 870px) {
   .text__effect {
     background-image: url("../../public/details.png") !important;
@@ -481,6 +501,21 @@ body::-webkit-scrollbar-track {
     background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.5), #000);
   }
 
+  .image-effect__top {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    transform: translateY(4px);
+    right: -1%;
+    top: -1%;
+    position: absolute;
+    background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.5), #000);
+  }
+  .image-effect__left {
+    width: 0;
+    height: 0;
+  }
+
   .article-container__effect::after {
     content: "";
     width: 100%;
@@ -554,4 +589,8 @@ body::-webkit-scrollbar-track {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.img-prologue__effect {
+  transition: all 0.1s ease linear;
 }
