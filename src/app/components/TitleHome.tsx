@@ -43,7 +43,7 @@ export default function TitleHome() {
   }, []);
 
   return (
-    <div className="w-[auto] h-auto absolute top-[60%] translate-y-[-60%] left-0 pl-4 z-[100] max-[870px]:top-[50%] max-[870px]:translate-y-[-50%] max-[870px]:px-2">
+    <div className="w-[auto] h-auto absolute top-[60%] translate-y-[-60%] left-0 pl-4 z-[100] max-[870px]:top-[50%] max-[870px]:translate-y-[-50%] max-[870px]:px-2 max-[870px]:w-full">
       <div className="title-container background-details__title overflow-hidden relative flex justify-center items-center flex-col">
         <h1
           id="title-home"
@@ -54,7 +54,7 @@ export default function TitleHome() {
         </h1>
         <h2
           id="archives-title"
-          className="inline-block scale-x-[1] scale-y-[1.2] tracking-wider title-archives__effect pb-2"
+          className="inline-block scale-x-[1] scale-y-[1.2] tracking-wider title-archives__effect pb-2 w-full max-[870px]:w-auto"
         >
           A <b className="text__effect__test">fan</b> website about all{" "}
           <b className="text__effect__test">re</b>sident evil{" "}
