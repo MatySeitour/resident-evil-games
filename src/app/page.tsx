@@ -52,14 +52,14 @@ export default function Home() {
           className="min-h-screen min-w-screen relative flex justify-end items-end home-container__effect"
         >
           <TitleHome />
-          <div className="h-[50px] z-[1000000] text-3xl inline-block absolute top-[60%] translate-y-[-60%] opacity-0 right-[10%] max-[700px]:bottom-[20%] max-[700px]:top-auto max-[700px]:translate-y-[20%] max-[700px]:right-[35%] max-[700px]:translate-x-[50%] element-up max-[700px]:text-base">
+          <div className="h-[50px] z-[1000000] text-3xl inline-block absolute top-[60%] translate-y-[-60%] opacity-0 right-[10%] max-[870px]:bottom-[20%] max-[870px]:top-auto max-[870px]:translate-y-[20%] max-[870px]:right-[35%] max-[870px]:translate-x-[50%] element-up max-[870px]:text-base">
             <p className="mb-2 tracking-wide text-white scroll-text__effect bg-white">
               SCROLL TO START
             </p>
             <div className="w-auto h-auto flex flex-col justify-center items-center arrow-scroll__home">
-              <span className="w-[16px] h-[16px] border-b-2 border-r-2 rotate-[45deg] border-white inline-block max-[700px]:w-[10px] max-[700px]:h-[10px]"></span>
-              <span className="w-[16px] h-[16px] border-b-2 border-r-2 rotate-[45deg] border-white inline-block max-[700px]:w-[10px] max-[700px]:h-[10px]"></span>
-              <span className="w-[16px] h-[16px] border-b-2 border-r-2 rotate-[45deg] border-white inline-block max-[700px]:w-[10px] max-[700px]:h-[10px] max-[700px]:hidden"></span>
+              <span className="w-[16px] h-[16px] border-b-2 border-r-2 rotate-[45deg] border-white inline-block max-[870px]:w-[10px] max-[870px]:h-[10px]"></span>
+              <span className="w-[16px] h-[16px] border-b-2 border-r-2 rotate-[45deg] border-white inline-block max-[870px]:w-[10px] max-[870px]:h-[10px]"></span>
+              <span className="w-[16px] h-[16px] border-b-2 border-r-2 rotate-[45deg] border-white inline-block max-[870px]:w-[10px] max-[870px]:h-[10px] max-[870px]:hidden"></span>
             </div>
           </div>
         </div>
