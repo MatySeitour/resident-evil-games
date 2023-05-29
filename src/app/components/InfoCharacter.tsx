@@ -64,6 +64,8 @@ export default function InfoCharacter({
       </div>
       <figure className="w-[500px] h-[550px] mr-2 relative character-container__effect max-[870px]:w-[300px] max-[870px]:h-[400px] opacity-1 transition-all">
         <div className="image-effect__right"></div>
+        <div className="image-effect__top"></div>
+        <div className="image-effect__left"></div>
         {!loaded && <LoaderImage />}
         <Image
           id={`image-character__full__${characterSelected?.id}`}
