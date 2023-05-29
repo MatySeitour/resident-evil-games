@@ -58,7 +58,7 @@ export default function InfoCharacter({
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <div className=" w-screen relative flex flex-1 info-characters__container opacity-1 transition-all flex-row justify-start items-center bg-black image-character__effect max-[870px]:flex-col max-[870px]:h-[auto] max-[870px]:min-h-[auto]">
+    <div className="w-screen relative flex flex-1 info-characters__container opacity-1 transition-all flex-row justify-start items-center bg-black image-character__effect max-[870px]:flex-col max-[870px]:h-[auto] max-[870px]:min-h-[auto]">
       <div className="max-[870px]:w-full max-[870px]:relative">
         <div className="image-effect__gradient"></div>
       </div>
