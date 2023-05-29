@@ -594,3 +594,17 @@ body::-webkit-scrollbar-track {
 .img-prologue__effect {
   transition: all 0.1s ease linear;
 }
+
+.text-epilogue__effect {
+  background-image: url("../../public/details.png");
+  background-position: center;
+  background-size: 1000px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: drop-shadow(5px 0 10px rgba(0, 0, 0, 0.8));
+  display: inline-block;
+  color: rgba(187, 16, 32, 0);
+  display: inline-block;
+  font-weight: 400;
+  z-index: 1999;
+}
