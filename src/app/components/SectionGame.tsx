@@ -39,6 +39,36 @@ export default function SectionGame({
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, SplitType);
 
+    const imageElement: any = document.querySelector(
+      `.img-prologue__effect__${id}`
+    );
+    const height: any = imageElement?.clientHeight;
+    const width: any = imageElement?.clientWidth;
+
+    imageElement?.addEventListener("mousemove", (event: any) => {
+      console.log("gola");
+      const { layerX, layerY } = event;
+
+      const yRotation = ((layerX - width / 2) / width) * 20;
+      const xRotation = ((layerY - height / 2) / height) * 20;
+
+      const newClass = `
+      perspective(500px)
+      scale(1)
+      rotateX(${xRotation}deg)
+      rotateY(${yRotation}deg)`;
+      imageElement.style.transform = newClass;
+    });
+
+    imageElement?.addEventListener("mouseout", () => {
+      imageElement.style.transform = `
+      perspective(500px)
+      scale(1)
+      rotateX(0)
+      rotateY(0)
+      `;
+    });
+
     let mm = gsap.matchMedia();
     mm.add("(min-width: 800px)", () => {
       const title = document.querySelector(`.game-title__${id}`);
@@ -239,8 +269,9 @@ export default function SectionGame({
           </div>
         </div>
         <div className="h-[100%] w-[70%] flex-1 flex justify-center items-center image-prologue opacity-0 pt-20 max-[870px]:w-[320px] max-[870px]:pt-14">
-          <figure className="h-[70%] w-[70%] max-[870px]:h-[100%] max-[870px]:w-[100%]">
+          <figure className="h-[70%] translate-x-[10%] w-[70%] max-[870px]:h-[100%] max-[870px]:w-[100%] max-[870px]:translate-x-0">
             <Image
+              className={`img-prologue__effect__${id}`}
               alt="resident evil 1"
               src={image_prologue}
               width="0"
