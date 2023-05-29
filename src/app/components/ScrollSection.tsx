@@ -18,6 +18,7 @@ export default function ScrollSection() {
 
     const backgroundReveal = gsap.utils.toArray("#section-game");
     const backgroundHome: any = document.querySelector(".background-home");
+    let mm = gsap.matchMedia();
 
     // backgroundReveal.forEach((text: any, i) => {
     //   console.log(text);
@@ -71,97 +72,204 @@ export default function ScrollSection() {
     //   });
     // });
 
-    const imagePrologue = gsap.utils.toArray(".image-prologue");
-    imagePrologue.forEach((iamge: any, i) => {
-      gsap.to(iamge, {
-        scrollTrigger: {
-          trigger: iamge,
-          toggleActions: "play none none none",
-          // markers: true,
-          start: "100px center",
+    mm.add("(min-width: 800px)", () => {
+      const imagePrologue = gsap.utils.toArray(".image-prologue");
+      imagePrologue.forEach((image: any, i) => {
+        gsap.to(image, {
+          scrollTrigger: {
+            trigger: image,
+            toggleActions: "play none none none",
+            // markers: true,
+            start: "100px center",
 
-          end: "-100px center",
-        },
-        opacity: 1,
-        duration: 0.5,
+            end: "-100px center",
+          },
+          opacity: 1,
+          xPercent: -2,
+          duration: 0.5,
+        });
+      });
+
+      const descriptionGame = gsap.utils.toArray("#description-game");
+      console.log(descriptionGame);
+      descriptionGame.forEach((description: any, i) => {
+        gsap.to(description, {
+          scrollTrigger: {
+            trigger: description,
+            toggleActions: "play none none none",
+            start: "-50px center",
+          },
+          opacity: 1,
+          xPercent: "10",
+          duration: 0.5,
+        });
+      });
+
+      const characterSelectContainer = gsap.utils.toArray(".characters-game");
+      characterSelectContainer.forEach((imagesContainer: any, i) => {
+        gsap.to(imagesContainer, {
+          scrollTrigger: {
+            trigger: imagesContainer,
+            toggleActions: "play none none none",
+            start: "500px center",
+            // markers: true,
+            // pin: true,
+            end: "600px center",
+          },
+          // opacity: 1,
+          // xPercent: "-100",
+          // yPercent: "100",
+          // duration: 0.1,
+          // flexDirection: "row",
+        });
+      });
+
+      const characterSelect = gsap.utils.toArray(".image-character");
+      characterSelect.forEach((imageCharacter: any, i) => {
+        gsap.to(imageCharacter, {
+          scrollTrigger: {
+            trigger: imageCharacter,
+            toggleActions: "play none none none",
+            start: "-140px center",
+            // markers: true,
+            // pin: true,
+            // end: "-200px center",
+          },
+          opacity: 1,
+          duration: 0.5,
+        });
+      });
+
+      const infoCharactersContainer = gsap.utils.toArray(
+        ".info-characters__container"
+      );
+      infoCharactersContainer.forEach((characterContainer: any) => {
+        gsap.to(characterContainer, {
+          scrollTrigger: {
+            trigger: characterContainer,
+            toggleActions: "play none none none",
+            start: "-400px center",
+            // markers: true,
+          },
+          opacity: 1,
+          duration: 0.5,
+        });
+      });
+
+      const prologueTitle = gsap.utils.toArray(".prologue-title");
+      prologueTitle.forEach((prologue: any) => {
+        gsap.to(prologue, {
+          scrollTrigger: {
+            trigger: prologue,
+            toggleActions: "play none none none",
+            start: "0px center",
+            // markers: true,
+          },
+          opacity: 1,
+          xPercent: "10",
+
+          duration: 0.5,
+        });
       });
     });
+    mm.add("(max-width: 800px)", () => {
+      const imagePrologue = gsap.utils.toArray(".image-prologue");
+      imagePrologue.forEach((image: any, i) => {
+        gsap.to(image, {
+          scrollTrigger: {
+            trigger: image,
+            toggleActions: "play none none none",
+            // markers: true,
+            start: "100px center",
 
-    const descriptionGame = gsap.utils.toArray("#description-game");
-    descriptionGame.forEach((description: any, i) => {
-      gsap.to(description, {
-        scrollTrigger: {
-          trigger: description,
-          toggleActions: "play none none none",
-          start: "-50px center",
-        },
-        opacity: 1,
-        duration: 0.5,
+            end: "-100px center",
+          },
+          opacity: 1,
+          // xPercent: -10,
+          duration: 0.5,
+        });
       });
-    });
 
-    const characterSelectContainer = gsap.utils.toArray(".characters-game");
-    characterSelectContainer.forEach((imagesContainer: any, i) => {
-      gsap.to(imagesContainer, {
-        scrollTrigger: {
-          trigger: imagesContainer,
-          toggleActions: "play none none none",
-          start: "500px center",
-          // markers: true,
-          // pin: true,
-          end: "600px center",
-        },
-        // opacity: 1,
-        // xPercent: "-100",
-        // yPercent: "100",
-        // duration: 0.1,
-        // flexDirection: "row",
+      const descriptionGame = gsap.utils.toArray("#description-game");
+      console.log(descriptionGame);
+      descriptionGame.forEach((description: any, i) => {
+        gsap.to(description, {
+          scrollTrigger: {
+            trigger: description,
+            toggleActions: "play none none none",
+            start: "-50px center",
+          },
+          opacity: 1,
+          // xPercent: "10",
+          duration: 0.5,
+        });
       });
-    });
 
-    const characterSelect = gsap.utils.toArray(".image-character");
-    characterSelect.forEach((imageCharacter: any, i) => {
-      gsap.to(imageCharacter, {
-        scrollTrigger: {
-          trigger: imageCharacter,
-          toggleActions: "play none none none",
-          start: "-140px center",
-          // markers: true,
-          // pin: true,
-          // end: "-200px center",
-        },
-        opacity: 1,
-        duration: 0.5,
+      const characterSelectContainer = gsap.utils.toArray(".characters-game");
+      characterSelectContainer.forEach((imagesContainer: any, i) => {
+        gsap.to(imagesContainer, {
+          scrollTrigger: {
+            trigger: imagesContainer,
+            toggleActions: "play none none none",
+            start: "500px center",
+            // markers: true,
+            // pin: true,
+            end: "600px center",
+          },
+          // opacity: 1,
+          // xPercent: "-100",
+          // yPercent: "100",
+          // duration: 0.1,
+          // flexDirection: "row",
+        });
       });
-    });
 
-    const infoCharactersContainer = gsap.utils.toArray(
-      ".info-characters__container"
-    );
-    infoCharactersContainer.forEach((characterContainer: any) => {
-      gsap.to(characterContainer, {
-        scrollTrigger: {
-          trigger: characterContainer,
-          toggleActions: "play none none none",
-          start: "-400px center",
-          // markers: true,
-        },
-        opacity: 1,
-        duration: 0.5,
+      const characterSelect = gsap.utils.toArray(".image-character");
+      characterSelect.forEach((imageCharacter: any, i) => {
+        gsap.to(imageCharacter, {
+          scrollTrigger: {
+            trigger: imageCharacter,
+            toggleActions: "play none none none",
+            start: "-140px center",
+            // markers: true,
+            // pin: true,
+            // end: "-200px center",
+          },
+          opacity: 1,
+          duration: 0.5,
+        });
       });
-    });
 
-    const prologueTitle = gsap.utils.toArray(".prologue-title");
-    prologueTitle.forEach((prologue: any) => {
-      gsap.to(prologue, {
-        scrollTrigger: {
-          trigger: prologue,
-          toggleActions: "play none none none",
-          start: "0px center",
-          // markers: true,
-        },
-        opacity: 1,
-        duration: 0.5,
+      const infoCharactersContainer = gsap.utils.toArray(
+        ".info-characters__container"
+      );
+      infoCharactersContainer.forEach((characterContainer: any) => {
+        gsap.to(characterContainer, {
+          scrollTrigger: {
+            trigger: characterContainer,
+            toggleActions: "play none none none",
+            start: "-400px center",
+            // markers: true,
+          },
+          opacity: 1,
+          duration: 0.5,
+        });
+      });
+
+      const prologueTitle = gsap.utils.toArray(".prologue-title");
+      prologueTitle.forEach((prologue: any) => {
+        gsap.to(prologue, {
+          scrollTrigger: {
+            trigger: prologue,
+            toggleActions: "play none none none",
+            start: "0px center",
+            // markers: true,
+          },
+          opacity: 1,
+          // xPercent: "10",
+
+          duration: 0.5,
+        });
       });
     });
   }, []);
