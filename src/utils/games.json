@@ -318,30 +318,23 @@
         {
           "id": 45,
           "name": "Sherry Birkin",
-          "image_select": "/william-select.webp",
-          "image_complete": "/william-character.webp",
-          "description": ""
+          "image_select": "/sherry-re6-logo.webp",
+          "image_complete": "/sherry-re6.webp",
+          "description": "15 years after the incident in Raccoon City, trained as a United States special agent. She joined B.S.A.A. for trying to be just like her her heroes Leon S. Kennedy and Claire Redfield whom she admires. she was sent to edonia to search for jake muller, who possesses the antibodies for the virus-c"
         },
         {
           "id": 46,
           "name": "Helena Harper",
-          "image_select": "/william-select.webp",
-          "image_complete": "/william-character.webp",
-          "description": ""
+          "image_select": "/helena-logo.webp",
+          "image_complete": "/helena.webp",
+          "description": "Helena Harper is an agent of the DSO (Division of Security Operations), a secret security organization that works under the orders of the US government. Attempted to be transferred to the US Secret Service to become one of US President Adam Benford's personal bodyguards, and became implicated in the bioterrorism attack on the town of Tall Oaks that led to the death of the president. Together with Leon, they will have to investigate who caused the attack."
         },
         {
           "id": 47,
           "name": "Piers Nivans",
-          "image_select": "/william-select.webp",
-          "image_complete": "/william-character.webp",
-          "description": ""
-        },
-        {
-          "id": 48,
-          "name": "Derek Simmons",
-          "image_select": "/william-select.webp",
-          "image_complete": "/william-character.webp",
-          "description": ""
+          "image_select": "/piers-logo.webp",
+          "image_complete": "/piers.webp",
+          "description": "In 2010, Chris Redfield, impressed by Piers' skills, asked him to join the B.S.A.A. Piers was very impressed with the way Chris led his team: he treated his teammates like family, not expendable soldiers. Chris, for his part, was aware that he couldn't work as a field agent forever, and so he recruited Piers. Chris believed that the future of the B.S.A.A. it was in the hands of talented individuals like Piers, and he, in turn, had a good cause to fight for. he would later be part of the alpha team in edonia"
         }
       ],
       "image_prologue": "/re2-prologue.jpg"
@@ -355,123 +348,30 @@
         {
           "id": 49,
           "name": "Ethan Winters",
-          "image_select": "/leon-select.webp",
-          "image_complete": "/leon-2.png",
-          "description": ""
+          "image_select": "/ethan-logo.webp",
+          "image_complete": "/ethan.webp",
+          "description": "He was born in 1984 and as an adult he met a woman named Mia, over time they became boyfriends and in 2011 they got married. During her relationship, Ethan would ask about Mia's job, unaware that she worked for Las Conexiones, a company that manufactures and produces biological weapons. In 2014, his wife informed him that she was going to babysit on a ship. During her trip on the metal ship Annabelle, but after October 10, it was reported that the ship Mia was traveling on disappeared due to a storm and she was presumed dead. Three years after Mia's disappearance, Ethan received an email from her saying that he was in Dulvey, Louisiana, and was at a farm for him to come look for her. he doesn't know what she awaits him..."
         },
         {
           "id": 50,
           "name": "Mia Winters",
-          "image_select": "/claire-select.webp",
-          "image_complete": "/claire-2.png",
-          "description": ""
-        },
-        {
-          "id": 51,
-          "name": "Jack Baker",
-          "image_select": "/ada-select.webp",
-          "image_complete": "/ada-2.png",
-          "description": ""
-        },
-        {
-          "id": 52,
-          "name": "Marguerite Baker",
-          "image_select": "/sherry-select.webp",
-          "image_complete": "/sherry.webp",
-          "description": ""
-        },
-        {
-          "id": 53,
-          "name": "Lucas Baker",
-          "image_select": "/william-select.webp",
-          "image_complete": "/william-character.webp",
-          "description": ""
-        },
-        {
-          "id": 54,
-          "name": "Zoe Baker",
-          "image_select": "/william-select.webp",
-          "image_complete": "/william-character.webp",
-          "description": ""
+          "image_select": "/mia-logo.webp",
+          "image_complete": "/mia.webp",
+          "description": "In 2010 she started working for the company Las Conexiones, which is dedicated to the manufacture and production of biological weapons internationally on the black market, Mia became a researcher and one of the company's special operatives."
         },
         {
           "id": 55,
           "name": "Eveline",
-          "image_select": "/william-select.webp",
-          "image_complete": "/william-character.webp",
-          "description": ""
+          "image_select": "/eveline-logo.webp",
+          "image_complete": "/eveline.webp",
+          "description": "she is a genetically modified human conceived as part of the next generation of biological weapons research, led by an unidentified B.O.W. maker, designed to take out enemies without the need for combat. As a result of the fusion of an abnormal bacterium into her genome during the embryonic stage, she gained the ability to control the minds of people who came in contact with her. she was the only one to be Type-E's first bioweapon, as well as her unhealthy obsession with creating a family that meets her own needs."
         },
         {
           "id": 56,
           "name": "Chris Redfield",
-          "image_select": "/william-select.webp",
-          "image_complete": "/william-character.webp",
-          "description": ""
-        }
-      ],
-      "image_prologue": "/re2-prologue.jpg"
-    },
-    {
-      "id": 8,
-      "title": "Resident Evil 8",
-      "description": "The game begins in a flashback of Leon Scott Kennedy where he pays a visit to the president in 2013. Fifteen years have passed since the events in Raccoon City and the president of the United States, a personal friend of Leon's, is determined to tell the whole story. truth about those facts. However, a bioterrorist attack prevents the appearance and transforms the president into a deformed being, forcing Leon to make a difficult decision, along with a mysterious new partner named Helena Harper. /n At the same time, Chris Redfield and Piers Nivans, both part of the B.S.A.A., are in China, a country where a bioterrorist threat has been unleashed.there is also a third story that stars Jake Muller and Sherry Birkin. (This first, being the son of Albert Wesker). Sherry protects Jake in order to save his blood, which is apparently the only antidote to the C-Virus. It has also been confirmed that the place where these two characters are located is Eastern Europe.",
-      "other_games": [{}],
-      "characters": [
-        {
-          "id": 57,
-          "name": "Ethan Winters",
-          "image_select": "/leon-select.webp",
-          "image_complete": "/leon-2.png",
-          "description": ""
-        },
-        {
-          "id": 58,
-          "name": "Mia Winters",
-          "image_select": "/claire-select.webp",
-          "image_complete": "/claire-2.png",
-          "description": ""
-        },
-        {
-          "id": 59,
-          "name": "Rosemary Winters",
-          "image_select": "/ada-select.webp",
-          "image_complete": "/ada-2.png",
-          "description": ""
-        },
-        {
-          "id": 60,
-          "name": "Chris Redfield",
-          "image_select": "/sherry-select.webp",
-          "image_complete": "/sherry.webp",
-          "description": ""
-        },
-        {
-          "id": 61,
-          "name": "Miranda",
-          "image_select": "/william-select.webp",
-          "image_complete": "/william-character.webp",
-          "description": ""
-        },
-        {
-          "id": 62,
-          "name": "Alcina Dimitrescu",
-          "image_select": "/william-select.webp",
-          "image_complete": "/william-character.webp",
-          "description": ""
-        },
-        {
-          "id": 63,
-          "name": "Karl Heisenberg",
-          "image_select": "/william-select.webp",
-          "image_complete": "/william-character.webp",
-          "description": ""
-        },
-        {
-          "id": 64,
-          "name": "Donna Beneviento",
-          "image_select": "/william-select.webp",
-          "image_complete": "/william-character.webp",
-          "description": ""
+          "image_select": "/chris-re7-logo.webp",
+          "image_complete": "/chris-re7.webp",
+          "description": "In 2017, the B.S.A.A. He had information from an underground crime syndicate called Las Conexiones, which has been involved in biochemical weapons research, drug and weapons trafficking, as well as money laundering. The B.S.A.A. had to cooperate with Blue Umbrella, an organization formed from Umbrella USA by the US Government to help counter combat with the B.O.W. by developing new weapons and Anti-B.O.W. Blue Umbrella asked the BSAA to send Chris Redfield to receive assistance for upcoming missions. The objective of the mission was to apprehend Lucas Baker, an alleged associate of the criminal organization Las Conexiones, who was in possession of the biological weapon known as Eveline."
         }
       ],
       "image_prologue": "/re2-prologue.jpg"
