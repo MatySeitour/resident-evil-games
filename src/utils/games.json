@@ -246,51 +246,37 @@
         {
           "id": 34,
           "name": "Albert Wesker",
-          "image_select": "/jill-select.webp",
-          "image_complete": "/wesker-test-3.png",
-          "description": ""
+          "image_select": "/wesker-re5-logo.webp",
+          "image_complete": "/wesker-re5.webp",
+          "description": "In 2009, he continued his activities by returning to work with Tricell and forming an alliance with Excella Gionne, who shared his vision of a new world. Wesker was already ready to carry out the strategy of perfecting Spencer's plan, so he continued to help Excella gain even greater positions of power within Tricell and soon she became the Director of Tricell's Africa Facility. With this alliance, the old Umbrella Research Center in Africa was reopened under Wesker's control along with the source of the Progenitor virus, Sun Ascension. Wesker used part of each viral agent to create the most powerful virus, the Uroboros virus. . With Uroboros, he planned to drive the next step in human evolution."
         },
         {
           "id": 35,
           "name": "Sheva alomar",
-          "image_select": "/wesker-select.webp",
-          "image_complete": "/wesker.webp",
-          "description": ""
+          "image_select": "/sheva-logo.webp",
+          "image_complete": "/sheva.webp",
+          "description": "Shortly after arriving in the United States, Sheva began to stand out for her intelligence and drive. She exceeded all expectations and even mastered English in just six months. After starting the B.S.A.A. an investigation into a possible biohazard in the Kijuju Autonomous Zone, Sheva was chosen to be a partner of Chris Redfield"
         },
         {
           "id": 36,
           "name": "Jill Valentine",
-          "image_select": "/rebecca-select.webp",
-          "image_complete": "/rebecca.webp",
-          "description": ""
+          "image_select": "/jill-re5-logo.webp",
+          "image_complete": "/jill-re5.webp",
+          "description": "In 2006, Chris and Jill received a tip from a reliable source detailing the location of Umbrella founder Oswell E. Spencer. Although the two put up a fierce battle, Chris and Jill saw each other and were overwhelmed by Wesker's superhuman powers, and so, as Wesker was about to deliver the blow that would end Chris's life, Jill lunged at Wesker. Throwing them both out of a window into the abyss beyond the mansion's cliff, Chris couldn't do anything as he watched Jill and Wesker fall through that window. Neither Jill nor Wesker died on that occasion after falling into the abyss. Jill survived thanks to the help of Wesker who, after subjecting her to the corresponding medical treatment, cryogenically placed her. Her plan was to use her as her first guinea pig after the Uroboros project was finished."
         },
         {
           "id": 37,
           "name": "Josh Stone",
-          "image_select": "/barry-select.webp",
-          "image_complete": "/barry.webp",
-          "description": ""
+          "image_select": "/josh-logo.webp",
+          "image_complete": "/josh.webp",
+          "description": "Josh Stone is a member of the West African chapter of the BSAA, though upon inspection, his BSAA patch says North America. He was the leader of the BSAA Delta Team for the Kijuju mission. Josh was the captain of the first team Sheva Alomar joined when he joined the B.S.A.A. and trained her for eight months. After the training, Sheva and Stone developed a very close relationship in which he refers to Sheva as 'The Little Sister of the Team'."
         },
         {
           "id": 38,
           "name": "Excella Gionne",
-          "image_select": "/barry-select.webp",
-          "image_complete": "/barry.webp",
-          "description": ""
-        },
-        {
-          "id": 39,
-          "name": "Ricardo Irving",
-          "image_select": "/barry-select.webp",
-          "image_complete": "/barry.webp",
-          "description": ""
-        },
-        {
-          "id": 40,
-          "name": "Oswell E. Spencer",
-          "image_select": "/barry-select.webp",
-          "image_complete": "/barry.webp",
-          "description": ""
+          "image_select": "/excella-logo.webp",
+          "image_complete": "/excella.webp",
+          "description": "Her grandmother, Virginia Gionne, was related to the Travis family, founders of the Tricell pharmaceutical company, giving Excella an illustrious and noble lineage. Over time she became CEO of the African division of Tricell, and a partner of Albert Wesker, sharing with him the same vision for the future of the world."
         }
       ],
       "image_prologue": "/re5-prologue.webp"
@@ -304,30 +290,30 @@
         {
           "id": 41,
           "name": "Leon Scott Kennedy",
-          "image_select": "/leon-select.webp",
-          "image_complete": "/leon-2.png",
-          "description": ""
+          "image_select": "/leon-logo-1.webp",
+          "image_complete": "/leon-re6.webp",
+          "description": "15 years after the Raccoon City incident, in 2013, Leon is forced to make the most difficult decision of his life and that is to assassinate the President of the United States. Leon with his new partner Helena Harper, are trapped in a region of the United States known as `Tall Oaks`, according to Ingrid Hunnigan, 90% of the population has been infected with the virus and that equates to more than 70,000 enemies. Leon, wanting answers about the situation, is forced by Helena's request to go to Tall Oaks Cathedral to find answers."
         },
         {
           "id": 42,
           "name": "Chris Redfield",
-          "image_select": "/claire-select.webp",
-          "image_complete": "/claire-2.png",
-          "description": ""
+          "image_select": "/chris-re6-logo.webp",
+          "image_complete": "/chris-re6.webp",
+          "description": "After the events of March 5, 6 and 7, 2009, Chris took Jill back to the US, he soon received an email from Barry Burton, who told him that he was too happy to know that she had returned. and that he had also brought Jill with him. Chris went from being an S.O.A. to be a Captain S.O.U. In the B.S.A.A., with his new position he met his new soldiers, including Piers Nivans. On December 24, 2012, the S.O.U. of the North American Branch of the B.S.A.A. Sent to Edonia to quell a civil war, Alpha Team consisting of Chris Redfield, Piers Nivans, Ben Airhart, Carl Alfonso, Finn Macauley, and Andy Walker were stationed in Eastern Edonia, where a new B.O.W.s known as J'avos had started. a civil war."
         },
         {
           "id": 43,
           "name": "Ada Wong",
-          "image_select": "/ada-select.webp",
-          "image_complete": "/ada-2.png",
-          "description": ""
+          "image_select": "/ada-re6-logo.webp",
+          "image_complete": "/ada-re6.webp",
+          "description": "Ada Wong will be located in the middle of all the chaos, since everyone thinks that she is the one who caused the bioterrorist attack, when the real cause of everything is Carla Radames (a clone) which was created by Derek C. Simmons inside a Chrysalis with the C-virus. Carla is the only person behind Neo-Umbrella."
         },
         {
           "id": 44,
           "name": "Jake Muller",
-          "image_select": "/sherry-select.webp",
-          "image_complete": "/sherry.webp",
-          "description": ""
+          "image_select": "/jake-logo.webp",
+          "image_complete": "/jake.webp",
+          "description": "He is the son of virologist and bioterrorist Albert Wesker and an unknown mother. Without Albert, Jake soon finds work as a mercenary in order to support his mother, who later dies of illness. Cooperating in operations against the government of the Republic of Edonia, Jake became involved in an act of bioterrorism. Jake's fellow mercenaries were infected with the C-Virus, however, Jake's antibodies (inherited directly from his father), managed to neutralize the virus. Soon after, he met with US government agent Sherry Birkin."
         },
         {
           "id": 45,
