@@ -58,8 +58,12 @@ export default function InfoCharacter({
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <div className="h-[400px] w-screen relative flex flex-1 info-characters__container opacity-1 transition-all flex-row justify-start items-center bg-black image-character__effect max-[700px]:flex-col max-[700px]:h-[auto] max-[700px]:min-h-[auto]">
-      <figure className="w-[500px] h-[550px] mr-2 relative character-container__effect max-[700px]:w-[300px] max-[700px]:h-[400px] opacity-1 transition-all">
+    <div className=" w-screen relative flex flex-1 info-characters__container opacity-1 transition-all flex-row justify-start items-center bg-black image-character__effect max-[870px]:flex-col max-[870px]:h-[auto] max-[870px]:min-h-[auto]">
+      <div className="max-[870px]:w-full max-[870px]:relative">
+        <div className="image-effect__gradient"></div>
+      </div>
+      <figure className="w-[500px] h-[550px] mr-2 relative character-container__effect max-[870px]:w-[300px] max-[870px]:h-[400px] opacity-1 transition-all">
+        <div className="image-effect__right"></div>
         {!loaded && <LoaderImage />}
         <Image
           id={`image-character__full__${characterSelected?.id}`}
@@ -86,14 +90,14 @@ export default function InfoCharacter({
           }}
         />
       </figure>
-      <div className="h-[100%] pt-4 pl-2 flex-1 relative max-[700px]:h-full max-[700px]:flex max-[700px]:flex-col max-[700px]:gap-[50px] max-[700px]:text-center max-[700px]:pr-2">
+      <div className="h-[100%] flex flex-col justify-center items-start pt-4 px-2 flex-1 relative max-[870px]:h-full max-[870px]:flex max-[870px]:flex-col max-[870px]:gap-[50px] max-[870px]:text-center max-[870px]:pr-2 max-[870px]:items-center">
         <h4
-          className={`text-red-700 scroll-text__effect bg-red-700 scale-y-[1.2] pl-2 text-4xl mb-2 tracking-wider character-selected__title__${characterSelected?.id} mb-4 max-[700px]:mb-0 max-[700px]:pl-0`}
+          className={`text-red-700 scroll-text__effect bg-red-700 scale-y-[1.2] pl-2 text-4xl tracking-wider character-selected__title__${characterSelected?.id} mb-10 max-[870px]:mb-2 max-[870px]:pl-0`}
         >
           {characterSelected?.name}
         </h4>
         <p
-          className={`pl-2 w-[90%] text-xl scale-y-[1.2] scroll-text__effect bg-white character-selected__description__${characterSelected?.id} max-[700px]:w-[100%] max-[700px]:pl-0`}
+          className={`pl-2 pr-2 w-full text-xl scale-y-[1.2] scroll-text__effect bg-white character-selected__description__${characterSelected?.id} max-[870px]:w-[100%] max-[870px]:pl-2 max-[870px]:px-2`}
         >
           {characterSelected?.description}
         </p>
