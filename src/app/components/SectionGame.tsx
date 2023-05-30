@@ -42,36 +42,80 @@ const SectionGame = ({
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, SplitType);
 
-    const imageElement: HTMLImageElement | null = document.querySelector(
-      `.img-prologue__effect__${id}`
+    const epilogueTitle = gsap.utils.toArray(`.epilogue_title__${id}`);
+    const umbrellaEpilogue = gsap.utils.toArray(`.umbrella-epilogue`);
+    const textEpilogue = gsap.utils.toArray(`.text-epilogue`);
+    const lineLeftEpilogue = gsap.utils.toArray(`.line-left__epilogue__${id}`);
+    const lineRightEpilogue = gsap.utils.toArray(
+      `.line-right__epilogue__${id}`
     );
-    const height = imageElement?.clientHeight;
-    const width = imageElement?.clientWidth;
 
-    if (height && width) {
-      imageElement?.addEventListener("mousemove", (event: any) => {
-        const { layerX, layerY } = event;
+    epilogueTitle.forEach((title: any, i: number) => {
+      gsap.to(title, {
+        scrollTrigger: {
+          trigger: title,
+          toggleActions: "play none none none",
+          start: "top center",
 
-        const yRotation = ((layerX - width / 2) / width) * 20;
-        const xRotation = ((layerY - height / 2) / height) * 20;
-
-        const newClass = `
-        perspective(500px)
-        scale(1)
-        rotateX(${xRotation}deg)
-        rotateY(${yRotation}deg)`;
-        imageElement.style.transform = newClass;
+          end: "0px center",
+        },
+        opacity: 1,
+        duration: 0.5,
       });
+    });
 
-      imageElement?.addEventListener("mouseout", () => {
-        imageElement.style.transform = `
-        perspective(500px)
-        scale(1)
-        rotateX(0)
-        rotateY(0)
-        `;
+    textEpilogue.forEach((title: any, i: number) => {
+      gsap.to(title, {
+        scrollTrigger: {
+          trigger: title,
+          toggleActions: "play none none none",
+          start: "top center",
+
+          end: "0px center",
+        },
+        opacity: 1,
+        duration: 0.5,
       });
-    }
+    });
+
+    lineLeftEpilogue.forEach((line: any, i: number) => {
+      gsap.to(line, {
+        scrollTrigger: {
+          trigger: line,
+          toggleActions: "play none none none",
+          start: "-100px center",
+          end: "-100px center",
+        },
+        width: "40%",
+        duration: 0.5,
+      });
+    });
+
+    umbrellaEpilogue.forEach((logo: any, i: number) => {
+      gsap.to(logo, {
+        scrollTrigger: {
+          trigger: logo,
+          toggleActions: "play none none none",
+          start: "-100px center",
+          end: "-100px center",
+        },
+        opacity: 1,
+        duration: 0.5,
+      });
+    });
+
+    lineRightEpilogue.forEach((line: any, i: number) => {
+      gsap.to(line, {
+        scrollTrigger: {
+          trigger: line,
+          toggleActions: "play none none none",
+          start: "-100px center",
+          end: "-100px center",
+        },
+        width: "40%",
+        duration: 0.5,
+      });
+    });
 
     let mm = gsap.matchMedia();
     mm.add("(min-width: 800px)", () => {
@@ -82,8 +126,7 @@ const SectionGame = ({
           trigger: `.game-title__${id} .char`,
           toggleActions: "play none none none",
           start: "top center",
-          // markers: true,
-          // pin: true,
+
           end: "600px center",
         },
         x: 0,
@@ -95,17 +138,12 @@ const SectionGame = ({
     });
     mm.add("(max-width: 800px)", () => {
       const gameTitle = gsap.utils.toArray(`.game-title__${id}`);
-      const epilogueTitle = gsap.utils.toArray(`.epilogue_title__${id}`);
-      const lineLeftEpilogue = gsap.utils.toArray(
-        `.line-left__epilogue__${id}`
-      );
 
       gameTitle.forEach((title: any, i: number) => {
         gsap.to(title, {
           scrollTrigger: {
             trigger: title,
             toggleActions: "play none none none",
-            // markers: true,
             start: "-100px center",
 
             end: "-100px center",
@@ -131,146 +169,9 @@ const SectionGame = ({
           duration: 0.5,
         });
       });
-
-      epilogueTitle.forEach((title: any, i: number) => {
-        gsap.to(title, {
-          scrollTrigger: {
-            trigger: title,
-            toggleActions: "play none none none",
-            //   markers: true,
-            start: "top center",
-
-            end: "0px center",
-          },
-          opacity: 1,
-          duration: 0.5,
-        });
-      });
-
-      lineLeftEpilogue.forEach((title: any, i: number) => {
-        gsap.to(title, {
-          scrollTrigger: {
-            trigger: title,
-            toggleActions: "play none none none",
-            // markers: true,
-            start: "-100px center",
-            end: "-100px center",
-          },
-          width: "40%",
-          duration: 0.5,
-        });
-      });
     });
   }, []);
 
-  // const handleOnMouse = (
-  //   evn: React.MouseEvent<HTMLImageElement, MouseEvent>
-  // ) => {
-  //   const imageElement: HTMLImageElement | null = document.querySelector(
-  //     `.img-prologue__effect__${id}`
-  //   );
-
-  //   console.log(evn);
-
-  //   const height = imageElement?.clientHeight;
-  //   const width = imageElement?.clientWidth;
-
-  //   // console.log(height);
-  // };
-  // useEffect(() => {
-  //   const sectionGames = document.querySelectorAll(".section-game");
-
-  //   /* Animate function */
-  //   const handleIntersection = (entries: {}[]) => {
-  //     entries.map((entry: any) => {
-  //       const title = entry.target.querySelector("h2");
-  //       const background = entry.target.querySelector("div");
-  //       /* getting the item class number */
-  //       const backgroundNumber = Number(entry.target.className.split("row")[1]);
-
-  //       /* GSAP timeline */
-  //       const tl = gsap.timeline({
-  //         repeat: 0,
-  //       });
-
-  //       if (entry.isIntersecting) {
-  //         /* separate text into words and letters */
-  //         const descriptionGame = new SplitType(
-  //           entry.target.querySelector("#description-game")
-  //         );
-
-  //         const description = entry.target.querySelector("#description-game");
-
-  //         /* remove opacity in description */
-  //         description.style.opacity = 1;
-
-  //         /* select all the characters of the article */
-  //         const descriptionChar = entry.target.querySelectorAll(".char");
-
-  //         const imageCharacter =
-  //           entry.target.querySelectorAll(".image-character");
-
-  //         /* animation for the title */
-
-  //         tl.to(title, { opacity: 1, duration: 0.5 });
-
-  //         /* animation for the description characters */
-  //         tl.from(descriptionChar, {
-  //           x: 0,
-  //           stagger: 0.005,
-  //           opacity: 0,
-  //           duration: 0.05,
-  //           delay: 1.5,
-  //         });
-
-  //         /* animation for the image characters */
-  //         tl.to(imageCharacter, {
-  //           duration: 1,
-  //           yPercent: 0,
-  //           opacity: 1,
-  //         });
-
-  //         background.style.opacity = 1;
-
-  //         /* add bg-number class */
-  //         background.classList.add(`bg-${backgroundNumber}`);
-  //       } else {
-  //         const description = entry.target.querySelector("#description-game");
-  //         const imageCharacter =
-  //           entry.target.querySelectorAll(".image-character");
-
-  //         tl.to(imageCharacter, {
-  //           duration: 1,
-  //           yPercent: 0,
-  //           opacity: 0,
-  //         });
-  //         // // const charactersGame = entry.target.querySelector(".characters-game");
-  //         // const imageCharacter =
-  //         //   entry.target.querySelectorAll(".image-character");
-  //         // /* animation so that the images of the logo disappear */
-  //         // tl.to(imageCharacter, {
-  //         //   duration: 1,
-  //         //   yPercent: 20,
-  //         //   opacity: 0,
-  //         //   delay: 0,
-  //         // });
-  //         // const description = entry.target.querySelector("#description-game");
-  //         // background.style.opacity = 0;
-  //         // /* when isintersecting is false, add the opacity 0 property so that the elements disappear */
-  //         title.style.opacity = 0;
-  //         description.style.opacity = 0;
-  //       }
-  //     });
-  //   };
-  //   const observer = new IntersectionObserver(handleIntersection, {
-  //     threshold: 0.5,
-  //   });
-
-  //   /* observe each section */
-  //   sectionGames.forEach((section) => {
-  //     observer.observe(section);
-  //   });
-  // }, []);
   const [characterSelected, setCharacterSelected] =
     useState<CharacterSelected>();
 
@@ -291,6 +192,32 @@ const SectionGame = ({
         }
       }
     }
+  };
+
+  const handleMouseMove = (evt: any) => {
+    const height = evt?.target.clientHeight;
+    const width = evt?.target.clientWidth;
+
+    const { layerX, layerY } = evt.nativeEvent;
+
+    const yRotation = ((layerX - width / 2) / width) * 20;
+    const xRotation = ((layerY - height / 2) / height) * 20;
+
+    const newClass = `
+        perspective(500px)
+        scale(1)
+        rotateX(${xRotation}deg)
+        rotateY(${yRotation}deg)`;
+    evt.target.style.transform = newClass;
+  };
+
+  const handleMouseOut = (evt: any) => {
+    evt.target.style.transform = `
+       perspective(500px)
+         scale(1)
+         rotateX(0)
+         rotateY(0)
+         `;
   };
 
   return (
@@ -324,9 +251,11 @@ const SectionGame = ({
         <div className="h-[100%] w-[70%] flex-1 flex justify-center items-center image-prologue opacity-0 pt-20 max-[870px]:w-[320px] max-[870px]:pt-14">
           <figure className="h-[70%] translate-x-[10%] w-[70%] max-[870px]:h-[100%] max-[870px]:w-[100%] max-[870px]:translate-x-0">
             <Image
-              className={`img-prologue__effect__${id} img-prologue__effect`}
+              className={`img-prologue__effect__${id} transition-all duration-100`}
               alt="resident evil 1"
               src={image_prologue}
+              onMouseMove={handleMouseMove}
+              onMouseOut={handleMouseOut}
               width="0"
               height="0"
               sizes="100vw"
@@ -334,7 +263,6 @@ const SectionGame = ({
                 width: "100%",
                 height: "100%",
                 objectFit: "cover",
-                // objectPosition: "center",
               }}
             />
           </figure>
