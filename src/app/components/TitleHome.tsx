@@ -3,7 +3,7 @@ import { url } from "inspector";
 import { useEffect } from "react";
 import SplitType from "split-type";
 
-export default function TitleHome() {
+const TitleHome = () => {
   useEffect(() => {
     let mm = gsap.matchMedia();
     mm.add("(min-width: 800px)", () => {
@@ -63,4 +63,6 @@ export default function TitleHome() {
       </div>
     </div>
   );
-}
+};
+
+export default TitleHome;
