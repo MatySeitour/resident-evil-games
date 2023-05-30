@@ -17,7 +17,6 @@ export default function Home() {
       setLoadingPageState(false);
     }, 2000);
     gsap.to(".element-up", {
-      x: 0,
       stagger: 0.05,
       opacity: 1,
       duration: 0.5,
@@ -52,7 +51,7 @@ export default function Home() {
           className="min-h-screen min-w-screen relative flex justify-end items-end home-container__effect"
         >
           <TitleHome />
-          <div className="h-[50px] z-[1000000] text-3xl inline-block absolute top-[60%] translate-y-[-60%] opacity-0 right-[10%] max-[870px]:top-[100%] max-[870px]:translate-y-[-200%] max-[870px]:right-[35%] max-[870px]:translate-x-[50%] element-up max-[870px]:text-base">
+          <div className="h-[50px] z-[1000000] text-3xl inline-block absolute top-[60%] translate-y-[-60%] opacity-0 right-[10%] max-[870px]:top-[100%] max-[870px]:translate-y-[-200%] max-[870px]:right-[50%] max-[870px]:translate-x-[50%] element-up max-[870px]:text-base">
             <p className="mb-2 tracking-wide text-white scroll-text__effect bg-white">
               SCROLL TO START
             </p>
