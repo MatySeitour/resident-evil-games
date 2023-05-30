@@ -91,7 +91,6 @@ const ScrollSection = () => {
       });
 
       const descriptionGame = gsap.utils.toArray("#description-game");
-      console.log(descriptionGame);
       descriptionGame.forEach((description: any, i) => {
         gsap.to(description, {
           scrollTrigger: {
@@ -191,7 +190,6 @@ const ScrollSection = () => {
       });
 
       const descriptionGame = gsap.utils.toArray("#description-game");
-      console.log(descriptionGame);
       descriptionGame.forEach((description: any, i) => {
         gsap.to(description, {
           scrollTrigger: {
