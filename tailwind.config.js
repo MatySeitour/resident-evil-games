@@ -25,9 +25,14 @@ module.exports = {
           '0%': { filter: "grayscale(1)" },
           '100%': { filter: "grayscale(0)" },
         },
+        spin: {
+          '0%': { transform: "rotate(0deg)" },
+          '100%': { transform: "rotate(360deg)" },
+        }
       },
       animation: {
         'loading': 'loading 5s linear infinite',
+        'spin': 'spin 5s linear infinite',
         // 'loadingImage': 'loadingImage 1s linear infinite',
       }
     },
