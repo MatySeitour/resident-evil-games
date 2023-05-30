@@ -8,10 +8,11 @@ interface InfoCharacterProps {
   setCharacterSelected: any;
 }
 
-export default function InfoCharacter({
+const InfoCharacter = ({
   characterSelected,
   setCharacterSelected,
-}: InfoCharacterProps) {
+}: InfoCharacterProps) => {
+  console.log(characterSelected);
   useEffect(() => {
     setLoaded(false);
     const imageFull = document.querySelector(
@@ -99,11 +100,13 @@ export default function InfoCharacter({
           {characterSelected?.name}
         </h4>
         <p
-          className={`pl-2 pr-2 w-full text-xl scale-y-[1.2] scroll-text__effect bg-white character-selected__description__${characterSelected?.id} max-[870px]:w-[100%] max-[870px]:pl-2 max-[870px]:px-2`}
+          className={`pl-2 pr-2 w-full text-xl scale-y-[1.2] scroll-text__effect bg-white character-selected__description__${characterSelected?.id} max-[870px]:w-[100%] max-[870px]:pl-2 max-[870px]:px-2 max-[870px]:scale-[1] max-[870px]:`}
         >
           {characterSelected?.description}
         </p>
       </div>
     </div>
   );
-}
+};
+
+export default InfoCharacter;
