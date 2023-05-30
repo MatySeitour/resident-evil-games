@@ -62,7 +62,8 @@
           "description": "The Tyrant T-002 was the first Tyrant Created on the basis of the T-Virus in a living human being, superior in every aspect to its predecessor, the Proto Tyrant. It was a B.O.W. (Big Organic Weapong) created in the laboratory of the Arklay mountains, in the Spencer mansion."
         }
       ],
-      "image_prologue": "/re1-prologue.jpg"
+      "image_prologue": "/re1-prologue.jpg",
+      "epilogue": "In the lab, Wesker reveals his identity: he is a double agent working for Umbrella who has used his minions as guinea pigs to test them against the biological weapons created by the T-Virus and ultimately unleashes Tyrant T-002, a giant humanoid monster created through prolonged exposure to the T-Virus. Upon release, the Tyrant kills Wesker by running its claws through him. Chris/Jill apparently kill the Tyrant using firearms and then activate the self-destruct program to end the lab experiments. Later Chris/Jill contacts the rescue helicopter, when the Tyrant reappears through the roof of the lab onto the helicopter's landing pad and suddenly attacks them. Bullet resistant, the Tyrant is eventually killed when Brad, the helicopter pilot, drops a rocket launcher and Chris/Jill uses it to completely destroy the creature. Chris Redfield and Jill Valentine escape in the helicopter before the mansion explodes and the game finally ends."
     },
     {
       "id": 2,
@@ -120,7 +121,8 @@
           "description": "She is a scientist who works with her husband Dr. William Birkin for the Umbrella Corporation. mother of Sherry Birkin, and one of the creators of the G-Virus"
         }
       ],
-      "image_prologue": "/re2-prologue.jpg"
+      "image_prologue": "/re2-prologue.jpg",
+      "epilogue": "the group of protagonists that manages to flee aboard a train, is pursued by Birkin who has assumed a grotesque appearance due to mutations in his body, causing the machine's self-destruct system to activate, forcing the protagonists to stop him in middle of the tunnel. Once they manage to stop the train, the trio manage to escape leaving Birkin trapped, who eventually dies after the train explodes. Leon reveals his intention to take down Umbrella as he leaves Raccoon City with Sherry, and Claire continues her search for her brother. In the end, it is revealed that Ada survived the deadly encounter with the creature by managing to get hold of a sample of the G-Virus."
     },
     {
       "id": 3,
@@ -164,7 +166,8 @@
           "description": "He is a member of Umbrella's private army, the U.B.C.S., as well as being the leader of Delta Squad."
         }
       ],
-      "image_prologue": "/re3-prologue.webp"
+      "image_prologue": "/re3-prologue.webp",
+      "epilogue": "Jill manages to synthesize a vaccine, but an encounter with the Nemesis causes Nikolai to steal it when he leaves her to fight the monster. After receiving a special acid bath, Nemesis's body takes heavy damage causing her to mutate further, and after much difficulty, Jill manages to kill Nemesis using an experimental Railgun, killing her pursuer for good. Jill is disarmed by Nikolai and watches as he destroys the vaccine while revealing that she has no interest in Raccoon City's survival as long as she is well paid for keeping Umbrella's involvement in the city's destruction a secret. she demands that he tell her who hired him to which Nikolai by way of making fun of her, she tells him that she will tell him in exchange for a good salary. Jill snatches the vaccine container from him and leaves Nikolai to die when finally the government-launched ballistic missile hits Raccoon City, destroying the city and wiping out all existence of the T-Virus while Jill and Carlos managed to escape. by helicopter to which Jill swears that she will make Umbrella pay for this mess."
     },
     {
       "id": 4,
@@ -229,7 +232,8 @@
           "description": "mayor of the town, and was very loved by all the residents, until the arrival of Osmund Saddler to the town. Saddler took over Mendez's mind so that the town would follow him. Saddler observed that the loyalty that the people of El Pueblo had to him was too valuable, so in addition to the normal Plague in his body, he inoculated him with the Control Plague, which allowed him to manipulate the Ganados as well, but would be forced to remain faithful to him."
         }
       ],
-      "image_prologue": "/re4-prologue.jpg"
+      "image_prologue": "/re4-prologue.jpg",
+      "epilogue": "After fighting Krauser and It, Leon is finally able to successfully rescue Ashley and flee from Saddler with Ada's help. However, Saddler captures Ada and challenges Leon to one last fight. After an intense fight with Saddler who mutates his body into a monstrous appearance, Leon kills him with a special rocket launcher provided by Ada. After retrieving the sample, Ada forces him to give it to him, and gives him the keys to a jet ski so they can escape the island, while she escapes from the complex in a helicopter. Although Leon and Ashley manage to escape the island, the sample's whereabouts and fate remain uncertain."
     },
     {
       "id": 5,
@@ -279,7 +283,8 @@
           "description": "Her grandmother, Virginia Gionne, was related to the Travis family, founders of the Tricell pharmaceutical company, giving Excella an illustrious and noble lineage. Over time she became CEO of the African division of Tricell, and a partner of Albert Wesker, sharing with him the same vision for the future of the world."
         }
       ],
-      "image_prologue": "/re5-prologue.webp"
+      "image_prologue": "/re5-prologue.webp",
+      "epilogue": "Chris and Sheva are in the bomber hangar. Wesker had supplied the plane with enough Uroboros-carrying missiles to infect the entire planet. In the ensuing fight, Chris manages to inject Wesker with an extra dose of the serums Excella dropped. This greatly weakens Wesker, forcing him to run away, and the Jet escapes him, though Chris and Sheva are able to catch up. Wesker reveals that the bomber is now climbing to the ideal altitude for global saturation, and that he plans to unleash the virus shortly. Chris and Sheva continue to fight Wesker, with the former injecting him with another dose of the serum. Chris then pulls him out of an airlock, but manages to grab Sheva, after which the jetty falls into a volcano. Wesker, who is still alive, plunges his right arm into an intact Uroboros missile, and the virus immediately engulfs him. Josh, piloting a B.S.A.A. helicopter, spots the couple, and Jill Valentine lowers them down a ladder. Chris and Sheva barely escape when the ground melts under them. Jill tells Chris and Sheva to use the rear-mounted RPG-7s. The two partners send a pair of anti-tank rockets into Albert Wesker's corrupted face, ending his life in a cloud of flame and ash."
     },
     {
       "id": 6,
@@ -337,7 +342,8 @@
           "description": "In 2010, Chris Redfield, impressed by Piers' skills, asked him to join the B.S.A.A. Piers was very impressed with the way Chris led his team: he treated his teammates like family, not expendable soldiers. Chris, for his part, was aware that he couldn't work as a field agent forever, and so he recruited Piers. Chris believed that the future of the B.S.A.A. it was in the hands of talented individuals like Piers, and he, in turn, had a good cause to fight for. he would later be part of the alpha team in edonia"
         }
       ],
-      "image_prologue": "/re2-prologue.jpg"
+      "image_prologue": "/re2-prologue.jpg",
+      "epilogue": "After several encounters with Simmons along the way, the agents arrive at the helipad facing Simmons' latest mutation, resembling a giant fly. After a long battle, Simmons is finally killed by being impaled on a metal stake. Leon and Helena, relieved, since the person responsible for the events is dead, they get on the helicopter after seeing that Ada left them a chip with the evidence that betrays Simmons and proves Leon and Helena's innocence of what happened to the president. Leon asks Chris to rescue Jake and Sherry who were captured by Neo-Umbrella before revealing to Jake and also confirming that he is the son of bioterrorist Albert Wesker. Chris and Piers are taken with a B.O.W. known as Haos and face each other. Piers loses one of his arms and is forced to inject himself with the C-Virus and save Chris. While both escaped, Piers decides to stay, knowing that it was only a matter of time before the virus completely transformed him, so he gives his emblem to Chris and activates the escape pod so that he can escape while making one last attempt. the B.O.W. He tries to finish off Chris, but luckily the explosion from the base reaches the creature, eliminating it while on the surface, Chris saw how a helicopter was preparing to evacuate him. On the other hand, Jake and Sherry manage to escape from the neo-umbrella facilities. finally jake tells sherry that she only charged 50 dollars for her blood sample for the cure of the virus."
     },
     {
       "id": 7,
@@ -374,7 +380,8 @@
           "description": "In 2017, the B.S.A.A. He had information from an underground crime syndicate called Las Conexiones, which has been involved in biochemical weapons research, drug and weapons trafficking, as well as money laundering. The B.S.A.A. had to cooperate with Blue Umbrella, an organization formed from Umbrella USA by the US Government to help counter combat with the B.O.W. by developing new weapons and Anti-B.O.W. Blue Umbrella asked the BSAA to send Chris Redfield to receive assistance for upcoming missions. The objective of the mission was to apprehend Lucas Baker, an alleged associate of the criminal organization Las Conexiones, who was in possession of the biological weapon known as Eveline."
         }
       ],
-      "image_prologue": "/re2-prologue.jpg"
+      "image_prologue": "/re2-prologue.jpg",
+      "epilogue": "Ethan synthesizes a powerful toxin to kill the girl by injecting it into her, then proceeds through a series of tunnels that eventually lead him to the Baker house, visited right at the start of the game. Eveline causes Ethan many hallucinations of attacks, as well as psychic shocks, but Ethan overcomes them and injects Eveline with the toxin, ending her hallucinations, and revealing that Eveline was always the old woman in a wheelchair, who has been aging rapidly ever since. his escape. The toxin recedes, turning Eveline into a large monster. Aided by the arrival of a military squad, Ethan is able to defeat Eveline. With the threat removed, the squad and their leader, who identifies himself as Redfield, extract Ethan in a helicopter. At this point in the end if Ethan doesn't heal Mia, he throws his phone, which contains his last message, from the helicopter, saying 'goodbye'. If Mia was cured, she is found alive receiving medical attention aboard Redfield's helicopter. As the helicopter flies away, it is shown to bear the trademark of the Umbrella Corporation, but with a blue color."
     }
   ]
 }
