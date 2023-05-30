@@ -6,6 +6,7 @@ import SplitType from "split-type";
 import Image from "next/image";
 import CharactersSelect from "./CharactersSelect";
 import InfoCharacter from "./InfoCharacter";
+import Epilogue from "./Epilogue";
 
 interface Props {
   id: number;
@@ -19,6 +20,7 @@ interface Props {
     description: string;
   }[];
   image_prologue: string;
+  epilogue: string;
   other_games?: {}[];
 }
 
@@ -29,45 +31,47 @@ interface CharacterSelected {
   name: string;
 }
 
-export default function SectionGame({
+const SectionGame = ({
   id,
   title,
   description,
   characters,
   image_prologue,
-}: Props) {
+  epilogue,
+}: Props) => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, SplitType);
 
-    const imageElement: any = document.querySelector(
+    const imageElement: HTMLImageElement | null = document.querySelector(
       `.img-prologue__effect__${id}`
     );
-    const height: any = imageElement?.clientHeight;
-    const width: any = imageElement?.clientWidth;
+    const height = imageElement?.clientHeight;
+    const width = imageElement?.clientWidth;
 
-    imageElement?.addEventListener("mousemove", (event: any) => {
-      console.log("gola");
-      const { layerX, layerY } = event;
+    if (height && width) {
+      imageElement?.addEventListener("mousemove", (event: any) => {
+        const { layerX, layerY } = event;
 
-      const yRotation = ((layerX - width / 2) / width) * 20;
-      const xRotation = ((layerY - height / 2) / height) * 20;
+        const yRotation = ((layerX - width / 2) / width) * 20;
+        const xRotation = ((layerY - height / 2) / height) * 20;
 
-      const newClass = `
-      perspective(500px)
-      scale(1)
-      rotateX(${xRotation}deg)
-      rotateY(${yRotation}deg)`;
-      imageElement.style.transform = newClass;
-    });
+        const newClass = `
+        perspective(500px)
+        scale(1)
+        rotateX(${xRotation}deg)
+        rotateY(${yRotation}deg)`;
+        imageElement.style.transform = newClass;
+      });
 
-    imageElement?.addEventListener("mouseout", () => {
-      imageElement.style.transform = `
-      perspective(500px)
-      scale(1)
-      rotateX(0)
-      rotateY(0)
-      `;
-    });
+      imageElement?.addEventListener("mouseout", () => {
+        imageElement.style.transform = `
+        perspective(500px)
+        scale(1)
+        rotateX(0)
+        rotateY(0)
+        `;
+      });
+    }
 
     let mm = gsap.matchMedia();
     mm.add("(min-width: 800px)", () => {
@@ -91,7 +95,12 @@ export default function SectionGame({
     });
     mm.add("(max-width: 800px)", () => {
       const gameTitle = gsap.utils.toArray(`.game-title__${id}`);
-      gameTitle.forEach((title: any, i) => {
+      const epilogueTitle = gsap.utils.toArray(`.epilogue_title__${id}`);
+      const lineLeftEpilogue = gsap.utils.toArray(
+        `.line-left__epilogue__${id}`
+      );
+
+      gameTitle.forEach((title: any, i: number) => {
         gsap.to(title, {
           scrollTrigger: {
             trigger: title,
@@ -122,8 +131,52 @@ export default function SectionGame({
           duration: 0.5,
         });
       });
+
+      epilogueTitle.forEach((title: any, i: number) => {
+        gsap.to(title, {
+          scrollTrigger: {
+            trigger: title,
+            toggleActions: "play none none none",
+            //   markers: true,
+            start: "top center",
+
+            end: "0px center",
+          },
+          opacity: 1,
+          duration: 0.5,
+        });
+      });
+
+      lineLeftEpilogue.forEach((title: any, i: number) => {
+        gsap.to(title, {
+          scrollTrigger: {
+            trigger: title,
+            toggleActions: "play none none none",
+            // markers: true,
+            start: "-100px center",
+            end: "-100px center",
+          },
+          width: "40%",
+          duration: 0.5,
+        });
+      });
     });
   }, []);
+
+  // const handleOnMouse = (
+  //   evn: React.MouseEvent<HTMLImageElement, MouseEvent>
+  // ) => {
+  //   const imageElement: HTMLImageElement | null = document.querySelector(
+  //     `.img-prologue__effect__${id}`
+  //   );
+
+  //   console.log(evn);
+
+  //   const height = imageElement?.clientHeight;
+  //   const width = imageElement?.clientWidth;
+
+  //   // console.log(height);
+  // };
   // useEffect(() => {
   //   const sectionGames = document.querySelectorAll(".section-game");
 
@@ -308,47 +361,16 @@ export default function SectionGame({
           ))}
         </div>
       </div>
-      <InfoCharacter
-        characterSelected={characterSelected}
-        setCharacterSelected={characterSelected}
-      />
-      <div className="bg-black relative w-full h-[50px] gradient-end__section__end"></div>
-      {/* <div className="bg-black h-[auto] w-full pb-10 flex flex-col justify-center items-center">
-        <h5 className="relative text-epilogue__effect leading-relaxed bg-red-800 text-red-500 scale-x-[1] scale-y-[1.2] text-5xl mb-10 tracking-wider opacity-1 max-[870px]:text-center max-[870px]:text-4xl max-[870px]:pb-[2px]">
-          Epilogue
-        </h5>
-        <div className="h-14 w-full bg-black flex justify-evenly items-center mb-4">
-          <div className="h-[2px] w-[40%] bg-red-800"></div>
-          <div className="h-full w-[auto] flex justify-center items-center">
-            <Image
-              src={"/umbrella-epilogue.png"}
-              alt="umbrella-epilogue"
-              width={48}
-              height={48}
-            />
-          </div>
-          <div className="h-[2px] w-[40%] bg-red-800"></div>
-        </div>
-        <div className="flex w-[100%] justify-center items-center pr-4 pl-2">
-          <p className="text-center relative w-[100%] opacity-1 text-epilogue__effect scale-x-[1] scale-y-[1.2] bg-white text-xl max-[870px]:text-center pt-4">
-            In the lab, Wesker reveals his identity: he is a double agent
-            working for Umbrella who has used his minions as guinea pigs to test
-            them against the biological weapons created by the T-Virus and
-            ultimately unleashes "Tyrant T-002." ", a giant humanoid monster
-            created through prolonged exposure to the T-Virus. Upon release, the
-            Tyrant kills Wesker by running its claws through him. Chris/Jill
-            apparently kill the Tyrant using firearms and then activate the
-            self-destruct program to end the lab experiments. Later Chris/Jill
-            contacts the rescue helicopter, when the Tyrant reappears through
-            the roof of the lab onto the helicopter's landing pad and suddenly
-            attacks them. Bullet resistant, the Tyrant is eventually killed when
-            Brad, the helicopter pilot, drops a rocket launcher and Chris/Jill
-            uses it to completely destroy the creature. Chris Redfield and Jill
-            Valentine escape in the helicopter before the mansion explodes and
-            the game finally ends.
-          </p>
-        </div>
-      </div> */}
+      <div className="bg-black">
+        <InfoCharacter
+          characterSelected={characterSelected}
+          setCharacterSelected={characterSelected}
+        />
+        <div className="bg-black relative w-full h-[55px] gradient-end__section__end mb-[150px]"></div>
+        <Epilogue epilogue={epilogue} id={id} />
+      </div>
     </article>
   );
-}
+};
+
+export default SectionGame;
