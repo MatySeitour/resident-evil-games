@@ -19,15 +19,13 @@ interface CharacterSelected {
   name: string;
 }
 
-export default function CharactersSelect({
+const CharactersSelect = ({
   character_id,
-  character_image_complete,
   character_image_select,
   character_name,
   handleSearchCharacter,
   characterSelected,
-  setCharacterSelected,
-}: CharacterProps) {
+}: CharacterProps) => {
   /* state that contains the id of the selected character */
   const [characterShowId, setCharacterShowId] = useState<number>(0);
 
@@ -64,4 +62,6 @@ export default function CharactersSelect({
       </figure>
     </div>
   );
-}
+};
+
+export default CharactersSelect;
