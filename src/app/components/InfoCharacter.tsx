@@ -12,7 +12,6 @@ const InfoCharacter = ({
   characterSelected,
   setCharacterSelected,
 }: InfoCharacterProps) => {
-  console.log(characterSelected);
   useEffect(() => {
     setLoaded(false);
     const imageFull = document.querySelector(
@@ -68,30 +67,34 @@ const InfoCharacter = ({
         <div className="image-effect__top"></div>
         <div className="image-effect__left"></div>
         {!loaded && <LoaderImage />}
-        <Image
-          id={`image-character__full__${characterSelected?.id}`}
-          src={
-            characterSelected?.id
-              ? `${characterSelected?.image_complete}`
-              : "/chris.webp"
-          }
-          alt={`${characterSelected?.name}`}
-          width="0"
-          height="0"
-          sizes="100%"
-          quality={100}
-          priority={true}
-          onLoadingComplete={(img) => {
-            img.classList.remove("opacity-on");
-            setLoaded(true);
-          }}
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: `${characterSelected?.id == 1 ? "contain" : "cover"}`,
-            objectPosition: "center",
-          }}
-        />
+        {characterSelected?.id && (
+          <>
+            <Image
+              id={`image-character__full__${characterSelected?.id}`}
+              src={
+                characterSelected?.id && `${characterSelected?.image_complete}`
+              }
+              alt={`${characterSelected?.name}`}
+              width="0"
+              height="0"
+              sizes="100%"
+              quality={100}
+              priority={true}
+              onLoadingComplete={(img) => {
+                img.classList.remove("opacity-on");
+                setLoaded(true);
+              }}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: `${
+                  characterSelected?.id == 1 ? "contain" : "cover"
+                }`,
+                objectPosition: "center",
+              }}
+            />
+          </>
+        )}
       </figure>
       <div className="h-[100%] flex flex-col justify-center items-start pt-4 px-2 flex-1 relative max-[870px]:h-full max-[870px]:flex max-[870px]:flex-col max-[870px]:gap-[50px] max-[870px]:text-center max-[870px]:pr-2 max-[870px]:items-center">
         <h4
