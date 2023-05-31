@@ -19,7 +19,10 @@ interface Props {
     image_complete: string;
     description: string;
   }[];
-  image_prologue: string;
+  image_prologue: {
+    id: number;
+    link: string;
+  }[];
   epilogue: string;
   other_games?: {}[];
 }
@@ -220,11 +223,13 @@ const SectionGame = ({
          `;
   };
 
+  console.log(image_prologue);
+
   return (
     <article
       key={id}
       id={`section-game`}
-      className={`bg-transparent article-container__effect w-full h-[auto] pt-[200px] relative flex flex-col justify-center bg-${id}`}
+      className={`bg-transparent article-container__effect w-full h-auto pt-[40px] relative flex flex-col justify-center bg-${id} max-[870px]:h-[500vh]`}
     >
       <div
         className={`opacity-0 absolute z[-1] transition-all background-gradient`}
@@ -234,7 +239,7 @@ const SectionGame = ({
       >
         <h1 className="inline-block">{title}</h1>
       </div>
-      <div className="h-[100%] w-[100%] pt-20 flex flex-row justify-between items-center mb-[100px] px-4 max-[870px]:flex-col">
+      <div className="h-[100%] w-[100%] pt-20 flex flex-col justify-between items-center mb-[150px] px-4 max-[870px]:flex-col">
         <div className="flex flex-col w-[50%] max-[870px]:w-full">
           <h2 className="relative inline-block prologue-title scroll-text__effect leading-relaxed bg-red-800 text-red-500 scale-x-[1] scale-y-[1.2] text-5xl mb-20 tracking-wider opacity-0 max-[870px]:text-center max-[870px]:text-4xl max-[870px]:pb-[2px]">
             Prologue
@@ -248,24 +253,28 @@ const SectionGame = ({
             </p>
           </div>
         </div>
-        <div className="h-[100%] w-[70%] flex-1 flex justify-center items-center image-prologue opacity-0 pt-20 max-[870px]:w-[320px] max-[870px]:pt-14">
-          <figure className="h-[70%] translate-x-[10%] w-[70%] max-[870px]:h-[100%] max-[870px]:w-[100%] max-[870px]:translate-x-0">
-            <Image
-              className={`img-prologue__effect__${id} transition-all duration-100`}
-              alt="resident evil 1"
-              src={image_prologue}
-              onMouseMove={handleMouseMove}
-              onMouseOut={handleMouseOut}
-              width="0"
-              height="0"
-              sizes="100vw"
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-              }}
-            />
-          </figure>
+        <div className="h-[100%] w-[70%] flex-1 flex justify-center items-center image-prologue opacity-0 pt-20 max-[870px]:w-[320px] max-[870px]:pt-14 max-[870px]:flex-col max-[870px]:justify-between">
+          {image_prologue.map((img) => (
+            <figure
+              key={img.id}
+              className="h-[70%] translate-x-[10%] w-[70%] max-[870px]:w-[100%] max-[870px]:translate-x-0 max-[870px]:h-[300px]"
+            >
+              <Image
+                className={`img-prologue__effect__${id} transition-all duration-100  max-[870px]:object-contain`}
+                alt="resident evil 1"
+                src={img.link}
+                onMouseMove={handleMouseMove}
+                onMouseOut={handleMouseOut}
+                width="0"
+                height="0"
+                sizes="100vw"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                }}
+              />
+            </figure>
+          ))}
         </div>
       </div>
       <div className="characters-game z-[99999] w-[100%] flex flex-col justify-center items-end relative h-auto mb-10 px-4">
@@ -294,7 +303,7 @@ const SectionGame = ({
           characterSelected={characterSelected}
           setCharacterSelected={characterSelected}
         />
-        <div className="bg-black relative w-full h-[55px] gradient-end__section__end mb-[150px]"></div>
+        <div className="bg-black relative w-full h-[55px] gradient-end__section__end"></div>
         <Epilogue epilogue={epilogue} id={id} />
       </div>
     </article>
