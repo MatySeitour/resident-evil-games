@@ -229,7 +229,7 @@ const SectionGame = ({
     <article
       key={id}
       id={`section-game`}
-      className={`bg-transparent article-container__effect w-full h-auto pt-[40px] relative flex flex-col justify-center bg-${id} max-[870px]:h-[500vh]`}
+      className={`bg-transparent article-container__effect w-full h-auto pt-[40px] relative flex flex-col justify-center bg-${id} max-[870px]:h-[auto]`}
     >
       <div
         className={`opacity-0 absolute z[-1] transition-all background-gradient`}
@@ -253,14 +253,14 @@ const SectionGame = ({
             </p>
           </div>
         </div>
-        <div className="h-[100%] w-[70%] flex-1 flex justify-center items-center image-prologue opacity-0 pt-20 max-[870px]:w-[320px] max-[870px]:pt-14 max-[870px]:flex-col max-[870px]:justify-between">
+        <div className="h-[100%] w-[90%] flex-1 gap-6 flex justify-center items-center image-prologue opacity-0 pt-20 max-[870px]:w-[320px] max-[870px]:pt-14 max-[870px]:flex-col max-[870px]:justify-between max-[870px]:gap-0">
           {image_prologue.map((img) => (
             <figure
               key={img.id}
-              className="h-[70%] translate-x-[10%] w-[70%] max-[870px]:w-[100%] max-[870px]:translate-x-0 max-[870px]:h-[300px]"
+              className="h-[100%] translate-x-[10%] w-[70%] max-[870px]:w-[100%] max-[870px]:translate-x-0 max-[870px]:h-[300px]"
             >
               <Image
-                className={`img-prologue__effect__${id} transition-all duration-100  max-[870px]:object-contain`}
+                className={`img-prologue__effect__${id} transition-all duration-100 grayscale-[1] hover:grayscale-[0] max-[870px]:object-contain`}
                 alt="resident evil 1"
                 src={img.link}
                 onMouseMove={handleMouseMove}
