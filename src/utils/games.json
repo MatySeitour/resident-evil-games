@@ -410,15 +410,15 @@
       "image_prologue": [
         {
           "id": 1,
-          "link": "/re1/images_game/re1-primary.webp"
+          "link": "/re6/images_game/re6-primary.webp"
         },
         {
           "id": 2,
-          "link": "/re1/images_game/re1-second.webp"
+          "link": "/re6/images_game/re6-second.webp"
         },
         {
           "id": 3,
-          "link": "/re1/images_game/re1-third.webp"
+          "link": "/re6/images_game/re6-third.webp"
         }
       ],
       "epilogue": "After several encounters with Simmons along the way, the agents arrive at the helipad facing Simmons' latest mutation, resembling a giant fly. After a long battle, Simmons is finally killed by being impaled on a metal stake. Leon and Helena, relieved, since the person responsible for the events is dead, they get on the helicopter after seeing that Ada left them a chip with the evidence that betrays Simmons and proves Leon and Helena's innocence of what happened to the president. Leon asks Chris to rescue Jake and Sherry who were captured by Neo-Umbrella before revealing to Jake and also confirming that he is the son of bioterrorist Albert Wesker. Chris and Piers are taken with a B.O.W. known as Haos and face each other. Piers loses one of his arms and is forced to inject himself with the C-Virus and save Chris. While both escaped, Piers decides to stay, knowing that it was only a matter of time before the virus completely transformed him, so he gives his emblem to Chris and activates the escape pod so that he can escape while making one last attempt. the B.O.W. He tries to finish off Chris, but luckily the explosion from the base reaches the creature, eliminating it while on the surface, Chris saw how a helicopter was preparing to evacuate him. On the other hand, Jake and Sherry manage to escape from the neo-umbrella facilities. finally jake tells sherry that she only charged 50 dollars for her blood sample for the cure of the virus."
@@ -461,15 +461,94 @@
       "image_prologue": [
         {
           "id": 1,
-          "link": "/re1/images_game/re1-primary.webp"
+          "link": "/re7/images_game/re7-primary.webp"
         },
         {
           "id": 2,
-          "link": "/re1/images_game/re1-second.webp"
+          "link": "/re7/images_game/re7-second.webp"
         },
         {
           "id": 3,
-          "link": "/re1/images_game/re1-third.webp"
+          "link": "/re7/images_game/re7-third.webp"
+        }
+      ],
+      "epilogue": "Ethan synthesizes a powerful toxin to kill the girl by injecting it into her, then proceeds through a series of tunnels that eventually lead him to the Baker house, visited right at the start of the game. Eveline causes Ethan many hallucinations of attacks, as well as psychic shocks, but Ethan overcomes them and injects Eveline with the toxin, ending her hallucinations, and revealing that Eveline was always the old woman in a wheelchair, who has been aging rapidly ever since. his escape. The toxin recedes, turning Eveline into a large monster. Aided by the arrival of a military squad, Ethan is able to defeat Eveline. With the threat removed, the squad and their leader, who identifies himself as Redfield, extract Ethan in a helicopter. At this point in the end if Ethan doesn't heal Mia, he throws his phone, which contains his last message, from the helicopter, saying 'goodbye'. If Mia was cured, she is found alive receiving medical attention aboard Redfield's helicopter. As the helicopter flies away, it is shown to bear the trademark of the Umbrella Corporation, but with a blue color."
+    },
+    {
+      "id": 8,
+      "title": "Resident Evil 8",
+      "description": "The game begins in a flashback of Leon Scott Kennedy where he pays a visit to the president in 2013. Fifteen years have passed since the events in Raccoon City and the president of the United States, a personal friend of Leon's, is determined to tell the whole story. truth about those facts. However, a bioterrorist attack prevents the appearance and transforms the president into a deformed being, forcing Leon to make a difficult decision, along with a mysterious new partner named Helena Harper. /n At the same time, Chris Redfield and Piers Nivans, both part of the B.S.A.A., are in China, a country where a bioterrorist threat has been unleashed.there is also a third story that stars Jake Muller and Sherry Birkin. (This first, being the son of Albert Wesker). Sherry protects Jake in order to save his blood, which is apparently the only antidote to the C-Virus. It has also been confirmed that the place where these two characters are located is Eastern Europe.",
+      "other_games": [{}],
+      "characters": [
+        {
+          "id": 57,
+          "name": "Ethan Winters",
+          "image_select": "/re8/ethan/ethan-re8-logo.webp",
+          "image_complete": "/re8/ethan/ethan-re8.webp",
+          "description": "3 years and 8 months after the events of the Dulvey incident, Ethan and Mia have settled into a peaceful life and have moved to Europe courtesy of Chris and together they have conceived a daughter named Rosemary, Ethan also participates in military training in a better preparation to defend his family in case they were to encounter threats again..."
+        },
+        {
+          "id": 58,
+          "name": "Mia Winters",
+          "image_select": "/re8/mia/mia-re8-logo.webp",
+          "image_complete": "/re8/mia/mia-re8.webp",
+          "description": "On February 2, 2021, they celebrated Rose's half-birthday and on the 6th, when Ethan accidentally mentions the Dulvey incident, they had a fight partly due to how many years she had been in the secret. Shortly after this, Mia was kidnapped and subjected to multiple experiments by her former colleague her Miranda, who wished to use Rose as a vessel for her deceased daughter hers Eva. Miranda locked Mia in her lab and impersonated her, taking her place in an attempt to kidnap Rose from Ethan."
+        },
+        {
+          "id": 59,
+          "name": "Rosemary Winters",
+          "image_select": "/re8/rose/rose-logo.webp",
+          "image_complete": "/re8/rose/rose.webp",
+          "description": "daughter of Ethan and Mia Winters. She was kidnapped when she was a baby by a mysterious cult led by Mother Miranda, who will try to use Rose as a vessel to resurrect her daughter Eva."
+        },
+        {
+          "id": 60,
+          "name": "Chris Redfield",
+          "image_select": "/re8/chris/chris-re8-logo.webp",
+          "image_complete": "/re8/chris/chris-re8.webp",
+          "description": "After what happened in Dulvey, Chris after seeing that the BSAA decided to cover up what happened with the Bakers saying that they died after a gas leak exploding the house, without telling the truth about Eveline and The Connections, Chris decided to found the Hound Wolf squad This being an elite unit of the BSAA during 2018, working separately, beginning to distrust the organization with which I previously worked and trusted, separating from it."
+        },
+        {
+          "id": 61,
+          "name": "Miranda",
+          "image_select": "/re8/miranda/miranda-logo.webp",
+          "image_complete": "/re8/miranda/miranda.webp",
+          "description": "With the megamycete, Miranda infected the villagers to search for a host that could house her daughter's consciousness. She also designed a parasite known as a Cadou, which granted powers to the four family hierarchs of the valley. The organization known as Las Conexiones contacts her to help her in her investigations. Miranda supplies them with samples of the megamycete and the DNA of her daughter. It was in this way that the chemical weapon known as Eveline was created. She was a tutor to one of the founders of Umbrella, Oswell E. Spencer, who was inspired by Miranda's studies on infecting living organisms."
+        },
+        {
+          "id": 62,
+          "name": "Alcina Dimitrescu",
+          "image_select": "/re8/dimitresctu/dimitresctu-logo.webp",
+          "image_complete": "/re8/dimitresctu/dimitresctu.webp",
+          "description": "She is the owner of the Dimitrescu Castle and an important member of a mysterious cult led by Mother Miranda."
+        },
+        {
+          "id": 63,
+          "name": "Karl Heisenberg",
+          "image_select": "/re8/karl/karl-logo.webp",
+          "image_complete": "/re8/karl/karl.webp",
+          "description": "He will be in charge of pursuing and capturing Ethan Winters on the orders of a mysterious cult led by Mother Miranda. He has electrical organs connected to his nervous system. Thanks to this he can control electricity through his body, which gives him the ability to create electromagnetic fields and direct metal."
+        },
+        {
+          "id": 64,
+          "name": "Donna Beneviento",
+          "image_select": "/re8/donna/donna-logo.webp",
+          "image_complete": "/re8/donna/donna.webp",
+          "description": "She is the leader of the Beneviento Family as well as an important member of a cult led by Mother Miranda. she carries with her a puppet named Angie who she can control and is always found in the Beneviento House on the outskirts of the Village."
+        }
+      ],
+      "image_prologue": [
+        {
+          "id": 1,
+          "link": "/re8/images_game/re8-primary.webp"
+        },
+        {
+          "id": 2,
+          "link": "/re8/images_game/re8-second.webp"
+        },
+        {
+          "id": 3,
+          "link": "/re8/images_game/re8-third.webp"
         }
       ],
       "epilogue": "Ethan synthesizes a powerful toxin to kill the girl by injecting it into her, then proceeds through a series of tunnels that eventually lead him to the Baker house, visited right at the start of the game. Eveline causes Ethan many hallucinations of attacks, as well as psychic shocks, but Ethan overcomes them and injects Eveline with the toxin, ending her hallucinations, and revealing that Eveline was always the old woman in a wheelchair, who has been aging rapidly ever since. his escape. The toxin recedes, turning Eveline into a large monster. Aided by the arrival of a military squad, Ethan is able to defeat Eveline. With the threat removed, the squad and their leader, who identifies himself as Redfield, extract Ethan in a helicopter. At this point in the end if Ethan doesn't heal Mia, he throws his phone, which contains his last message, from the helicopter, saying 'goodbye'. If Mia was cured, she is found alive receiving medical attention aboard Redfield's helicopter. As the helicopter flies away, it is shown to bear the trademark of the Umbrella Corporation, but with a blue color."
