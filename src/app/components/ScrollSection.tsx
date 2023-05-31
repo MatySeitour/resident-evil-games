@@ -5,7 +5,6 @@ import getGames from "../../utils/games.json";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import SplitType from "split-type";
-import Image from "next/image";
 // import CharactersSelect from "./CharactersSelect";
 import SectionGame from "./SectionGame";
 
