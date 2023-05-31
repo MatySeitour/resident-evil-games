@@ -265,14 +265,14 @@ body::-webkit-scrollbar-track {
   background-attachment: fixed;
   will-change: background;
 }
-/* .bg-8 {
-  background-image: url("../../public/bg-8.webp");
+.bg-8 {
+  background-image: url("../../public/re8/bg-8.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   will-change: background;
-} */
+}
 
 /* BACKGROUND GRADIENT EFFECT GAMES */
 
@@ -462,6 +462,16 @@ body::-webkit-scrollbar-track {
   }
 }
 
+.gradient-epilogue__text::after {
+  content: "";
+  width: 0%;
+  height: 0px;
+  z-index: 10000;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8), #000);
+}
+
 @media only screen and (max-width: 870px) {
   .character-container__effect::after {
     content: "";
@@ -552,11 +562,20 @@ body::-webkit-scrollbar-track {
     position: absolute;
     background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8), #000);
   }
+
+  .gradient-epilogue__text::after {
+    content: "";
+    width: 100%;
+    height: 50px;
+    z-index: 10000;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8), #000);
+  }
 }
 
 .opacity-on {
   opacity: 0;
-  transition: all 0.5s ease;
 }
 
 .opacity-off {
@@ -616,12 +635,6 @@ body::-webkit-scrollbar-track {
   z-index: 1999;
 }
 
-.gradient-epilogue__text::after {
-  content: "";
-  width: 100%;
-  height: 50px;
-  z-index: 10000;
-  bottom: 0;
-  position: absolute;
-  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8), #000);
+.overflow-epilogue__active {
+  overflow-y: scroll !important;
 }
