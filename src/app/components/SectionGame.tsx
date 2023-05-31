@@ -48,6 +48,9 @@ const SectionGame = ({
     const epilogueTitle = gsap.utils.toArray(`.epilogue_title__${id}`);
     const umbrellaEpilogue = gsap.utils.toArray(`.umbrella-epilogue`);
     const textEpilogue = gsap.utils.toArray(`.text-epilogue`);
+    // const textEpilogueContainer = gsap.utils.toArray(
+    //   ".text-epilogue__container"
+    // );
     const lineLeftEpilogue = gsap.utils.toArray(`.line-left__epilogue__${id}`);
     const lineRightEpilogue = gsap.utils.toArray(
       `.line-right__epilogue__${id}`
@@ -156,6 +159,27 @@ const SectionGame = ({
         });
       });
 
+      textEpilogue.forEach((title: any, i: number) => {
+        gsap.to(title, {
+          scrollTrigger: {
+            trigger: title,
+            toggleActions: "play none none none",
+            start: "top center",
+
+            end: "0px center",
+          },
+          opacity: 1,
+          duration: 0.5,
+          onComplete: () => {
+            console.log(i);
+            const textContainer = document.querySelector(
+              `.text-epilogue__container__${i + 1}`
+            );
+            textContainer?.classList.add("overflow-epilogue__active");
+          },
+        });
+      });
+
       const charactersTitleContainer = gsap.utils.toArray(
         `.characters-title__container`
       );
@@ -229,7 +253,7 @@ const SectionGame = ({
     <article
       key={id}
       id={`section-game`}
-      className={`bg-transparent article-container__effect w-full h-auto pt-[40px] relative flex flex-col justify-center bg-${id} max-[870px]:h-[auto]`}
+      className={`bg-transparent article-container__effect w-full h-[2600px] pt-[40px] relative flex flex-col justify-center bg-${id} max-[870px]:h-[auto]`}
     >
       <div
         className={`opacity-0 absolute z[-1] transition-all background-gradient`}
@@ -239,15 +263,15 @@ const SectionGame = ({
       >
         <h1 className="inline-block">{title}</h1>
       </div>
-      <div className="h-[100%] w-[100%] pt-20 flex flex-col justify-between items-center mb-[150px] px-4 max-[870px]:flex-col">
-        <div className="flex flex-col w-[50%] max-[870px]:w-full">
-          <h2 className="relative inline-block prologue-title scroll-text__effect leading-relaxed bg-red-800 text-red-500 scale-x-[1] scale-y-[1.2] text-5xl mb-20 tracking-wider opacity-0 max-[870px]:text-center max-[870px]:text-4xl max-[870px]:pb-[2px]">
+      <div className="h-[100%] w-[100%] pt-20 flex flex-col justify-between items-center mb-[150px] max-[870px]:flex-col max-[870px]:px-4 ">
+        <div className="flex flex-col w-[50%] translate-x-[-10%] max-[870px]:w-full max-[870px]:translate-x-0">
+          <h2 className="relative inline-block prologue-title scroll-text__effect leading-relaxed bg-red-800 text-red-500 scale-x-[1] scale-y-[1.2] text-5xl mb-20 tracking-wider text-center opacity-0 max-[870px]:text-center max-[870px]:text-4xl max-[870px]:pb-[2px]">
             Prologue
           </h2>
           <div className="h-auto w-[100%]">
             <p
               id="description-game"
-              className="relative w-[100%] opacity-0 scale-x-[1] scale-y-[1.2] mb-14 scroll-text__effect bg-white text-xl max-[870px]:text-center"
+              className="relative w-[100%] opacity-0 scale-x-[1] scale-y-[1.2] mb-14 scroll-text__effect bg-white text-center text-xl max-[870px]:text-center"
             >
               {description}
             </p>
@@ -257,7 +281,7 @@ const SectionGame = ({
           {image_prologue.map((img) => (
             <figure
               key={img.id}
-              className="h-[100%] translate-x-[10%] w-[70%] max-[870px]:w-[100%] max-[870px]:translate-x-0 max-[870px]:h-[300px]"
+              className="h-[100%] max-h-[300px] translate-x-[10%] w-[70%] max-[870px]:w-[100%] max-[870px]:translate-x-0 max-[870px]:h-[300px] max-[870px]:max-h-none"
             >
               <Image
                 className={`img-prologue__effect__${id} transition-all duration-100 grayscale-[1] hover:grayscale-[0] max-[870px]:object-contain`}
