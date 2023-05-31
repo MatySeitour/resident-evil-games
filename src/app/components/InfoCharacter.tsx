@@ -102,11 +102,13 @@ const InfoCharacter = ({
         >
           {characterSelected?.name}
         </h4>
-        <p
-          className={`pl-2 pr-2 w-full text-xl scale-y-[1.2] scroll-text__effect bg-white character-selected__description__${characterSelected?.id} max-[870px]:w-[100%] max-[870px]:pl-2 max-[870px]:px-2 max-[870px]:scale-[1] max-[870px]:`}
-        >
-          {characterSelected?.description}
-        </p>
+        <div className="max-[870px]:h-[300px] max-[870px]:overflow-y-scroll">
+          <p
+            className={`pl-2 pr-2 w-full text-xl scale-y-[1.2] scroll-text__effect bg-white character-selected__description__${characterSelected?.id} max-[870px]:w-[100%] max-[870px]:pl-2 max-[870px]:px-2 max-[870px]:scale-[1]`}
+          >
+            {characterSelected?.description}
+          </p>
+        </div>
       </div>
     </div>
   );
