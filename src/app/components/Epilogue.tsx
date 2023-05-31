@@ -81,7 +81,9 @@ const Epilogue = ({ epilogue, id }: PropEpilogue) => {
           className={`line-right__epilogue__${id} h-[2px] w-[0%] bg-red-800 will-change-auto`}
         ></span>
       </div>
-      <div className="flex w-[100%] justify-center items-center pr-3 pl-3 max-[870px]:h-[300px] max-[870px]:overflow-y-scroll max-[870px]:inline-block max-[870px]:pb-[24px]">
+      <div
+        className={`flex w-[100%] text-epilogue__container__${id} justify-center items-center pr-3 pl-3 max-[870px]:h-[300px] max-[870px]:overflow-hidden max-[870px]:inline-block max-[870px]:pb-[24px]`}
+      >
         <p className="text-center text-epilogue relative w-[100%] opacity-0 text-epilogue__effect mb-4 scale-x-[1] scale-y-[1.2] pr-2 bg-white text-xl max-[870px]:text-center pt-4 max-[870px]:scale-[1] max-[870px]:mb-0 max-[870px]:pr-0">
           {epilogue}
         </p>
