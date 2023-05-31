@@ -8,61 +8,74 @@
         {
           "id": 1,
           "name": "Chris Redfield",
-          "image_select": "/chris-select.webp",
-          "image_complete": "/chris-1.png",
+          "image_select": "/re1/chris/chris-select.webp",
+          "image_complete": "/re1/chris/chris-1.png",
           "description": "Upon joining S.T.A.R.S., he was assigned the position of Alpha Team's scout, consisting of opening up and reconnoitering the ground. As such, exceptional skill in shooting and combat was expected of him, as well as great ability in the use of various weapons."
         },
         {
           "id": 2,
           "name": "Jill Valentine",
-          "image_select": "/jill-select.webp",
-          "image_complete": "/jill-1.png",
+          "image_select": "/re1/jill/jill-select.webp",
+          "image_complete": "/re1/jill/jill-1.png",
           "description": "Upon joining S.T.A.R.S., she was assigned the position of Alpha Team's Back-Up. Notably, Jill was already a specialist in locks and explosives."
         },
         {
           "id": 3,
           "name": "Albert Wesker",
-          "image_select": "/wesker-select.webp",
-          "image_complete": "/wesker.webp",
+          "image_select": "/re1/wesker/wesker-select.webp",
+          "image_complete": "/re1/wesker/wesker.webp",
           "description": "Upon joining S.T.A.R.S., he was assigned as Captain of Alpha Team and the entire unit."
         },
         {
           "id": 4,
           "name": "Rebecca Chambers",
-          "image_select": "/rebecca-select.webp",
-          "image_complete": "/rebecca.webp",
+          "image_select": "/re1/rebecca/rebecca-select.webp",
+          "image_complete": "/re1/rebecca/rebecca.webp",
           "description": "Rebecca Chambers possesses brilliant intellect and knowledge in medicine (biochemistry). Thanks to such valuable records of hers, they earned her acceptance into the special unit of the R.P.D., known as S.T.A.R.S. she being integrated into it, serving as a doctor within the Bravo Team."
         },
         {
           "id": 5,
           "name": "Barry Burton",
-          "image_select": "/barry-select.webp",
-          "image_complete": "/barry.webp",
+          "image_select": "/re1/barry/barry-select.webp",
+          "image_complete": "/re1/barry/barry.webp",
           "description": "Upon joining S.T.A.R.S., He was assigned as a member of Team Alpha under Wekser's orders. he is a great weapons specialist"
         },
         {
           "id": 6,
           "name": "Zombie",
-          "image_select": "/zombie-logo.webp",
-          "image_complete": "/zombie.webp",
+          "image_select": "/re1/zombie/zombie-logo.webp",
+          "image_complete": "/re1/zombie/zombie.webp",
           "description": "a human being infected with the T-virus. a kind of virus that can make the host a kind of undead"
         },
         {
           "id": 7,
           "name": "MA-39 Cerberus",
-          "image_select": "/cerberus-logo.webp",
-          "image_complete": "/cerberus.webp",
+          "image_select": "/re1/cerberus/cerberus-logo.webp",
+          "image_complete": "/re1/cerberus/cerberus.webp",
           "description": "Doberman dogs infected with the T-Virus that have escaped from the research labs under the mansion."
         },
         {
           "id": 8,
           "name": "Tyrant T-002",
-          "image_select": "/tyrant-1-logo.webp",
-          "image_complete": "/tyrant-1.webp",
+          "image_select": "/re1/tyrant/tyrant-1-logo.webp",
+          "image_complete": "/re1/tyrant/tyrant-1.webp",
           "description": "The Tyrant T-002 was the first Tyrant Created on the basis of the T-Virus in a living human being, superior in every aspect to its predecessor, the Proto Tyrant. It was a B.O.W. (Big Organic Weapong) created in the laboratory of the Arklay mountains, in the Spencer mansion."
         }
       ],
-      "image_prologue": "/re1-prologue.jpg",
+      "image_prologue": [
+        {
+          "id": 1,
+          "link": "/re1/images_game/re1-primary.webp"
+        },
+        {
+          "id": 2,
+          "link": "/re1/images_game/re1-second.webp"
+        },
+        {
+          "id": 3,
+          "link": "/re1/images_game/re1-third.webp"
+        }
+      ],
       "epilogue": "In the lab, Wesker reveals his identity: he is a double agent working for Umbrella who has used his minions as guinea pigs to test them against the biological weapons created by the T-Virus and ultimately unleashes Tyrant T-002, a giant humanoid monster created through prolonged exposure to the T-Virus. Upon release, the Tyrant kills Wesker by running its claws through him. Chris/Jill apparently kill the Tyrant using firearms and then activate the self-destruct program to end the lab experiments. Later Chris/Jill contacts the rescue helicopter, when the Tyrant reappears through the roof of the lab onto the helicopter's landing pad and suddenly attacks them. Bullet resistant, the Tyrant is eventually killed when Brad, the helicopter pilot, drops a rocket launcher and Chris/Jill uses it to completely destroy the creature. Chris Redfield and Jill Valentine escape in the helicopter before the mansion explodes and the game finally ends."
     },
     {
@@ -74,54 +87,67 @@
         {
           "id": 9,
           "name": "Leon Scott Kennedy",
-          "image_select": "/leon-select.webp",
-          "image_complete": "/leon-2.png",
+          "image_select": "/re2/leon/leon-select.webp",
+          "image_complete": "/re2/leon/leon-2.png",
           "description": "Leon, at the young age of 21, was assigned to work for the Raccoon City Police Department (Raccoon Police Department abbreviated R.P.D.) in its division, the Select Police Forces (S.P.F.). After graduating from the police academy, he arrived in Raccoon City on September 29, 1998 as his first day on the job, but was met with a terrifying experience that would change his life forever."
         },
         {
           "id": 10,
           "name": "Claire Redfield",
-          "image_select": "/claire-select.webp",
-          "image_complete": "/claire.webp",
+          "image_select": "/re2/claire/claire-select.webp",
+          "image_complete": "/re2/claire/claire.webp",
           "description": "Claire begins to worry about her brother, Chris Redfield, after losing contact with him, then she goes to Raccoon City to look for him, but far from finding him it is Umbrella who crosses her path."
         },
         {
           "id": 11,
           "name": "Ada Wong",
-          "image_select": "/ada-select.webp",
-          "image_complete": "/ada-test.webp",
+          "image_select": "/re2/ada/ada-select.webp",
+          "image_complete": "/re2/ada/ada-test.webp",
           "description": "Ada is a corporate spy working for an unidentified competitor of the Umbrella Corporation, who intends to acquire from Umbrella all kinds of bio-organic weapons and a sample of the G-Virus developed by William Birkin."
         },
         {
           "id": 12,
           "name": "Sherry Birkin",
-          "image_select": "/sherry-select.webp",
-          "image_complete": "/sherry-test.webp",
+          "image_select": "/re2/sherry/sherry-select.webp",
+          "image_complete": "/re2/sherry/sherry-test.webp",
           "description": "She is the daughter of Annette Birkin and William Birkin, the scientists who gave rise to the G-virus."
         },
         {
           "id": 13,
           "name": "William Birkin",
-          "image_select": "/william-select.webp",
-          "image_complete": "/william.webp",
+          "image_select": "/re2/william/william-select.webp",
+          "image_complete": "/re2/william/william.webp",
           "description": "He is a scientist working for the Umbrella Corporation and developer of the powerful G-Virus. After a series of disagreements with the Umbrella Corporation, the latter sends a team to execute William and thus obtain the virus samples. before his death, Birkin injected himself with a sample of the G-Virus and survived, though he ended up mutating into a hideous monster known as G."
         },
         {
           "id": 15,
           "name": "Tyrant T-103",
-          "image_select": "/tyrant-re2-logo.webp",
-          "image_complete": "/tyrant-2.webp",
+          "image_select": "/re2/tyrant/tyrant-re2-logo.webp",
+          "image_complete": "/re2/tyrant/tyrant-2.webp",
           "description": "Tyrant-class bioweapon model, sent by the Umbrella Corporation to retrieve a sample of the Birkin-created virus. Said sample is found in Sherry's necklace."
         },
         {
           "id": 16,
           "name": "Annette Birkin",
-          "image_select": "/annette-logo.webp",
-          "image_complete": "/annette.webp",
+          "image_select": "/re2/annette/annette-logo.webp",
+          "image_complete": "/re2/annette/annette.webp",
           "description": "She is a scientist who works with her husband Dr. William Birkin for the Umbrella Corporation. mother of Sherry Birkin, and one of the creators of the G-Virus"
         }
       ],
-      "image_prologue": "/re2-prologue.jpg",
+      "image_prologue": [
+        {
+          "id": 1,
+          "link": "/re1/images_game/re1-primary.webp"
+        },
+        {
+          "id": 2,
+          "link": "/re1/images_game/re1-second.webp"
+        },
+        {
+          "id": 3,
+          "link": "/re1/images_game/re1-third.webp"
+        }
+      ],
       "epilogue": "the group of protagonists that manages to flee aboard a train, is pursued by Birkin who has assumed a grotesque appearance due to mutations in his body, causing the machine's self-destruct system to activate, forcing the protagonists to stop him in middle of the tunnel. Once they manage to stop the train, the trio manage to escape leaving Birkin trapped, who eventually dies after the train explodes. Leon reveals his intention to take down Umbrella as he leaves Raccoon City with Sherry, and Claire continues her search for her brother. In the end, it is revealed that Ada survived the deadly encounter with the creature by managing to get hold of a sample of the G-Virus."
     },
     {
@@ -133,40 +159,53 @@
         {
           "id": 17,
           "name": "Jill Valentine",
-          "image_select": "/jill-re3-logo.webp",
-          "image_complete": "/jill-r3.webp",
+          "image_select": "/re3/jill/jill-re3-logo.webp",
+          "image_complete": "/re3/jill/jill-r3.webp",
           "description": "She had been removed from police forces after the Spencer Mansion Incident. During the Raccoon City incident, she was in her apartment when she is suddenly attacked by an intelligent bioweapon known as the Nemesis, which tries to kill her and all the remaining members of S.T.A.R.S. She will have to escape from the city and from nemesis."
         },
         {
           "id": 18,
           "name": "Carlos Oliveira",
-          "image_select": "/carlos-re3-logo.webp",
-          "image_complete": "/carlos-re3.webp",
+          "image_select": "/re3/carlos/carlos-re3-logo.webp",
+          "image_complete": "/re3/carlos/carlos-re3.webp",
           "description": "He is a former member of the Umbrella Biohazard Countermeasure Service (U.B.C.S.). Umbrella gave orders to the UBCS squad to obtain the virus sample, but almost the entire squad is wiped out by the t-virus disaster, so Carlos decides to search for survivors in the city."
         },
         {
           "id": 19,
           "name": "Nemesis",
-          "image_select": "/nemesis-logo.webp",
-          "image_complete": "/nemesis-3.webp",
+          "image_select": "/re3/nemesis/nemesis-logo.webp",
+          "image_complete": "/re3/nemesis/nemesis-3.webp",
           "description": "It is one of the Umbrella Corporation's deadliest biological weapons. It is the next step in the investigations of the pharmaceutical company Umbrella, the evolution of T-103 (Tyrant with a human appearance in principle, which appears in Resident Evil 2). Nemesis's mission is very simple: exterminate the members of S.T.A.R.S. that remain in Raccoon City, so Jill Valentine must prepare for her worst nightmare"
         },
         {
           "id": 20,
           "name": "Nicholai Ginovaef",
-          "image_select": "/nicholai-logo.webp",
-          "image_complete": "/nicholai-test.webp",
+          "image_select": "/re3/nicholai/nicholai-logo.webp",
+          "image_complete": "/re3/nicholai/nicholai-test.webp",
           "description": "He is one of the members of Umbrella's private army, the U.B.C.S., as well as the leader of Section B of Delta Squad. In the Raccoon City incident, he was serving as a squad leader, with the rank of Sergeant, sent by Umbrella to contain the virus outbreak and save civilians. but his true nature was as a member of the company's secret internal spy organization known as the `Overseers`, with a secret mission to collect combat data on those infected with the virus and the B.O.W.s. of Umbrella, along with other dangers in the infested city."
         },
         {
           "id": 21,
           "name": "Mikhail Victor",
-          "image_select": "/mikhail-logo-test.png",
-          "image_complete": "/mikhail-re3.webp",
+          "image_select": "/re3/mikhail/mikhail-logo-test.png",
+          "image_complete": "/re3/mikhail/mikhail-re3.webp",
           "description": "He is a member of Umbrella's private army, the U.B.C.S., as well as being the leader of Delta Squad."
         }
       ],
-      "image_prologue": "/re3-prologue.webp",
+      "image_prologue": [
+        {
+          "id": 1,
+          "link": "/re1/images_game/re1-primary.webp"
+        },
+        {
+          "id": 2,
+          "link": "/re1/images_game/re1-second.webp"
+        },
+        {
+          "id": 3,
+          "link": "/re1/images_game/re1-third.webp"
+        }
+      ],
       "epilogue": "Jill manages to synthesize a vaccine, but an encounter with the Nemesis causes Nikolai to steal it when he leaves her to fight the monster. After receiving a special acid bath, Nemesis's body takes heavy damage causing her to mutate further, and after much difficulty, Jill manages to kill Nemesis using an experimental Railgun, killing her pursuer for good. Jill is disarmed by Nikolai and watches as he destroys the vaccine while revealing that she has no interest in Raccoon City's survival as long as she is well paid for keeping Umbrella's involvement in the city's destruction a secret. she demands that he tell her who hired him to which Nikolai by way of making fun of her, she tells him that she will tell him in exchange for a good salary. Jill snatches the vaccine container from him and leaves Nikolai to die when finally the government-launched ballistic missile hits Raccoon City, destroying the city and wiping out all existence of the T-Virus while Jill and Carlos managed to escape. by helicopter to which Jill swears that she will make Umbrella pay for this mess."
     },
     {
@@ -178,61 +217,74 @@
         {
           "id": 25,
           "name": "Leon Scott Kennedy",
-          "image_select": "/leon-re4-logo.webp",
-          "image_complete": "/leon-r4.webp",
+          "image_select": "/re4/leon/leon-re4-logo.webp",
+          "image_complete": "/re4/leon/leon-r4.webp",
           "description": "He went from being a rookie cop to becoming a secret service agent under the direct orders of the president.For 6 years, Leon went through a series of tough training and ruthless missions, making him a highly regarded agent.He was entrusted with the mission of rescuing the president's daughter who was kidnapped and is located in a small town in Europe. Not even Leon will be prepared for what is coming..."
         },
         {
           "id": 26,
           "name": "Ashley Graham",
-          "image_select": "/ashley-logo.webp",
-          "image_complete": "/ashley.webp",
+          "image_select": "/re4/ashley/ashley-logo.webp",
+          "image_complete": "/re4/ashley/ashley.webp",
           "description": "She is the daughter of the President of the United States. When Ashley was on her way home from school, she was kidnapped by Jack Krauser. Leon must save her, protect her and escape from her together."
         },
         {
           "id": 27,
           "name": "Ada Wong",
-          "image_select": "/ada-logo-re4.webp",
-          "image_complete": "/ada-re4.webp",
+          "image_select": "/re4/ada/ada-logo-re4.webp",
+          "image_complete": "/re4/ada/ada-re4.webp",
           "description": "Ada had been left for dead after the events in Raccoon City six years ago, but the truth about her fate turned out to be something different. Against all odds she survived and was helped by Albert Wesker. In exchange for this help she agreed to continue working for her organization and quickly became her best agent. Therefore, she must enter Osmund Saddler's domain and snatch the samples of the Las Plagas parasite from him."
         },
         {
           "id": 28,
           "name": "Luis Sera",
-          "image_select": "/sera-logo.webp",
-          "image_complete": "/sera.webp",
+          "image_select": "/re4/luis/sera-logo.webp",
+          "image_complete": "/re4/luis/sera.webp",
           "description": "He was an ex-policeman who worked in Madrid and later a great scientist who helped Saddler with his experiments. Ada Wong helped him remove the plague from Luis's body, and as a reward for her, he would help her get the sample of the plagues, but she is captured by Saddler's men. Luis also developed a machine that destroyed the Las Plagas parasite. Throughout the story, Luis will help Leon and Ada."
         },
         {
           "id": 29,
           "name": "Jack Krauser",
-          "image_select": "/krauser-logo.webp",
-          "image_complete": "/krauser.webp",
+          "image_select": "/re4/krauser/krauser-logo.webp",
+          "image_complete": "/re4/krauser/krauser.webp",
           "description": "Former colleague of Leon Scott Kennedy. He was presumed dead in 2002 and hired by Albert Wesker. his task was to enter the sect to extract one more sample of the supposed Plague developed by Luis Sera. he had to infiltrate them and prove that he was infinitely loyal to Saddler, he ordered him to kidnap the President's daughter, Ashley Graham to gain access to the cult, and Krauser himself took care of directing the operation while the girl returned home."
         },
         {
           "id": 30,
           "name": "Osmund Saddler",
-          "image_select": "/saddler-logo-test.png",
-          "image_complete": "/saddler-test.png",
+          "image_select": "/re4/saddler/saddler-logo-test.png",
+          "image_complete": "/re4/saddler/saddler-test.png",
           "description": "`main prophet` and maximum leader of Los Illuminados, a sect and paramilitary organization that sought world domination and the establishment of a new world order through the parasites known as Las Plagas, using the kidnapping of Ashley Graham, daughter of the President of The USA."
         },
         {
           "id": 31,
           "name": "Ramón Salazar",
-          "image_select": "/salazar-logo.webp",
-          "image_complete": "/salazar.webp",
+          "image_select": "/re4/salazar/salazar-logo.webp",
+          "image_complete": "/re4/salazar/salazar.webp",
           "description": "Eighth Castilian prince, owner of the castle of Salazar. Saddler's Right Hand"
         },
         {
           "id": 32,
           "name": "Bitores Méndez",
-          "image_select": "/mendez-logo.webp",
-          "image_complete": "/mendez.webp",
+          "image_select": "/re4/mendez/mendez-logo.webp",
+          "image_complete": "/re4/mendez/mendez.webp",
           "description": "mayor of the town, and was very loved by all the residents, until the arrival of Osmund Saddler to the town. Saddler took over Mendez's mind so that the town would follow him. Saddler observed that the loyalty that the people of El Pueblo had to him was too valuable, so in addition to the normal Plague in his body, he inoculated him with the Control Plague, which allowed him to manipulate the Ganados as well, but would be forced to remain faithful to him."
         }
       ],
-      "image_prologue": "/re4-prologue.jpg",
+      "image_prologue": [
+        {
+          "id": 1,
+          "link": "/re1/images_game/re1-primary.webp"
+        },
+        {
+          "id": 2,
+          "link": "/re1/images_game/re1-second.webp"
+        },
+        {
+          "id": 3,
+          "link": "/re1/images_game/re1-third.webp"
+        }
+      ],
       "epilogue": "After fighting Krauser and It, Leon is finally able to successfully rescue Ashley and flee from Saddler with Ada's help. However, Saddler captures Ada and challenges Leon to one last fight. After an intense fight with Saddler who mutates his body into a monstrous appearance, Leon kills him with a special rocket launcher provided by Ada. After retrieving the sample, Ada forces him to give it to him, and gives him the keys to a jet ski so they can escape the island, while she escapes from the complex in a helicopter. Although Leon and Ashley manage to escape the island, the sample's whereabouts and fate remain uncertain."
     },
     {
@@ -243,47 +295,60 @@
         {
           "id": 33,
           "name": "Chris Redfield",
-          "image_select": "/chris-re5-logo.webp",
-          "image_complete": "/chris-re5.webp",
+          "image_select": "/re5/chris/chris-re5-logo.webp",
+          "image_complete": "/re5/chris/chris-re5.webp",
           "description": "In 2006, the B.S.A.A. receives information on the whereabouts of Umbrella founder Oswell E. Spencer. Jill Valentine and Chris Redfield are ordained by the European Headquarters of the B.S.A.A. to stop him, and they accept the mission, hoping to discover some information that can lead them to the whereabouts of Albert Wesker, but after an encounter with wesker, jill sacrifices herself to save chris. six years after the destruction of the Umbrella Pharmaceutical Corporation, and 11 years after the Raccoon City Destruction Incident. Chris Redfield is dispatched by the B.S.A.A. to investigate a possible smuggling of bio-organic weapons in Africa along with his partner sheeva alomar."
         },
         {
           "id": 34,
           "name": "Albert Wesker",
-          "image_select": "/wesker-re5-logo.webp",
-          "image_complete": "/wesker-re5.webp",
+          "image_select": "/re5/wesker/wesker-re5-logo.webp",
+          "image_complete": "/re5/wesker/wesker-re5.webp",
           "description": "In 2009, he continued his activities by returning to work with Tricell and forming an alliance with Excella Gionne, who shared his vision of a new world. Wesker was already ready to carry out the strategy of perfecting Spencer's plan, so he continued to help Excella gain even greater positions of power within Tricell and soon she became the Director of Tricell's Africa Facility. With this alliance, the old Umbrella Research Center in Africa was reopened under Wesker's control along with the source of the Progenitor virus, Sun Ascension. Wesker used part of each viral agent to create the most powerful virus, the Uroboros virus. . With Uroboros, he planned to drive the next step in human evolution."
         },
         {
           "id": 35,
           "name": "Sheva alomar",
-          "image_select": "/sheva-logo.webp",
-          "image_complete": "/sheva.webp",
+          "image_select": "/re5/sheva/sheva-logo.webp",
+          "image_complete": "/re5/sheva/sheva.webp",
           "description": "Shortly after arriving in the United States, Sheva began to stand out for her intelligence and drive. She exceeded all expectations and even mastered English in just six months. After starting the B.S.A.A. an investigation into a possible biohazard in the Kijuju Autonomous Zone, Sheva was chosen to be a partner of Chris Redfield"
         },
         {
           "id": 36,
           "name": "Jill Valentine",
-          "image_select": "/jill-re5-logo.webp",
-          "image_complete": "/jill-re5.webp",
+          "image_select": "/re5/jill/jill-re5-logo.webp",
+          "image_complete": "/re5/jill/jill-re5.webp",
           "description": "In 2006, Chris and Jill received a tip from a reliable source detailing the location of Umbrella founder Oswell E. Spencer. Although the two put up a fierce battle, Chris and Jill saw each other and were overwhelmed by Wesker's superhuman powers, and so, as Wesker was about to deliver the blow that would end Chris's life, Jill lunged at Wesker. Throwing them both out of a window into the abyss beyond the mansion's cliff, Chris couldn't do anything as he watched Jill and Wesker fall through that window. Neither Jill nor Wesker died on that occasion after falling into the abyss. Jill survived thanks to the help of Wesker who, after subjecting her to the corresponding medical treatment, cryogenically placed her. Her plan was to use her as her first guinea pig after the Uroboros project was finished."
         },
         {
           "id": 37,
           "name": "Josh Stone",
-          "image_select": "/josh-logo.webp",
-          "image_complete": "/josh.webp",
+          "image_select": "/re5/josh/josh-logo.webp",
+          "image_complete": "/re5/josh/josh.webp",
           "description": "Josh Stone is a member of the West African chapter of the BSAA, though upon inspection, his BSAA patch says North America. He was the leader of the BSAA Delta Team for the Kijuju mission. Josh was the captain of the first team Sheva Alomar joined when he joined the B.S.A.A. and trained her for eight months. After the training, Sheva and Stone developed a very close relationship in which he refers to Sheva as 'The Little Sister of the Team'."
         },
         {
           "id": 38,
           "name": "Excella Gionne",
-          "image_select": "/excella-logo.webp",
-          "image_complete": "/excella.webp",
+          "image_select": "/re5/excella/excella-logo.webp",
+          "image_complete": "/re5/excella/excella.webp",
           "description": "Her grandmother, Virginia Gionne, was related to the Travis family, founders of the Tricell pharmaceutical company, giving Excella an illustrious and noble lineage. Over time she became CEO of the African division of Tricell, and a partner of Albert Wesker, sharing with him the same vision for the future of the world."
         }
       ],
-      "image_prologue": "/re5-prologue.webp",
+      "image_prologue": [
+        {
+          "id": 1,
+          "link": "/re1/images_game/re1-primary.webp"
+        },
+        {
+          "id": 2,
+          "link": "/re1/images_game/re1-second.webp"
+        },
+        {
+          "id": 3,
+          "link": "/re1/images_game/re1-third.webp"
+        }
+      ],
       "epilogue": "Chris and Sheva are in the bomber hangar. Wesker had supplied the plane with enough Uroboros-carrying missiles to infect the entire planet. In the ensuing fight, Chris manages to inject Wesker with an extra dose of the serums Excella dropped. This greatly weakens Wesker, forcing him to run away, and the Jet escapes him, though Chris and Sheva are able to catch up. Wesker reveals that the bomber is now climbing to the ideal altitude for global saturation, and that he plans to unleash the virus shortly. Chris and Sheva continue to fight Wesker, with the former injecting him with another dose of the serum. Chris then pulls him out of an airlock, but manages to grab Sheva, after which the jetty falls into a volcano. Wesker, who is still alive, plunges his right arm into an intact Uroboros missile, and the virus immediately engulfs him. Josh, piloting a B.S.A.A. helicopter, spots the couple, and Jill Valentine lowers them down a ladder. Chris and Sheva barely escape when the ground melts under them. Jill tells Chris and Sheva to use the rear-mounted RPG-7s. The two partners send a pair of anti-tank rockets into Albert Wesker's corrupted face, ending his life in a cloud of flame and ash."
     },
     {
@@ -295,54 +360,67 @@
         {
           "id": 41,
           "name": "Leon Scott Kennedy",
-          "image_select": "/leon-logo-1.webp",
-          "image_complete": "/leon-re6.webp",
+          "image_select": "/re6/leon/leon-logo-1.webp",
+          "image_complete": "/re6/leon/leon-re6.webp",
           "description": "15 years after the Raccoon City incident, in 2013, Leon is forced to make the most difficult decision of his life and that is to assassinate the President of the United States. Leon with his new partner Helena Harper, are trapped in a region of the United States known as `Tall Oaks`, according to Ingrid Hunnigan, 90% of the population has been infected with the virus and that equates to more than 70,000 enemies. Leon, wanting answers about the situation, is forced by Helena's request to go to Tall Oaks Cathedral to find answers."
         },
         {
           "id": 42,
           "name": "Chris Redfield",
-          "image_select": "/chris-re6-logo.webp",
-          "image_complete": "/chris-re6.webp",
+          "image_select": "/re6/chris/chris-re6-logo.webp",
+          "image_complete": "/re6/chris/chris-re6.webp",
           "description": "After the events of March 5, 6 and 7, 2009, Chris took Jill back to the US, he soon received an email from Barry Burton, who told him that he was too happy to know that she had returned. and that he had also brought Jill with him. Chris went from being an S.O.A. to be a Captain S.O.U. In the B.S.A.A., with his new position he met his new soldiers, including Piers Nivans. On December 24, 2012, the S.O.U. of the North American Branch of the B.S.A.A. Sent to Edonia to quell a civil war, Alpha Team consisting of Chris Redfield, Piers Nivans, Ben Airhart, Carl Alfonso, Finn Macauley, and Andy Walker were stationed in Eastern Edonia, where a new B.O.W.s known as J'avos had started. a civil war."
         },
         {
           "id": 43,
           "name": "Ada Wong",
-          "image_select": "/ada-re6-logo.webp",
-          "image_complete": "/ada-re6.webp",
+          "image_select": "/re6/ada/ada-re6-logo.webp",
+          "image_complete": "/re6/ada/ada-re6.webp",
           "description": "Ada Wong will be located in the middle of all the chaos, since everyone thinks that she is the one who caused the bioterrorist attack, when the real cause of everything is Carla Radames (a clone) which was created by Derek C. Simmons inside a Chrysalis with the C-virus. Carla is the only person behind Neo-Umbrella."
         },
         {
           "id": 44,
           "name": "Jake Muller",
-          "image_select": "/jake-logo.webp",
-          "image_complete": "/jake.webp",
+          "image_select": "/re6/jake/jake-logo.webp",
+          "image_complete": "/re6/jake/jake.webp",
           "description": "He is the son of virologist and bioterrorist Albert Wesker and an unknown mother. Without Albert, Jake soon finds work as a mercenary in order to support his mother, who later dies of illness. Cooperating in operations against the government of the Republic of Edonia, Jake became involved in an act of bioterrorism. Jake's fellow mercenaries were infected with the C-Virus, however, Jake's antibodies (inherited directly from his father), managed to neutralize the virus. Soon after, he met with US government agent Sherry Birkin."
         },
         {
           "id": 45,
           "name": "Sherry Birkin",
-          "image_select": "/sherry-re6-logo.webp",
-          "image_complete": "/sherry-re6.webp",
+          "image_select": "/re6/sherry/sherry-re6-logo.webp",
+          "image_complete": "/re6/sherry/sherry-re6.webp",
           "description": "15 years after the incident in Raccoon City, trained as a United States special agent. She joined B.S.A.A. for trying to be just like her her heroes Leon S. Kennedy and Claire Redfield whom she admires. she was sent to edonia to search for jake muller, who possesses the antibodies for the virus-c"
         },
         {
           "id": 46,
           "name": "Helena Harper",
-          "image_select": "/helena-logo.webp",
-          "image_complete": "/helena.webp",
+          "image_select": "/re6/helena/helena-logo.webp",
+          "image_complete": "/re6/helena/helena.webp",
           "description": "Helena Harper is an agent of the DSO (Division of Security Operations), a secret security organization that works under the orders of the US government. Attempted to be transferred to the US Secret Service to become one of US President Adam Benford's personal bodyguards, and became implicated in the bioterrorism attack on the town of Tall Oaks that led to the death of the president. Together with Leon, they will have to investigate who caused the attack."
         },
         {
           "id": 47,
           "name": "Piers Nivans",
-          "image_select": "/piers-logo.webp",
-          "image_complete": "/piers.webp",
+          "image_select": "/re6/piers/piers-logo.webp",
+          "image_complete": "/re6/piers/piers.webp",
           "description": "In 2010, Chris Redfield, impressed by Piers' skills, asked him to join the B.S.A.A. Piers was very impressed with the way Chris led his team: he treated his teammates like family, not expendable soldiers. Chris, for his part, was aware that he couldn't work as a field agent forever, and so he recruited Piers. Chris believed that the future of the B.S.A.A. it was in the hands of talented individuals like Piers, and he, in turn, had a good cause to fight for. he would later be part of the alpha team in edonia"
         }
       ],
-      "image_prologue": "/re2-prologue.jpg",
+      "image_prologue": [
+        {
+          "id": 1,
+          "link": "/re1/images_game/re1-primary.webp"
+        },
+        {
+          "id": 2,
+          "link": "/re1/images_game/re1-second.webp"
+        },
+        {
+          "id": 3,
+          "link": "/re1/images_game/re1-third.webp"
+        }
+      ],
       "epilogue": "After several encounters with Simmons along the way, the agents arrive at the helipad facing Simmons' latest mutation, resembling a giant fly. After a long battle, Simmons is finally killed by being impaled on a metal stake. Leon and Helena, relieved, since the person responsible for the events is dead, they get on the helicopter after seeing that Ada left them a chip with the evidence that betrays Simmons and proves Leon and Helena's innocence of what happened to the president. Leon asks Chris to rescue Jake and Sherry who were captured by Neo-Umbrella before revealing to Jake and also confirming that he is the son of bioterrorist Albert Wesker. Chris and Piers are taken with a B.O.W. known as Haos and face each other. Piers loses one of his arms and is forced to inject himself with the C-Virus and save Chris. While both escaped, Piers decides to stay, knowing that it was only a matter of time before the virus completely transformed him, so he gives his emblem to Chris and activates the escape pod so that he can escape while making one last attempt. the B.O.W. He tries to finish off Chris, but luckily the explosion from the base reaches the creature, eliminating it while on the surface, Chris saw how a helicopter was preparing to evacuate him. On the other hand, Jake and Sherry manage to escape from the neo-umbrella facilities. finally jake tells sherry that she only charged 50 dollars for her blood sample for the cure of the virus."
     },
     {
@@ -354,33 +432,46 @@
         {
           "id": 49,
           "name": "Ethan Winters",
-          "image_select": "/ethan-logo.webp",
-          "image_complete": "/ethan.webp",
+          "image_select": "/re7/ethan/ethan-logo.webp",
+          "image_complete": "/re7/ethan/ethan.webp",
           "description": "He was born in 1984 and as an adult he met a woman named Mia, over time they became boyfriends and in 2011 they got married. During her relationship, Ethan would ask about Mia's job, unaware that she worked for Las Conexiones, a company that manufactures and produces biological weapons. In 2014, his wife informed him that she was going to babysit on a ship. During her trip on the metal ship Annabelle, but after October 10, it was reported that the ship Mia was traveling on disappeared due to a storm and she was presumed dead. Three years after Mia's disappearance, Ethan received an email from her saying that he was in Dulvey, Louisiana, and was at a farm for him to come look for her. he doesn't know what she awaits him..."
         },
         {
           "id": 50,
           "name": "Mia Winters",
-          "image_select": "/mia-logo.webp",
-          "image_complete": "/mia.webp",
+          "image_select": "/re7/mia/mia-logo.webp",
+          "image_complete": "/re7/mia/mia.webp",
           "description": "In 2010 she started working for the company Las Conexiones, which is dedicated to the manufacture and production of biological weapons internationally on the black market, Mia became a researcher and one of the company's special operatives."
         },
         {
           "id": 55,
           "name": "Eveline",
-          "image_select": "/eveline-logo.webp",
-          "image_complete": "/eveline.webp",
+          "image_select": "/re7/eveline/eveline-logo.webp",
+          "image_complete": "/re7/eveline/eveline.webp",
           "description": "she is a genetically modified human conceived as part of the next generation of biological weapons research, led by an unidentified B.O.W. maker, designed to take out enemies without the need for combat. As a result of the fusion of an abnormal bacterium into her genome during the embryonic stage, she gained the ability to control the minds of people who came in contact with her. she was the only one to be Type-E's first bioweapon, as well as her unhealthy obsession with creating a family that meets her own needs."
         },
         {
           "id": 56,
           "name": "Chris Redfield",
-          "image_select": "/chris-re7-logo.webp",
-          "image_complete": "/chris-re7.webp",
+          "image_select": "/re7/chris/chris-re7-logo.webp",
+          "image_complete": "/re7/chris/chris-re7.webp",
           "description": "In 2017, the B.S.A.A. He had information from an underground crime syndicate called Las Conexiones, which has been involved in biochemical weapons research, drug and weapons trafficking, as well as money laundering. The B.S.A.A. had to cooperate with Blue Umbrella, an organization formed from Umbrella USA by the US Government to help counter combat with the B.O.W. by developing new weapons and Anti-B.O.W. Blue Umbrella asked the BSAA to send Chris Redfield to receive assistance for upcoming missions. The objective of the mission was to apprehend Lucas Baker, an alleged associate of the criminal organization Las Conexiones, who was in possession of the biological weapon known as Eveline."
         }
       ],
-      "image_prologue": "/re2-prologue.jpg",
+      "image_prologue": [
+        {
+          "id": 1,
+          "link": "/re1/images_game/re1-primary.webp"
+        },
+        {
+          "id": 2,
+          "link": "/re1/images_game/re1-second.webp"
+        },
+        {
+          "id": 3,
+          "link": "/re1/images_game/re1-third.webp"
+        }
+      ],
       "epilogue": "Ethan synthesizes a powerful toxin to kill the girl by injecting it into her, then proceeds through a series of tunnels that eventually lead him to the Baker house, visited right at the start of the game. Eveline causes Ethan many hallucinations of attacks, as well as psychic shocks, but Ethan overcomes them and injects Eveline with the toxin, ending her hallucinations, and revealing that Eveline was always the old woman in a wheelchair, who has been aging rapidly ever since. his escape. The toxin recedes, turning Eveline into a large monster. Aided by the arrival of a military squad, Ethan is able to defeat Eveline. With the threat removed, the squad and their leader, who identifies himself as Redfield, extract Ethan in a helicopter. At this point in the end if Ethan doesn't heal Mia, he throws his phone, which contains his last message, from the helicopter, saying 'goodbye'. If Mia was cured, she is found alive receiving medical attention aboard Redfield's helicopter. As the helicopter flies away, it is shown to bear the trademark of the Umbrella Corporation, but with a blue color."
     }
   ]
