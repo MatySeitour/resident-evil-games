@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 
+/* characters select props */
+
 interface CharacterProps {
   character_id: number;
   character_image_complete: string;
@@ -12,12 +14,6 @@ interface CharacterProps {
   characterSelected: any;
   setCharacterSelected: any;
 }
-interface CharacterSelected {
-  id: number;
-  image_complete: string;
-  image_select: string;
-  name: string;
-}
 
 const CharactersSelect = ({
   character_id,
@@ -26,11 +22,6 @@ const CharactersSelect = ({
   handleSearchCharacter,
   characterSelected,
 }: CharacterProps) => {
-  /* state that contains the id of the selected character */
-  const [characterShowId, setCharacterShowId] = useState<number>(0);
-
-  /* search character by id */
-
   return (
     <div key={character_id} className="image-character opacity-0 relative">
       <figure className="w-[100px] h-[70px] mr-[2.5px] cursor-pointer max-[870px]:mb-[2.5px]">
