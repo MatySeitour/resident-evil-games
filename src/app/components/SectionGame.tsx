@@ -8,6 +8,22 @@ import CharactersSelect from "./CharactersSelect";
 import InfoCharacter from "./InfoCharacter";
 import Epilogue from "./Epilogue";
 import useIntersection from "../hooks/useIntersection";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import {
+  ButtonGroupProps,
+  ArrowProps,
+  DotProps,
+} from "react-multi-carousel/lib/types";
+interface CustomLeftArrowProps extends ArrowProps {
+  myOwnStuff: string;
+}
+interface CustomRightArrowProps extends ArrowProps {
+  myOwnStuff: string;
+}
+interface CarouselButtonGroupProps extends ButtonGroupProps {
+  className?: string;
+}
 
 interface Props {
   id: number;
@@ -43,6 +59,27 @@ const SectionGame = ({
   image_prologue,
   epilogue,
 }: Props) => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      partialVisibilityGutter: 40,
+    },
+  };
+
   const element = useRef(null);
   const screen = useIntersection(element);
 
@@ -185,27 +222,6 @@ const SectionGame = ({
           });
         });
 
-        const characterSelectContainer = gsap.utils.toArray(
-          `.characters-game__${screen}`
-        );
-        characterSelectContainer.forEach((imagesContainer: any, i) => {
-          gsap.to(imagesContainer, {
-            scrollTrigger: {
-              trigger: imagesContainer,
-              toggleActions: "play none none none",
-              start: "500px center",
-              // markers: true,
-              // pin: true,
-              end: "600px center",
-            },
-            opacity: 1,
-            // xPercent: "-100",
-            // yPercent: "100",
-            // duration: 0.1,
-            // flexDirection: "row",
-          });
-        });
-
         const charactersTitleContainer = gsap.utils.toArray(
           `.characters-title__container__${screen}`
         );
@@ -223,21 +239,21 @@ const SectionGame = ({
           });
         });
 
-        const characterSelect = gsap.utils.toArray(".image-character");
-        characterSelect.forEach((imageCharacter: any, i) => {
-          gsap.to(imageCharacter, {
-            scrollTrigger: {
-              trigger: imageCharacter,
-              toggleActions: "play none none none",
-              start: "-140px center",
-              // markers: true,
-              // pin: true,
-              // end: "-200px center",
-            },
-            opacity: 1,
-            duration: 0.5,
-          });
-        });
+        // const characterSelect = gsap.utils.toArray(".image-character");
+        // characterSelect.forEach((imageCharacter: any, i) => {
+        //   gsap.to(imageCharacter, {
+        //     scrollTrigger: {
+        //       trigger: imageCharacter,
+        //       toggleActions: "play none none none",
+        //       start: "-140px center",
+        //       // markers: true,
+        //       // pin: true,
+        //       // end: "-200px center",
+        //     },
+        //     opacity: 1,
+        //     duration: 0.5,
+        //   });
+        // });
 
         const infoCharactersContainer = gsap.utils.toArray(
           ".info-characters__container"
@@ -255,7 +271,7 @@ const SectionGame = ({
           });
         });
 
-        const prologueTitle = gsap.utils.toArray(`.prologue-title__${id}`);
+        const prologueTitle = gsap.utils.toArray(`.prologue-title__${screen}`);
         prologueTitle.forEach((prologue: any) => {
           gsap.to(prologue, {
             scrollTrigger: {
@@ -267,6 +283,22 @@ const SectionGame = ({
             opacity: 1,
             xPercent: "10",
 
+            duration: 0.5,
+          });
+        });
+
+        const charactersSelectContainer = gsap.utils.toArray(
+          `.character-select__container__${screen}`
+        );
+        charactersSelectContainer.forEach((characterContainer: any) => {
+          gsap.to(`.character-select__container__${screen} .image-character`, {
+            scrollTrigger: {
+              trigger: characterContainer,
+              toggleActions: "play none none none",
+              start: "0px center",
+              // markers: true,
+            },
+            opacity: 1,
             duration: 0.5,
           });
         });
@@ -551,6 +583,42 @@ const SectionGame = ({
          `;
   };
 
+  const CustomLeftArrow = ({ onClick }: CustomLeftArrowProps) => {
+    return (
+      <div className="w-[40px] h-[40px] bg-details bg-red-800 absolute top-0">
+        <span
+          onClick={() => onClick()}
+          className="text-center text-4xl flex justify-center items-center arrow__effect text-white h-full w-full -translate-y-1 font-light"
+        >{`<`}</span>
+      </div>
+    );
+  };
+
+  const CustomRightArrow = ({ onClick }: CustomRightArrowProps) => {
+    return (
+      <div className="w-[40px] h-[40px] bg-details bg-red-800 absolute top-0 right-0">
+        <span
+          onClick={() => onClick()}
+          className="text-center text-4xl flex justify-center items-center arrow__effect text-white h-full w-full -translate-y-1 font-light"
+        >{`>`}</span>
+      </div>
+    );
+  };
+
+  const CustomDots = ({ index, active, onClick, carouselState }: DotProps) => {
+    console.log(carouselState);
+    return (
+      <div
+        className={`w-[30px] h-[30px] rounded-full m-2 ${
+          active ? `bg-details bg-red-800` : `bg-gray-900 bg-details`
+        } transition-all flex justify-center items-center`}
+        onClick={() => onClick()}
+      >
+        <p>{(index || index == 0) && index + 1}</p>
+      </div>
+    );
+  };
+
   return (
     <article
       key={id}
@@ -583,12 +651,47 @@ const SectionGame = ({
           </div>
         </div>
         <div
-          className={`h-[100%] w-[90%] flex-1 gap-6 flex justify-center items-center image-prologue__${id} opacity-0 pt-20 max-[870px]:w-[320px] max-[870px]:pt-14 max-[870px]:flex-col max-[870px]:justify-between max-[870px]:gap-0`}
+          className={`image-prologue__${id} max-[870px]:w-[100%] max-[870px]:h-[100%] max-[870px]:opacity-0 max-[870px]:flex max-[870px]:pt-14 max-[870px]:flex-col max-[870px]:justify-between max-[870px]:gap-0`}
+        >
+          <Carousel
+            focusOnSelect={true}
+            showDots={true}
+            className="max-[870px]:w-full max-[870px]:h-full w-full"
+            responsive={responsive}
+            customLeftArrow={<CustomLeftArrow myOwnStuff="" />}
+            customRightArrow={<CustomRightArrow myOwnStuff="" />}
+            customDot={<CustomDots />}
+          >
+            {image_prologue.map((img) => (
+              <figure
+                key={img.id}
+                className="h-[100%] max-h-[300px] translate-x-[10%] w-[70%] max-[870px]:w-[100%] max-[870px]:translate-x-0 max-[870px]:h-[300px] max-[870px]:max-h-none max-[870px]:px-4"
+              >
+                <Image
+                  className={`img-prologue__effect__${id} transition-all duration-100 grayscale-[1] hover:grayscale-[0] max-[870px]:object-contain`}
+                  alt="resident evil 1"
+                  src={img.link}
+                  onMouseMove={handleMouseMove}
+                  onMouseOut={handleMouseOut}
+                  width="0"
+                  height="0"
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                  }}
+                />
+              </figure>
+            ))}
+          </Carousel>
+        </div>
+        <div
+          className={`h-[100%] w-[90%] flex-1 gap-6 flex justify-center items-center image-prologue__${id} opacity-0 pt-20 max-[870px]:hidden`}
         >
           {image_prologue.map((img) => (
             <figure
               key={img.id}
-              className="h-[100%] max-h-[300px] translate-x-[10%] w-[70%] max-[870px]:w-[100%] max-[870px]:translate-x-0 max-[870px]:h-[300px] max-[870px]:max-h-none"
+              className="h-[100%] max-h-[300px] translate-x-[10%] w-[70%] max-[870px]:hidden"
             >
               <Image
                 className={`img-prologue__effect__${id} transition-all duration-100 grayscale-[1] hover:grayscale-[0] max-[870px]:object-contain`}
@@ -618,7 +721,9 @@ const SectionGame = ({
             Characters
           </h2>
         </div>
-        <div className="flex flex-row w-full items-center justify-end h-auto max-[870px]:flex-wrap max-[870px]:justify-center">
+        <div
+          className={`character-select__container__${id} flex flex-row w-full items-center justify-end h-auto max-[870px]:flex-wrap max-[870px]:justify-center`}
+        >
           {characters?.map((character) => (
             <CharactersSelect
               character_id={character.id}
