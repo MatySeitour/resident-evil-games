@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
 export default function useIntersection(a: any) {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(0);
   useEffect(() => {
     const observer = new window.IntersectionObserver(function (entries) {
       const { isIntersecting } = entries[0];
       if (isIntersecting) {
-        setShow(true);
+        setShow(Number(entries[0].target.id));
         observer.disconnect();
       }
     });
