@@ -1,18 +1,21 @@
 "use client";
 
-import TitleHome from "@/app/components/TitleHome";
-import Image from "next/image";
+/* import react hooks */
 import { useEffect, useState } from "react";
-import Nav from "./components/Nav";
-import { gsap } from "gsap";
+
+/* import componentes */
+import TitleHome from "@/app/components/TitleHome";
 import ScrollSection from "./components/ScrollSection";
+import Image from "next/image";
+
+/* import gsap */
+import { gsap } from "gsap";
 export default function Home() {
   /* first load page */
   const [loadingPageState, setLoadingPageState] = useState<boolean>(true);
 
   useEffect(() => {
     /* when the page load, wait two seconds and setloadingpage in false */
-
     setTimeout(() => {
       setLoadingPageState(false);
     }, 2000);
@@ -46,10 +49,7 @@ export default function Home() {
             </div>
           </div>
         )}
-        <div
-          // id="section-container"
-          className="min-h-screen min-w-screen relative flex justify-end items-end home-container__effect"
-        >
+        <div className="min-h-screen min-w-screen relative flex justify-end items-end home-container__effect">
           <TitleHome />
           <div className="h-[50px] z-[1000000] text-3xl inline-block absolute top-[60%] translate-y-[-60%] opacity-0 right-[10%] max-[870px]:top-[100%] max-[870px]:translate-y-[-200%] max-[870px]:right-[50%] max-[870px]:translate-x-[50%] element-up max-[870px]:text-base">
             <p className="mb-2 tracking-wide text-white scroll-text__effect bg-white">
@@ -79,11 +79,6 @@ export default function Home() {
                   src={"/icons8-linkedin-50.png"}
                   height={50}
                   width={50}
-                  // sizes="100%"
-                  // style={{
-                  //   width: "100%",
-                  //   height: "100%",
-                  // }}
                   alt="linkedIn"
                 />
               </figure>
@@ -92,11 +87,6 @@ export default function Home() {
                   src={"/icons8-twitter-240.png"}
                   height={50}
                   width={50}
-                  // sizes="100%"
-                  // style={{
-                  //   width: "100%",
-                  //   height: "100%",
-                  // }}
                   alt="linkedIn"
                 />
               </figure>
@@ -105,11 +95,6 @@ export default function Home() {
                   src={"/icons8-git-240.png"}
                   height={50}
                   width={50}
-                  // sizes="100%"
-                  // style={{
-                  //   width: "100%",
-                  //   height: "100%",
-                  // }}
                   alt="linkedIn"
                 />
               </figure>
