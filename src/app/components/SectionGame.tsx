@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import getGames from "../../utils/games.json";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -7,6 +7,7 @@ import Image from "next/image";
 import CharactersSelect from "./CharactersSelect";
 import InfoCharacter from "./InfoCharacter";
 import Epilogue from "./Epilogue";
+import useIntersection from "../hooks/useIntersection";
 
 interface Props {
   id: number;
@@ -42,97 +43,23 @@ const SectionGame = ({
   image_prologue,
   epilogue,
 }: Props) => {
+  const element = useRef(null);
+  const screen = useIntersection(element);
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, SplitType);
-
-    const epilogueTitle = gsap.utils.toArray(`.epilogue_title__${id}`);
-    const umbrellaEpilogue = gsap.utils.toArray(`.umbrella-epilogue`);
-    const textEpilogue = gsap.utils.toArray(`.text-epilogue`);
-    // const textEpilogueContainer = gsap.utils.toArray(
-    //   ".text-epilogue__container"
-    // );
-    const lineLeftEpilogue = gsap.utils.toArray(`.line-left__epilogue__${id}`);
-    const lineRightEpilogue = gsap.utils.toArray(
-      `.line-right__epilogue__${id}`
-    );
-
-    epilogueTitle.forEach((title: any, i: number) => {
-      gsap.to(title, {
-        scrollTrigger: {
-          trigger: title,
-          toggleActions: "play none none none",
-          start: "top center",
-
-          end: "0px center",
-        },
-        opacity: 1,
-        duration: 0.5,
-      });
-    });
-
-    textEpilogue.forEach((title: any, i: number) => {
-      gsap.to(title, {
-        scrollTrigger: {
-          trigger: title,
-          toggleActions: "play none none none",
-          start: "top center",
-
-          end: "0px center",
-        },
-        opacity: 1,
-        duration: 0.5,
-      });
-    });
-
-    lineLeftEpilogue.forEach((line: any, i: number) => {
-      gsap.to(line, {
-        scrollTrigger: {
-          trigger: line,
-          toggleActions: "play none none none",
-          start: "-100px center",
-          end: "-100px center",
-        },
-        width: "40%",
-        duration: 0.5,
-      });
-    });
-
-    umbrellaEpilogue.forEach((logo: any, i: number) => {
-      gsap.to(logo, {
-        scrollTrigger: {
-          trigger: logo,
-          toggleActions: "play none none none",
-          start: "-100px center",
-          end: "-100px center",
-        },
-        opacity: 1,
-        duration: 0.5,
-      });
-    });
-
-    lineRightEpilogue.forEach((line: any, i: number) => {
-      gsap.to(line, {
-        scrollTrigger: {
-          trigger: line,
-          toggleActions: "play none none none",
-          start: "-100px center",
-          end: "-100px center",
-        },
-        width: "40%",
-        duration: 0.5,
-      });
-    });
-
     let mm = gsap.matchMedia();
-    mm.add("(min-width: 800px)", () => {
-      const title = document.querySelector(`.game-title__${id}`);
-      const titleSplit = new SplitType(`.game-title__${id}`);
-      gsap.from(`.game-title__${id} .char`, {
+
+    if (screen != 0) {
+      console.log(screen);
+      const title = document.querySelector(`.game-title__${screen}`);
+      const titleSplit = new SplitType(`.game-title__${screen}`);
+      gsap.from(`.game-title__${screen} .char`, {
         scrollTrigger: {
-          trigger: `.game-title__${id} .char`,
+          trigger: `.game-title__${screen} .char`,
           toggleActions: "play none none none",
           start: "top center",
-
+          // markers: true,
           end: "600px center",
         },
         x: 0,
@@ -141,18 +68,30 @@ const SectionGame = ({
         duration: 0.1,
         delay: 0,
       });
-    });
-    mm.add("(max-width: 800px)", () => {
-      const gameTitle = gsap.utils.toArray(`.game-title__${id}`);
 
-      gameTitle.forEach((title: any, i: number) => {
+      const epilogueTitle = gsap.utils.toArray(`.epilogue_title__${screen}`);
+      const umbrellaEpilogue = gsap.utils.toArray(
+        `.umbrella-epilogue__${screen}`
+      );
+      const textEpilogue = gsap.utils.toArray(`.text-epilogue__${screen}`);
+      // const textEpilogueContainer = gsap.utils.toArray(
+      //   ".text-epilogue__container"
+      // );
+      const lineLeftEpilogue = gsap.utils.toArray(
+        `.line-left__epilogue__${screen}`
+      );
+      const lineRightEpilogue = gsap.utils.toArray(
+        `.line-right__epilogue__${screen}`
+      );
+
+      epilogueTitle.forEach((title: any, i: number) => {
         gsap.to(title, {
           scrollTrigger: {
             trigger: title,
             toggleActions: "play none none none",
-            start: "-100px center",
+            start: "top center",
 
-            end: "-100px center",
+            end: "0px center",
           },
           opacity: 1,
           duration: 0.5,
@@ -170,34 +109,399 @@ const SectionGame = ({
           },
           opacity: 1,
           duration: 0.5,
-          onComplete: () => {
-            console.log(i);
-            const textContainer = document.querySelector(
-              `.text-epilogue__container__${i + 1}`
-            );
-            textContainer?.classList.add("overflow-epilogue__active");
-          },
         });
       });
 
-      const charactersTitleContainer = gsap.utils.toArray(
-        `.characters-title__container`
-      );
-      charactersTitleContainer.forEach((title: any, i) => {
-        gsap.to(title, {
+      lineLeftEpilogue.forEach((line: any, i: number) => {
+        gsap.to(line, {
           scrollTrigger: {
-            trigger: title,
+            trigger: line,
             toggleActions: "play none none none",
             start: "-100px center",
+            end: "-100px center",
+          },
+          width: "40%",
+          duration: 0.5,
+        });
+      });
 
+      umbrellaEpilogue.forEach((logo: any, i: number) => {
+        gsap.to(logo, {
+          scrollTrigger: {
+            trigger: logo,
+            toggleActions: "play none none none",
+            start: "-100px center",
             end: "-100px center",
           },
           opacity: 1,
           duration: 0.5,
         });
       });
-    });
-  }, []);
+
+      lineRightEpilogue.forEach((line: any, i: number) => {
+        gsap.to(line, {
+          scrollTrigger: {
+            trigger: line,
+            toggleActions: "play none none none",
+            start: "-100px center",
+            end: "-100px center",
+          },
+          width: "40%",
+          duration: 0.5,
+        });
+      });
+
+      mm.add("(min-width: 800px)", () => {
+        const imagePrologue = gsap.utils.toArray(`.image-prologue__${screen}`);
+        imagePrologue.forEach((image: any, i) => {
+          gsap.to(image, {
+            scrollTrigger: {
+              trigger: image,
+              toggleActions: "play none none none",
+              // markers: true,
+              start: "100px center",
+
+              end: "-100px center",
+            },
+            opacity: 1,
+            xPercent: -2,
+            duration: 0.5,
+          });
+        });
+
+        const descriptionGame = gsap.utils.toArray(
+          `#description-game__${screen}`
+        );
+        descriptionGame.forEach((description: any, i) => {
+          gsap.to(description, {
+            scrollTrigger: {
+              trigger: description,
+              toggleActions: "play none none none",
+              start: "-50px center",
+            },
+            opacity: 1,
+            xPercent: "10",
+            duration: 0.5,
+          });
+        });
+
+        const characterSelectContainer = gsap.utils.toArray(
+          `.characters-game__${screen}`
+        );
+        characterSelectContainer.forEach((imagesContainer: any, i) => {
+          gsap.to(imagesContainer, {
+            scrollTrigger: {
+              trigger: imagesContainer,
+              toggleActions: "play none none none",
+              start: "500px center",
+              // markers: true,
+              // pin: true,
+              end: "600px center",
+            },
+            opacity: 1,
+            // xPercent: "-100",
+            // yPercent: "100",
+            // duration: 0.1,
+            // flexDirection: "row",
+          });
+        });
+
+        const charactersTitleContainer = gsap.utils.toArray(
+          `.characters-title__container__${screen}`
+        );
+        charactersTitleContainer.forEach((title: any, i) => {
+          gsap.to(title, {
+            scrollTrigger: {
+              trigger: title,
+              toggleActions: "play none none none",
+              start: "-100px center",
+
+              end: "-100px center",
+            },
+            opacity: 1,
+            duration: 0.5,
+          });
+        });
+
+        const characterSelect = gsap.utils.toArray(".image-character");
+        characterSelect.forEach((imageCharacter: any, i) => {
+          gsap.to(imageCharacter, {
+            scrollTrigger: {
+              trigger: imageCharacter,
+              toggleActions: "play none none none",
+              start: "-140px center",
+              // markers: true,
+              // pin: true,
+              // end: "-200px center",
+            },
+            opacity: 1,
+            duration: 0.5,
+          });
+        });
+
+        const infoCharactersContainer = gsap.utils.toArray(
+          ".info-characters__container"
+        );
+        infoCharactersContainer.forEach((characterContainer: any) => {
+          gsap.to(characterContainer, {
+            scrollTrigger: {
+              trigger: characterContainer,
+              toggleActions: "play none none none",
+              start: "-400px center",
+              // markers: true,
+            },
+            opacity: 1,
+            duration: 0.5,
+          });
+        });
+
+        const prologueTitle = gsap.utils.toArray(`.prologue-title__${id}`);
+        prologueTitle.forEach((prologue: any) => {
+          gsap.to(prologue, {
+            scrollTrigger: {
+              trigger: prologue,
+              toggleActions: "play none none none",
+              start: "0px center",
+              // markers: true,
+            },
+            opacity: 1,
+            xPercent: "10",
+
+            duration: 0.5,
+          });
+        });
+      });
+      mm.add("(max-width: 800px)", () => {
+        const gameTitle = gsap.utils.toArray(`.game-title__${screen}`);
+        gameTitle.forEach((title: any, i: number) => {
+          gsap.to(title, {
+            scrollTrigger: {
+              trigger: title,
+              toggleActions: "play none none none",
+              start: "-100px center",
+
+              end: "-100px center",
+            },
+            opacity: 1,
+            duration: 0.5,
+          });
+        });
+
+        const imagePrologue = gsap.utils.toArray(`.image-prologue__${screen}`);
+        imagePrologue.forEach((image: any, i) => {
+          gsap.to(image, {
+            scrollTrigger: {
+              trigger: image,
+              toggleActions: "play none none none",
+              // markers: true,
+              start: "100px center",
+
+              end: "-100px center",
+            },
+            opacity: 1,
+            // xPercent: -10,
+            duration: 0.5,
+          });
+        });
+
+        const descriptionGame = gsap.utils.toArray(
+          `#description-game__${screen}`
+        );
+        descriptionGame.forEach((description: any, i) => {
+          gsap.to(description, {
+            scrollTrigger: {
+              trigger: description,
+              toggleActions: "play none none none",
+              start: "-50px center",
+            },
+            opacity: 1,
+            // xPercent: "10",
+            duration: 0.5,
+          });
+        });
+
+        const charactersTitleContainer = gsap.utils.toArray(
+          `.characters-title__container__${screen}`
+        );
+        charactersTitleContainer.forEach((title: any, i) => {
+          gsap.to(title, {
+            scrollTrigger: {
+              trigger: title,
+              toggleActions: "play none none none",
+              start: "-100px center",
+
+              end: "-100px center",
+            },
+            opacity: 1,
+            duration: 0.5,
+          });
+        });
+
+        const characterSelectContainer = gsap.utils.toArray(
+          `.characters-game__${screen}`
+        );
+        characterSelectContainer.forEach((imagesContainer: any, i) => {
+          gsap.to(imagesContainer, {
+            scrollTrigger: {
+              trigger: imagesContainer,
+              toggleActions: "play none none none",
+              start: "500px center",
+              // markers: true,
+              // pin: true,
+              end: "600px center",
+            },
+            // opacity: 1,
+            // xPercent: "-100",
+            // yPercent: "100",
+            // duration: 0.1,
+            // flexDirection: "row",
+          });
+        });
+
+        const characterSelect = gsap.utils.toArray(".image-character");
+        characterSelect.forEach((imageCharacter: any, i) => {
+          gsap.to(imageCharacter, {
+            scrollTrigger: {
+              trigger: imageCharacter,
+              toggleActions: "play none none none",
+              start: "-140px center",
+              // markers: true,
+              // pin: true,
+              // end: "-200px center",
+            },
+            opacity: 1,
+            duration: 0.5,
+          });
+        });
+
+        const infoCharactersContainer = gsap.utils.toArray(
+          ".info-characters__container"
+        );
+        infoCharactersContainer.forEach((characterContainer: any) => {
+          gsap.to(characterContainer, {
+            scrollTrigger: {
+              trigger: characterContainer,
+              toggleActions: "play none none none",
+              start: "-400px center",
+              // markers: true,
+            },
+            opacity: 1,
+            duration: 0.5,
+          });
+        });
+
+        const prologueTitle = gsap.utils.toArray(`.prologue-title__${screen}`);
+        prologueTitle.forEach((prologue: any) => {
+          gsap.to(prologue, {
+            scrollTrigger: {
+              trigger: prologue,
+              toggleActions: "play none none none",
+              start: "0px center",
+              // markers: true,
+            },
+            opacity: 1,
+            // xPercent: "10",
+
+            duration: 0.5,
+          });
+        });
+
+        textEpilogue.forEach((title: any, i: number) => {
+          gsap.to(title, {
+            scrollTrigger: {
+              trigger: title,
+              toggleActions: "play none none none",
+              start: "top center",
+
+              end: "0px center",
+            },
+            onComplete: () => {
+              const textContainer = document.querySelector(
+                `.text-epilogue__container__${screen}`
+              );
+              textContainer?.classList.add("overflow-epilogue__active");
+            },
+            opacity: 1,
+            duration: 0.5,
+          });
+        });
+      });
+    }
+
+    // let mm = gsap.matchMedia();
+    // mm.add("(min-width: 800px)", () => {
+    //   const title = document.querySelector(`.game-title__${id}`);
+    //   const titleSplit = new SplitType(`.game-title__${id}`);
+    //   gsap.from(`.game-title__${id} .char`, {
+    //     scrollTrigger: {
+    //       trigger: `.game-title__${id} .char`,
+    //       toggleActions: "play none none none",
+    //       start: "top center",
+
+    //       end: "600px center",
+    //     },
+    //     x: 0,
+    //     stagger: 0.05,
+    //     opacity: 0,
+    //     duration: 0.1,
+    //     delay: 0,
+    //   });
+    // });
+    // mm.add("(max-width: 800px)", () => {
+    //   const gameTitle = gsap.utils.toArray(`.game-title__${id}`);
+
+    //   gameTitle.forEach((title: any, i: number) => {
+    //     gsap.to(title, {
+    //       scrollTrigger: {
+    //         trigger: title,
+    //         toggleActions: "play none none none",
+    //         start: "-100px center",
+
+    //         end: "-100px center",
+    //       },
+    //       opacity: 1,
+    //       duration: 0.5,
+    //     });
+    //   });
+
+    //   textEpilogue.forEach((title: any, i: number) => {
+    //     gsap.to(title, {
+    //       scrollTrigger: {
+    //         trigger: title,
+    //         toggleActions: "play none none none",
+    //         start: "top center",
+
+    //         end: "0px center",
+    //       },
+    //       opacity: 1,
+    //       duration: 0.5,
+    //       onComplete: () => {
+    //         const textContainer = document.querySelector(
+    //           `.text-epilogue__container__${i + 1}`
+    //         );
+    //         textContainer?.classList.add("overflow-epilogue__active");
+    //       },
+    //     });
+    //   });
+
+    //   const charactersTitleContainer = gsap.utils.toArray(
+    //     `.characters-title__container`
+    //   );
+    //   charactersTitleContainer.forEach((title: any, i) => {
+    //     gsap.to(title, {
+    //       scrollTrigger: {
+    //         trigger: title,
+    //         toggleActions: "play none none none",
+    //         start: "-100px center",
+
+    //         end: "-100px center",
+    //       },
+    //       opacity: 1,
+    //       duration: 0.5,
+    //     });
+    //   });
+    // });
+  }, [screen]);
 
   const [characterSelected, setCharacterSelected] =
     useState<CharacterSelected>();
@@ -247,13 +551,12 @@ const SectionGame = ({
          `;
   };
 
-  console.log(image_prologue);
-
   return (
     <article
       key={id}
-      id={`section-game`}
-      className={`bg-transparent article-container__effect w-full h-[2600px] pt-[40px] relative flex flex-col justify-center bg-${id} max-[870px]:h-[auto]`}
+      ref={element}
+      id={`${id}`}
+      className={`bg-transparent article-container__effect w-full h-[auto] pt-[40px] relative flex flex-col justify-center bg-${id} max-[870px]:h-[auto]`}
     >
       <div
         className={`opacity-0 absolute z[-1] transition-all background-gradient`}
@@ -265,19 +568,23 @@ const SectionGame = ({
       </div>
       <div className="h-[100%] w-[100%] pt-20 flex flex-col justify-between items-center mb-[150px] max-[870px]:flex-col max-[870px]:px-4 ">
         <div className="flex flex-col w-[50%] translate-x-[-10%] max-[870px]:w-full max-[870px]:translate-x-0">
-          <h2 className="relative inline-block prologue-title scroll-text__effect leading-relaxed bg-red-800 text-red-500 scale-x-[1] scale-y-[1.2] text-5xl mb-20 tracking-wider text-center opacity-0 max-[870px]:text-center max-[870px]:text-4xl max-[870px]:pb-[2px]">
+          <h2
+            className={`relative inline-block prologue-title__${id} scroll-text__effect leading-relaxed bg-red-800 text-red-500 scale-x-[1] scale-y-[1.2] text-5xl mb-20 tracking-wider text-center opacity-0 max-[870px]:text-center max-[870px]:text-4xl max-[870px]:pb-[2px]`}
+          >
             Prologue
           </h2>
           <div className="h-auto w-[100%]">
             <p
-              id="description-game"
+              id={`description-game__${id}`}
               className="relative w-[100%] opacity-0 scale-x-[1] scale-y-[1.2] mb-14 scroll-text__effect bg-white text-center text-xl max-[870px]:text-center"
             >
               {description}
             </p>
           </div>
         </div>
-        <div className="h-[100%] w-[90%] flex-1 gap-6 flex justify-center items-center image-prologue opacity-0 pt-20 max-[870px]:w-[320px] max-[870px]:pt-14 max-[870px]:flex-col max-[870px]:justify-between max-[870px]:gap-0">
+        <div
+          className={`h-[100%] w-[90%] flex-1 gap-6 flex justify-center items-center image-prologue__${id} opacity-0 pt-20 max-[870px]:w-[320px] max-[870px]:pt-14 max-[870px]:flex-col max-[870px]:justify-between max-[870px]:gap-0`}
+        >
           {image_prologue.map((img) => (
             <figure
               key={img.id}
@@ -301,9 +608,13 @@ const SectionGame = ({
           ))}
         </div>
       </div>
-      <div className="characters-game z-[99999] w-[100%] flex flex-col justify-center items-end relative h-auto mb-10 px-4">
+      <div
+        className={`characters-game__${id} z-[99999] w-[100%] flex flex-col justify-center items-end relative h-auto mb-10 px-4`}
+      >
         <div className="w-full text-center">
-          <h2 className="relative inline-block characters-title__container scroll-text__effect bg-red-800 text-red-800 scale-x-[1] scale-y-[1.2] text-4xl mb-20 tracking-wider opacity-0">
+          <h2
+            className={`relative inline-block characters-title__container__${id} scroll-text__effect bg-red-800 text-red-800 scale-x-[1] scale-y-[1.2] text-4xl mb-20 tracking-wider opacity-0`}
+          >
             Characters
           </h2>
         </div>
