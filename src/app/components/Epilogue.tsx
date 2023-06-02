@@ -70,7 +70,7 @@ const Epilogue = ({ epilogue, id }: PropEpilogue) => {
         ></span>
         <div className="h-full w-[auto] flex justify-center items-center">
           <Image
-            className="animate-spin opacity-0 umbrella-epilogue"
+            className={`animate-spin opacity-0 umbrella-epilogue__${id}`}
             src={"/umbrella-epilogue.png"}
             alt="umbrella-epilogue"
             width={48}
@@ -84,7 +84,9 @@ const Epilogue = ({ epilogue, id }: PropEpilogue) => {
       <div
         className={`flex w-[100%] text-epilogue__container__${id} justify-center items-center pr-3 pl-3 max-[870px]:h-[300px] max-[870px]:overflow-hidden max-[870px]:inline-block max-[870px]:pb-[24px]`}
       >
-        <p className="text-center text-epilogue relative w-[100%] opacity-0 text-epilogue__effect mb-4 scale-x-[1] scale-y-[1.2] pr-2 bg-white text-xl max-[870px]:text-center pt-4 max-[870px]:scale-[1] max-[870px]:mb-0 max-[870px]:pr-0">
+        <p
+          className={`text-center text-epilogue__${id} relative w-[100%] opacity-0 text-epilogue__effect mb-4 scale-x-[1] scale-y-[1.2] pr-2 bg-white text-xl max-[870px]:text-center pt-4 max-[870px]:scale-[1] max-[870px]:mb-0 max-[870px]:pr-0`}
+        >
           {epilogue}
         </p>
       </div>
@@ -95,7 +97,7 @@ const Epilogue = ({ epilogue, id }: PropEpilogue) => {
         ></span>
         <div className="h-full w-[auto] flex justify-center items-center">
           <Image
-            className="animate-spin opacity-0 umbrella-epilogue"
+            className={`animate-spin opacity-0 umbrella-epilogue__${id}`}
             src={"/umbrella-epilogue.png"}
             alt="umbrella-epilogue"
             width={48}
