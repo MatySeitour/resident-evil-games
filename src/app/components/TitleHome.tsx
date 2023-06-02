@@ -44,7 +44,7 @@ const TitleHome = () => {
 
   return (
     <div className="w-[auto] h-auto absolute top-[60%] translate-y-[-60%] left-0 pl-4 z-[100] max-[870px]:top-[50%] max-[870px]:translate-y-[-50%] max-[870px]:px-2 max-[870px]:w-full">
-      <div className="title-container background-details__title overflow-hidden relative flex justify-center items-center flex-col">
+      <div className="title-container overflow-hidden relative flex justify-center items-center flex-col">
         <h1
           id="title-home"
           className="scale-x-[1] scale-y-[1.2] text-4xl mb-2 tracking-wider text__effect text-center max-[870px]:mb-4"
