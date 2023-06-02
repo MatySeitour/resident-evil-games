@@ -66,27 +66,54 @@ export default function Home() {
         <ScrollSection />
         <div className="h-screen w-full relative footer-gradient__effect flex justify-center items-center">
           <div className="w-auto h-auto flex flex-col justify-center items-center">
-            <h6 className="text-4xl mb-2 tracking-wider text__effect text-center max-[870px]:mb-10">
+            <h6 className="text-4xl mb-2 tracking-wider text__effect__footer text-center scale-y-[1.2] max-[870px]:mb-10">
               THE END?...
             </h6>
-            <p className="tracking-wider title-archives__effect pb-2 text-center text-2xl">
+            <p className="tracking-wider text__thanking pb-2 text-center text-2xl mb-4">
               Thanks for watching :D
             </p>
 
-            <figure className="relative w-[50px] h-[50px] overflow-hidden">
-              <Image
-                src={"/icons8-linkedin-50.png"}
-                height={60}
-                width={60}
-                // sizes="100%"
-                // style={{
-                //   width: "100%",
-                //   height: "100%",
-                // }}
-                alt="linkedIn"
-              />
-              <div className="linkedin-details w-[50px] h-[50px] overflow-hidden"></div>
-            </figure>
+            <div className="w-auto h-auto flex flex-row">
+              <figure className="relative w-[50px] h-[50px] overflow-hidden m-2">
+                <Image
+                  src={"/icons8-linkedin-50.png"}
+                  height={50}
+                  width={50}
+                  // sizes="100%"
+                  // style={{
+                  //   width: "100%",
+                  //   height: "100%",
+                  // }}
+                  alt="linkedIn"
+                />
+              </figure>
+              <figure className="relative w-[50px] h-[50px] overflow-hidden m-2">
+                <Image
+                  src={"/icons8-twitter-240.png"}
+                  height={50}
+                  width={50}
+                  // sizes="100%"
+                  // style={{
+                  //   width: "100%",
+                  //   height: "100%",
+                  // }}
+                  alt="linkedIn"
+                />
+              </figure>
+              <figure className="relative w-[50px] h-[50px] overflow-hidden m-2">
+                <Image
+                  src={"/icons8-git-240.png"}
+                  height={50}
+                  width={50}
+                  // sizes="100%"
+                  // style={{
+                  //   width: "100%",
+                  //   height: "100%",
+                  // }}
+                  alt="linkedIn"
+                />
+              </figure>
+            </div>
           </div>
         </div>
       </div>
