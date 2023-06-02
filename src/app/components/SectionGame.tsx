@@ -587,7 +587,7 @@ const SectionGame = ({
     return (
       <div className="w-[40px] h-[40px] bg-details bg-red-800 absolute top-0">
         <span
-          onClick={() => onClick()}
+          onClick={onClick}
           className="text-center text-4xl flex justify-center items-center arrow__effect text-white h-full w-full -translate-y-1 font-light"
         >{`<`}</span>
       </div>
@@ -598,7 +598,7 @@ const SectionGame = ({
     return (
       <div className="w-[40px] h-[40px] bg-details bg-red-800 absolute top-0 right-0">
         <span
-          onClick={() => onClick()}
+          onClick={onClick}
           className="text-center text-4xl flex justify-center items-center arrow__effect text-white h-full w-full -translate-y-1 font-light"
         >{`>`}</span>
       </div>
@@ -612,7 +612,7 @@ const SectionGame = ({
         className={`w-[30px] h-[30px] rounded-full m-2 ${
           active ? `bg-details bg-red-800` : `bg-gray-900 bg-details`
         } transition-all flex justify-center items-center`}
-        onClick={() => onClick()}
+        onClick={onClick}
       >
         <p>{(index || index == 0) && index + 1}</p>
       </div>
