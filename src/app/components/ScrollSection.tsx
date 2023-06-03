@@ -16,6 +16,7 @@ const ScrollSection = () => {
           characters={game.characters}
           epilogue={game.epilogue}
           image_prologue={game.image_prologue}
+          date={game.date}
         />
       ))}
     </>
