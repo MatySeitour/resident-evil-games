@@ -114,6 +114,21 @@ body::-webkit-scrollbar-track {
   z-index: 1999;
   transform: scale(1, 1.2);
 }
+.text__effect {
+  background-image: url("../../public/details.png") !important;
+  background-position: center;
+  background-size: 1000px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  filter: drop-shadow(5px 0 10px rgba(0, 0, 0, 0.8));
+  display: inline-block;
+  color: rgba(187, 16, 32, 0);
+  background-color: #a00;
+  display: inline-block;
+  font-weight: 400;
+  z-index: 1999;
+  transform: scale(1, 1.2);
+}
 
 .title-archives__effect .char {
   background-image: url("../../public/details.png") !important;
@@ -535,6 +550,62 @@ body::-webkit-scrollbar-track {
 
   .bg-1 {
     background-image: url("../../public/re1/bg-1-mobile.webp");
+    background-size: 160vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    will-change: background;
+  }
+  .bg-2 {
+    background-image: url("../../public/re2/bg-2-mobile.webp");
+    background-size: 160vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    will-change: background;
+  }
+  .bg-3 {
+    background-image: url("../../public/re3/bg-3-mobile.webp");
+    background-size: 160vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    will-change: background;
+  }
+  .bg-4 {
+    background-image: url("../../public/re4/bg-4-mobile.webp");
+    background-size: 160vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    will-change: background;
+  }
+  .bg-5 {
+    background-image: url("../../public/re5/bg-5-mobile.webp");
+    background-size: 160vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    will-change: background;
+  }
+  .bg-6 {
+    background-image: url("../../public/re6/bg-6-mobile.webp");
+    background-size: 200vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    will-change: background;
+  }
+  .bg-7 {
+    background-image: url("../../public/re7/bg-7-mobile.webp");
+    background-size: 160vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    will-change: background;
+  }
+  .bg-8 {
+    background-image: url("../../public/re8/bg-8-mobile.webp");
     background-size: 160vw;
     background-position: center;
     background-repeat: no-repeat;
