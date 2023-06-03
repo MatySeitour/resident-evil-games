@@ -621,13 +621,6 @@ const SectionGame = ({
       >
         <h1 className="inline-block">{title}</h1>
       </div>
-      <div className="relative">
-        <p
-          className={`inline-block date__${id} absolute right-[2%] top-[20%] text-center text__effect text-red-800 scale-x-[1] scale-y-[1.2] text-4xl mb-20 tracking-wider`}
-        >
-          {date}
-        </p>
-      </div>
       <div className="h-[100%] w-[100%] pt-20 flex flex-col justify-between items-center mb-[150px] max-[870px]:flex-col max-[870px]:px-4 ">
         <div className="flex flex-col w-[50%] translate-x-[-10%] max-[870px]:w-full max-[870px]:translate-x-0">
           <h2
