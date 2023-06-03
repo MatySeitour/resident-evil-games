@@ -10,6 +10,7 @@ import Image from "next/image";
 
 /* import gsap */
 import { gsap } from "gsap";
+import Footer from "./components/Footer";
 export default function Home() {
   /* first load page */
   const [loadingPageState, setLoadingPageState] = useState<boolean>(true);
@@ -64,43 +65,7 @@ export default function Home() {
         </div>
         <div className="bg-black w-full h-[100px]"></div>
         <ScrollSection />
-        <div className="h-screen w-full relative footer-gradient__effect flex justify-center items-center">
-          <div className="w-auto h-auto flex flex-col justify-center items-center">
-            <h6 className="text-4xl mb-2 tracking-wider text__effect__footer text-center scale-y-[1.2] max-[870px]:mb-10">
-              THE END?...
-            </h6>
-            <p className="tracking-wider text__thanking pb-2 text-center text-2xl mb-4">
-              Thanks for watching :D
-            </p>
-
-            <div className="w-auto h-auto flex flex-row">
-              <figure className="relative w-[50px] h-[50px] overflow-hidden m-2">
-                <Image
-                  src={"/icons8-linkedin-50.png"}
-                  height={50}
-                  width={50}
-                  alt="linkedIn"
-                />
-              </figure>
-              <figure className="relative w-[50px] h-[50px] overflow-hidden m-2">
-                <Image
-                  src={"/icons8-twitter-240.png"}
-                  height={50}
-                  width={50}
-                  alt="linkedIn"
-                />
-              </figure>
-              <figure className="relative w-[50px] h-[50px] overflow-hidden m-2">
-                <Image
-                  src={"/icons8-git-240.png"}
-                  height={50}
-                  width={50}
-                  alt="linkedIn"
-                />
-              </figure>
-            </div>
-          </div>
-        </div>
+        <Footer />
       </div>
     </main>
   );
