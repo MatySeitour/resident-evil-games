@@ -566,7 +566,7 @@ body::-webkit-scrollbar-track {
   }
   .bg-3 {
     background-image: url("../../public/re3/bg-3-mobile.webp");
-    background-size: 160vw;
+    background-size: 200vw;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -582,7 +582,7 @@ body::-webkit-scrollbar-track {
   }
   .bg-5 {
     background-image: url("../../public/re5/bg-5-mobile.webp");
-    background-size: 160vw;
+    background-size: 200vw;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
