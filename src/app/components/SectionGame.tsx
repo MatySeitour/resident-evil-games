@@ -49,6 +49,7 @@ interface Props {
     link: string;
   }[];
   epilogue: string;
+  date: string;
   other_games?: {}[];
 }
 
@@ -68,6 +69,7 @@ const SectionGame = ({
   characters,
   image_prologue,
   epilogue,
+  date,
 }: Props) => {
   /* react-multi-carousel queries */
   const responsive = {
@@ -229,17 +231,34 @@ const SectionGame = ({
 
         const imagePrologue = gsap.utils.toArray(`.image-prologue__${screen}`);
         imagePrologue.forEach((image: any, i) => {
-          gsap.to(image, {
-            scrollTrigger: {
-              trigger: image,
-              toggleActions: "play none none none",
-              start: "100px center",
+          gsap.fromTo(
+            image,
+            {
+              scrollTrigger: {
+                trigger: image,
+                toggleActions: "play none none none",
+                start: "100px center",
 
-              end: "-100px center",
+                end: "-100px center",
+              },
+              opacity: 0,
+              xPercent: 50,
+
+              duration: 0.5,
             },
-            opacity: 1,
-            duration: 0.5,
-          });
+            {
+              scrollTrigger: {
+                trigger: image,
+                toggleActions: "play none none none",
+                start: "100px center",
+
+                end: "-100px center",
+              },
+              opacity: 1,
+              xPercent: 0,
+              duration: 0.5,
+            }
+          );
         });
 
         /* prologue description game animation */
@@ -302,15 +321,29 @@ const SectionGame = ({
           `.character-select__container__${screen}`
         );
         charactersSelectContainer.forEach((characterContainer: any) => {
-          gsap.to(`.character-select__container__${screen} .image-character`, {
-            scrollTrigger: {
-              trigger: characterContainer,
-              toggleActions: "play none none none",
-              start: "top center",
+          gsap.fromTo(
+            `.character-select__container__${screen} .image-character`,
+            {
+              scrollTrigger: {
+                trigger: characterContainer,
+                toggleActions: "play none none none",
+                start: "top center",
+              },
+              opacity: 0,
+              duration: 0.5,
+              xPercent: 10,
             },
-            opacity: 1,
-            duration: 0.5,
-          });
+            {
+              scrollTrigger: {
+                trigger: characterContainer,
+                toggleActions: "play none none none",
+                start: "top center",
+              },
+              opacity: 1,
+              xPercent: 0,
+              duration: 0.5,
+            }
+          );
         });
       });
 
@@ -587,6 +620,13 @@ const SectionGame = ({
         className={`relative w-auto game-title__${id} text-center text__effect text-red-800 scale-x-[1] scale-y-[1.2] text-6xl mb-20 tracking-wider max-[870px]:opacity-0 max-[870px]:text-5xl`}
       >
         <h1 className="inline-block">{title}</h1>
+      </div>
+      <div className="relative">
+        <p
+          className={`inline-block date__${id} absolute right-[2%] top-[20%] text-center text__effect text-red-800 scale-x-[1] scale-y-[1.2] text-4xl mb-20 tracking-wider`}
+        >
+          {date}
+        </p>
       </div>
       <div className="h-[100%] w-[100%] pt-20 flex flex-col justify-between items-center mb-[150px] max-[870px]:flex-col max-[870px]:px-4 ">
         <div className="flex flex-col w-[50%] translate-x-[-10%] max-[870px]:w-full max-[870px]:translate-x-0">
