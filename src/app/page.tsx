@@ -17,8 +17,10 @@ export default function Home() {
 
   useEffect(() => {
     /* when the page load, wait two seconds and setloadingpage in false */
+    const html = document.querySelector("html");
     setTimeout(() => {
       setLoadingPageState(false);
+      html?.classList.remove("scroll");
     }, 2000);
     gsap.to(".element-up", {
       stagger: 0.05,

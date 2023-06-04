@@ -13,7 +13,6 @@ const Footer = () => {
     gsap.registerPlugin(ScrollTrigger, SplitType);
 
     if (screen == 9) {
-      console.log("enter");
       const footerText = new SplitType(".footer-text");
       const thanksText = new SplitType(".thanks-text");
 
