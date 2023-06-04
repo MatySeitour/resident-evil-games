@@ -3,7 +3,7 @@ import { url } from "inspector";
 import { useEffect } from "react";
 import SplitType from "split-type";
 
-const TitleHome = () => {
+const TitleHome = (): JSX.Element => {
   useEffect(() => {
     let mm = gsap.matchMedia();
 

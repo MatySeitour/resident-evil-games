@@ -4,6 +4,7 @@ export default function useIntersection(element: any) {
   /* receives by parameter the section in the form of an element */
 
   const [show, setShow] = useState(0);
+  console.log(element);
   useEffect(() => {
     const observer = new window.IntersectionObserver(function (entries) {
       const { isIntersecting } = entries[0];

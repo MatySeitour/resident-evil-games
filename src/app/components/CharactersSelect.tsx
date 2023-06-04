@@ -21,7 +21,7 @@ const CharactersSelect = ({
   character_name,
   handleSearchCharacter,
   characterSelected,
-}: CharacterProps) => {
+}: CharacterProps): JSX.Element => {
   return (
     <div key={character_id} className="image-character opacity-0 relative">
       <figure className="w-[100px] h-[70px] mr-[2.5px] cursor-pointer max-[870px]:mb-[2.5px]">

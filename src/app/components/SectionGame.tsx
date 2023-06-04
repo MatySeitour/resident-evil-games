@@ -70,7 +70,7 @@ const SectionGame = ({
   image_prologue,
   epilogue,
   date,
-}: Props) => {
+}: Props): JSX.Element => {
   /* react-multi-carousel queries */
   const responsive = {
     superLargeDesktop: {
@@ -124,23 +124,27 @@ const SectionGame = ({
       });
 
       /* epilogue elements */
-      const epilogueTitle = gsap.utils.toArray(`.epilogue_title__${screen}`);
+      const epilogueTitle: HTMLElement[] = gsap.utils.toArray(
+        `.epilogue_title__${screen}`
+      );
 
-      const umbrellaEpilogue = gsap.utils.toArray(
+      const umbrellaEpilogue: HTMLElement[] = gsap.utils.toArray(
         `.umbrella-epilogue__${screen}`
       );
 
-      const textEpilogue = gsap.utils.toArray(`.text-epilogue__${screen}`);
+      const textEpilogue: HTMLElement[] = gsap.utils.toArray(
+        `.text-epilogue__${screen}`
+      );
 
-      const lineLeftEpilogue = gsap.utils.toArray(
+      const lineLeftEpilogue: HTMLElement[] = gsap.utils.toArray(
         `.line-left__epilogue__${screen}`
       );
-      const lineRightEpilogue = gsap.utils.toArray(
+      const lineRightEpilogue: HTMLElement[] = gsap.utils.toArray(
         `.line-right__epilogue__${screen}`
       );
 
       /* epilogue animations */
-      epilogueTitle.forEach((title: any, i: number) => {
+      epilogueTitle.forEach((title: HTMLElement, i: number) => {
         gsap.to(title, {
           scrollTrigger: {
             trigger: title,
@@ -154,7 +158,7 @@ const SectionGame = ({
         });
       });
 
-      textEpilogue.forEach((title: any, i: number) => {
+      textEpilogue.forEach((title: HTMLElement, i: number) => {
         gsap.to(title, {
           scrollTrigger: {
             trigger: title,
@@ -168,7 +172,7 @@ const SectionGame = ({
         });
       });
 
-      lineLeftEpilogue.forEach((line: any, i: number) => {
+      lineLeftEpilogue.forEach((line: HTMLElement, i: number) => {
         gsap.to(line, {
           scrollTrigger: {
             trigger: line,
@@ -181,7 +185,7 @@ const SectionGame = ({
         });
       });
 
-      umbrellaEpilogue.forEach((logo: any, i: number) => {
+      umbrellaEpilogue.forEach((logo: HTMLElement, i: number) => {
         gsap.to(logo, {
           scrollTrigger: {
             trigger: logo,
@@ -194,7 +198,7 @@ const SectionGame = ({
         });
       });
 
-      lineRightEpilogue.forEach((line: any, i: number) => {
+      lineRightEpilogue.forEach((line: HTMLElement, i: number) => {
         gsap.to(line, {
           scrollTrigger: {
             trigger: line,
@@ -212,8 +216,10 @@ const SectionGame = ({
       mm.add("(min-width: 870px)", () => {
         /* prologue title animation */
 
-        const prologueTitle = gsap.utils.toArray(`.prologue-title__${screen}`);
-        prologueTitle.forEach((prologue: any) => {
+        const prologueTitle: HTMLElement[] = gsap.utils.toArray(
+          `.prologue-title__${screen}`
+        );
+        prologueTitle.forEach((prologue: HTMLElement) => {
           gsap.to(prologue, {
             scrollTrigger: {
               trigger: prologue,
@@ -229,8 +235,10 @@ const SectionGame = ({
 
         /* image prologue animation */
 
-        const imagePrologue = gsap.utils.toArray(`.image-prologue__${screen}`);
-        imagePrologue.forEach((image: any, i) => {
+        const imagePrologue: HTMLElement[] = gsap.utils.toArray(
+          `.image-prologue__${screen}`
+        );
+        imagePrologue.forEach((image: HTMLElement, i) => {
           gsap.fromTo(
             image,
             {
@@ -263,10 +271,10 @@ const SectionGame = ({
 
         /* prologue description game animation */
 
-        const descriptionGame = gsap.utils.toArray(
+        const descriptionGame: HTMLElement[] = gsap.utils.toArray(
           `#description-game__${screen}`
         );
-        descriptionGame.forEach((description: any, i) => {
+        descriptionGame.forEach((description: HTMLElement, i) => {
           gsap.to(description, {
             scrollTrigger: {
               trigger: description,
@@ -281,10 +289,10 @@ const SectionGame = ({
 
         /* characters title animation */
 
-        const charactersTitleContainer = gsap.utils.toArray(
+        const charactersTitleContainer: HTMLElement[] = gsap.utils.toArray(
           `.characters-title__container__${screen}`
         );
-        charactersTitleContainer.forEach((title: any, i) => {
+        charactersTitleContainer.forEach((title: HTMLElement, i) => {
           gsap.to(title, {
             scrollTrigger: {
               trigger: title,
@@ -300,10 +308,10 @@ const SectionGame = ({
 
         /* info characters animation */
 
-        const infoCharactersContainer = gsap.utils.toArray(
+        const infoCharactersContainer: HTMLElement[] = gsap.utils.toArray(
           `.info-characters__container__${screen}`
         );
-        infoCharactersContainer.forEach((characterContainer: any) => {
+        infoCharactersContainer.forEach((characterContainer: HTMLElement) => {
           gsap.to(characterContainer, {
             scrollTrigger: {
               trigger: characterContainer,
@@ -317,10 +325,10 @@ const SectionGame = ({
 
         /* characters select container animation*/
 
-        const charactersSelectContainer = gsap.utils.toArray(
+        const charactersSelectContainer: HTMLElement[] = gsap.utils.toArray(
           `.character-select__container__${screen}`
         );
-        charactersSelectContainer.forEach((characterContainer: any) => {
+        charactersSelectContainer.forEach((characterContainer: HTMLElement) => {
           gsap.fromTo(
             `.character-select__container__${screen} .image-character`,
             {
@@ -352,8 +360,10 @@ const SectionGame = ({
       mm.add("(max-width: 870px)", () => {
         /* game title animation */
 
-        const gameTitle = gsap.utils.toArray(`.game-title__${screen}`);
-        gameTitle.forEach((title: any, i: number) => {
+        const gameTitle: HTMLElement[] = gsap.utils.toArray(
+          `.game-title__${screen}`
+        );
+        gameTitle.forEach((title: HTMLElement, i: number) => {
           gsap.to(title, {
             scrollTrigger: {
               trigger: title,
@@ -369,8 +379,10 @@ const SectionGame = ({
 
         /* prologue title animation */
 
-        const prologueTitle = gsap.utils.toArray(`.prologue-title__${screen}`);
-        prologueTitle.forEach((prologue: any) => {
+        const prologueTitle: HTMLElement[] = gsap.utils.toArray(
+          `.prologue-title__${screen}`
+        );
+        prologueTitle.forEach((prologue: HTMLElement) => {
           gsap.to(prologue, {
             scrollTrigger: {
               trigger: prologue,
@@ -385,8 +397,10 @@ const SectionGame = ({
 
         /* image prologue animation */
 
-        const imagePrologue = gsap.utils.toArray(`.image-prologue__${screen}`);
-        imagePrologue.forEach((image: any, i) => {
+        const imagePrologue: HTMLElement[] = gsap.utils.toArray(
+          `.image-prologue__${screen}`
+        );
+        imagePrologue.forEach((image: HTMLElement, i) => {
           gsap.to(image, {
             scrollTrigger: {
               trigger: image,
@@ -402,10 +416,10 @@ const SectionGame = ({
 
         /* prologue description game animation */
 
-        const descriptionGame = gsap.utils.toArray(
+        const descriptionGame: HTMLElement[] = gsap.utils.toArray(
           `#description-game__${screen}`
         );
-        descriptionGame.forEach((description: any, i) => {
+        descriptionGame.forEach((description: HTMLElement, i) => {
           gsap.to(description, {
             scrollTrigger: {
               trigger: description,
@@ -420,10 +434,10 @@ const SectionGame = ({
 
         /* characters title animation */
 
-        const charactersTitleContainer = gsap.utils.toArray(
+        const charactersTitleContainer: HTMLElement[] = gsap.utils.toArray(
           `.characters-title__container__${screen}`
         );
-        charactersTitleContainer.forEach((title: any, i) => {
+        charactersTitleContainer.forEach((title: HTMLElement, i) => {
           gsap.to(title, {
             scrollTrigger: {
               trigger: title,
@@ -439,10 +453,10 @@ const SectionGame = ({
 
         /* characters select container animation */
 
-        const characterSelectContainer = gsap.utils.toArray(
+        const characterSelectContainer: HTMLElement[] = gsap.utils.toArray(
           `.characters-game__${screen}`
         );
-        characterSelectContainer.forEach((imagesContainer: any, i) => {
+        characterSelectContainer.forEach((imagesContainer: HTMLElement, i) => {
           gsap.to(imagesContainer, {
             scrollTrigger: {
               trigger: imagesContainer,
@@ -455,8 +469,9 @@ const SectionGame = ({
 
         /* characters select animation */
 
-        const characterSelect = gsap.utils.toArray(".image-character");
-        characterSelect.forEach((imageCharacter: any, i) => {
+        const characterSelect: HTMLElement[] =
+          gsap.utils.toArray(".image-character");
+        characterSelect.forEach((imageCharacter: HTMLElement, i) => {
           gsap.to(imageCharacter, {
             scrollTrigger: {
               trigger: imageCharacter,
@@ -470,10 +485,10 @@ const SectionGame = ({
 
         /* info characters animation */
 
-        const infoCharactersContainer = gsap.utils.toArray(
+        const infoCharactersContainer: HTMLElement[] = gsap.utils.toArray(
           `.info-characters__container__${screen}`
         );
-        infoCharactersContainer.forEach((characterContainer: any) => {
+        infoCharactersContainer.forEach((characterContainer: HTMLElement) => {
           gsap.to(characterContainer, {
             scrollTrigger: {
               trigger: characterContainer,
@@ -487,7 +502,7 @@ const SectionGame = ({
 
         /* text epilogue animation:  */
 
-        textEpilogue.forEach((title: any, i: number) => {
+        textEpilogue.forEach((title: HTMLElement, i: number) => {
           gsap.to(title, {
             scrollTrigger: {
               trigger: title,

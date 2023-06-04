@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/all";
 import { useEffect, useRef } from "react";
 import useIntersection from "../hooks/useIntersection";
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
   const element = useRef(null);
   const screen = useIntersection(element);
 
@@ -16,8 +16,8 @@ const Footer = () => {
       const footerText = new SplitType(".footer-text");
       const thanksText = new SplitType(".thanks-text");
 
-      const itemsFooter = gsap.utils.toArray(".item-footer");
-      itemsFooter.forEach((item: any) => {
+      const itemsFooter: HTMLElement[] = gsap.utils.toArray(".item-footer");
+      itemsFooter.forEach((item: HTMLElement) => {
         gsap.from(item, {
           scrollTrigger: {
             trigger: item,

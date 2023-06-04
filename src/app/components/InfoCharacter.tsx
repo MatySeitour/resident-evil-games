@@ -15,7 +15,10 @@ interface InfoCharacterProps {
   setCharacterSelected: any;
 }
 
-const InfoCharacter = ({ characterSelected, gameId }: InfoCharacterProps) => {
+const InfoCharacter = ({
+  characterSelected,
+  gameId,
+}: InfoCharacterProps): JSX.Element => {
   /* load image state */
   const [loadImageState, setLoadImageState] = useState(false);
 

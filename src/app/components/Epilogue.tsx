@@ -5,7 +5,7 @@ interface PropEpilogue {
   id: number;
 }
 
-const Epilogue = ({ epilogue, id }: PropEpilogue) => {
+const Epilogue = ({ epilogue, id }: PropEpilogue): JSX.Element => {
   return (
     <div className="bg-black h-[auto] w-full pb-10 flex flex-col justify-center items-center gap-4">
       <h5
